@@ -1,0 +1,235 @@
+EESchema Schematic File Version 4
+LIBS:MukkeBox-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MySymbols:TDA7418 U
+U 1 1 5E6D49E0
+P 9900 3600
+F 0 "U" H 10150 4550 50  0000 C CNN
+F 1 "TDA7418" H 9900 3650 50  0000 C CNN
+F 2 "" H 9700 3650 50  0001 C CNN
+F 3 "" H 9700 3650 50  0001 C CNN
+	1    9900 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Audio:PCM5100 U
+U 1 1 5E6DC9C9
+P 6800 4250
+F 0 "U" H 6800 5028 50  0000 C CNN
+F 1 "PCM5100" H 6800 4937 50  0000 C CNN
+F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 6750 5000 50  0001 C CNN
+F 3 "" H 6750 5000 50  0001 C CNN
+	1    6800 4250
+	1    0    0    -1  
+$EndComp
+Text Notes 6400 2750 0    50   ~ 0
+32Bit I2S Audio DAC\n
+Text Notes 9350 2050 0    50   ~ 0
+Audio Digitial Signal Processor\n
+Text Notes 3650 2600 0    50   ~ 0
+32Bit MCU \n
+$Comp
+L Connector:Conn_ARM_JTAG_SWD_10 J
+U 1 1 5E6D4F79
+P 1850 1300
+F 0 "J" H 1410 1346 50  0000 R CNN
+F 1 "Conn_ARM_JTAG_SWD_10" H 1410 1255 50  0000 R CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD" H 1900 750 50  0001 L TNN
+F 3 "" V 1500 50  50  0001 C CNN
+	1    1850 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCU_ST_STM32F4:STM32F410CBUx U
+U 1 1 5E711750
+P 3750 5350
+F 0 "U" H 3700 6100 50  0000 C CNN
+F 1 "STM32F410C8Ux" H 3750 5750 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm" H 3150 3850 50  0001 R CNN
+F 3 "" H 3750 5350 50  0001 C CNN
+	1    3750 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E73EDC7
+P 2450 4250
+F 0 "R?" V 2243 4250 50  0000 C CNN
+F 1 "10k" V 2334 4250 50  0000 C CNN
+F 2 "" V 2380 4250 50  0001 C CNN
+F 3 "~" H 2450 4250 50  0001 C CNN
+	1    2450 4250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2600 4250 3050 4250
+$Comp
+L power:GND #PWR?
+U 1 1 5E73F0A2
+P 2150 4300
+F 0 "#PWR?" H 2150 4050 50  0001 C CNN
+F 1 "GND" H 2155 4127 50  0000 C CNN
+F 2 "" H 2150 4300 50  0001 C CNN
+F 3 "" H 2150 4300 50  0001 C CNN
+	1    2150 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 4300 2150 4250
+Wire Wire Line
+	2150 4250 2300 4250
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5E73F598
+P 3750 3300
+F 0 "#PWR?" H 3750 3150 50  0001 C CNN
+F 1 "+3.3V" H 3765 3473 50  0000 C CNN
+F 2 "" H 3750 3300 50  0001 C CNN
+F 3 "" H 3750 3300 50  0001 C CNN
+	1    3750 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 3850 3750 3600
+Wire Wire Line
+	3850 3850 3850 3600
+Wire Wire Line
+	3850 3600 3750 3600
+Connection ~ 3750 3600
+Wire Wire Line
+	3750 3600 3750 3400
+Wire Wire Line
+	3650 3850 3650 3600
+Wire Wire Line
+	3650 3600 3750 3600
+$Comp
+L Device:C C?
+U 1 1 5E73F72A
+P 4450 3550
+F 0 "C?" H 4565 3596 50  0000 L CNN
+F 1 "100n" H 4565 3505 50  0000 L CNN
+F 2 "" H 4488 3400 50  0001 C CNN
+F 3 "~" H 4450 3550 50  0001 C CNN
+	1    4450 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 3400 3750 3400
+Connection ~ 3750 3400
+Wire Wire Line
+	3750 3400 3750 3300
+$Comp
+L power:GND #PWR?
+U 1 1 5E73F8A4
+P 4450 3750
+F 0 "#PWR?" H 4450 3500 50  0001 C CNN
+F 1 "GND" H 4455 3577 50  0000 C CNN
+F 2 "" H 4450 3750 50  0001 C CNN
+F 3 "" H 4450 3750 50  0001 C CNN
+	1    4450 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 3750 4450 3700
+Wire Wire Line
+	3950 3850 3950 3600
+Wire Wire Line
+	3950 3600 3850 3600
+Connection ~ 3850 3600
+Wire Wire Line
+	3950 6950 3950 7150
+Wire Wire Line
+	3950 7150 3850 7150
+Wire Wire Line
+	3850 6950 3850 7150
+Connection ~ 3850 7150
+Wire Wire Line
+	3850 7150 3750 7150
+Wire Wire Line
+	3750 6950 3750 7150
+Connection ~ 3750 7150
+Wire Wire Line
+	3650 6950 3650 7150
+Wire Wire Line
+	3550 6950 3550 7150
+Wire Wire Line
+	3550 7150 3650 7150
+Connection ~ 3650 7150
+Wire Wire Line
+	3650 7150 3700 7150
+Wire Wire Line
+	3650 7150 3750 7150
+Wire Wire Line
+	3750 7150 3750 7300
+$Comp
+L power:GND #PWR?
+U 1 1 5E7404BA
+P 3750 7300
+F 0 "#PWR?" H 3750 7050 50  0001 C CNN
+F 1 "GND" H 3755 7127 50  0000 C CNN
+F 2 "" H 3750 7300 50  0001 C CNN
+F 3 "" H 3750 7300 50  0001 C CNN
+	1    3750 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E74058A
+P 2750 3600
+F 0 "R?" H 2820 3646 50  0000 L CNN
+F 1 "47k" H 2820 3555 50  0000 L CNN
+F 2 "" V 2680 3600 50  0001 C CNN
+F 3 "~" H 2750 3600 50  0001 C CNN
+	1    2750 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 4050 2750 4050
+Wire Wire Line
+	2750 4050 2750 3750
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5E740911
+P 2750 3300
+F 0 "#PWR?" H 2750 3150 50  0001 C CNN
+F 1 "+3.3V" H 2765 3473 50  0000 C CNN
+F 2 "" H 2750 3300 50  0001 C CNN
+F 3 "" H 2750 3300 50  0001 C CNN
+	1    2750 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 3300 2750 3450
+$Sheet
+S 5300 800  1200 1050
+U 5E73BADE
+F0 "02_BMS" 50
+F1 "02_BMS.sch" 50
+$EndSheet
+$Sheet
+S 2700 800  1100 1050
+U 5E73BAE8
+F0 "00_StepUp" 50
+F1 "00_StepUp.sch" 50
+$EndSheet
+$Sheet
+S 4000 800  1050 1050
+U 5E73BB4A
+F0 "01_Charger" 50
+F1 "01_Charger.sch" 50
+$EndSheet
+$EndSCHEMATC
