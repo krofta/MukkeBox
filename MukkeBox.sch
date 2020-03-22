@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
+Sheet 1 5
 Title ""
 Date ""
 Rev ""
@@ -45,12 +45,12 @@ Text Notes 3650 2600 0    50   ~ 0
 $Comp
 L Connector:Conn_ARM_JTAG_SWD_10 J
 U 1 1 5E6D4F79
-P 1850 1300
-F 0 "J" H 1410 1346 50  0000 R CNN
-F 1 "Conn_ARM_JTAG_SWD_10" H 1410 1255 50  0000 R CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD" H 1900 750 50  0001 L TNN
-F 3 "" V 1500 50  50  0001 C CNN
-	1    1850 1300
+P 1550 3000
+F 0 "J" H 1110 3046 50  0000 R CNN
+F 1 "Conn_ARM_JTAG_SWD_10" H 1110 2955 50  0000 R CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD" H 1600 2450 50  0001 L TNN
+F 3 "" V 1200 1750 50  0001 C CNN
+	1    1550 3000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -215,21 +215,27 @@ $EndComp
 Wire Wire Line
 	2750 3300 2750 3450
 $Sheet
-S 5300 800  1200 1050
+S 2350 750  1050 1050
 U 5E73BADE
-F0 "02_BMS" 50
-F1 "02_BMS.sch" 50
+F0 "01_BMS" 50
+F1 "01_BMS.sch" 50
 $EndSheet
 $Sheet
-S 2700 800  1100 1050
+S 3900 750  1100 1050
 U 5E73BAE8
-F0 "00_StepUp" 50
-F1 "00_StepUp.sch" 50
+F0 "02_StepUp" 50
+F1 "02_StepUp.sch" 50
 $EndSheet
 $Sheet
-S 4000 800  1050 1050
+S 800  750  1050 1050
 U 5E73BB4A
-F0 "01_Charger" 50
-F1 "01_Charger.sch" 50
+F0 "00_Charger" 50
+F1 "00_Charger.sch" 50
+$EndSheet
+$Sheet
+S 7900 800  1150 950 
+U 5E751A81
+F0 "Amplifier" 50
+F1 "Amplifier.sch" 50
 $EndSheet
 $EndSCHEMATC
