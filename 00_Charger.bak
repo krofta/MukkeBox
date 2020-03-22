@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 5
+Sheet 4 6
 Title ""
 Date ""
 Rev ""
@@ -80,7 +80,7 @@ F 3 "~" H 6100 4500 50  0001 C CNN
 	1    6100 4500
 	0    1    1    0   
 $EndComp
-Text Notes 8000 4050 0    50   ~ 0
+Text Notes 8050 4200 0    50   ~ 0
 Zum Lition-Zellen-Block
 $Comp
 L Device:L L?
@@ -500,13 +500,13 @@ Wire Wire Line
 $Comp
 L power:GND #PWR?
 U 1 1 5E827DF6
-P 7550 3650
-F 0 "#PWR?" H 7550 3400 50  0001 C CNN
-F 1 "GND" H 7555 3477 50  0000 C CNN
-F 2 "" H 7550 3650 50  0001 C CNN
-F 3 "" H 7550 3650 50  0001 C CNN
-	1    7550 3650
-	0    -1   -1   0   
+P 8050 3750
+F 0 "#PWR?" H 8050 3500 50  0001 C CNN
+F 1 "GND" H 8055 3577 50  0000 C CNN
+F 2 "" H 8050 3750 50  0001 C CNN
+F 3 "" H 8050 3750 50  0001 C CNN
+	1    8050 3750
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:D_Schottky D?
@@ -571,7 +571,7 @@ Text GLabel 2700 3850 0    50   Input ~ 0
 CHARGER_DISABLE
 Wire Wire Line
 	2700 3850 2950 3850
-Text Notes 6850 2700 0    50   ~ 0
+Text Notes 6950 2900 0    50   ~ 0
 R_CSB - Charge Current Limit\n68m: Icharge = 0.2V/R_CSB = 3A\nfür 2 Zellen Parallel = 0.5Charging Rate\n
 Text Notes 4000 5600 0    50   ~ 0
 U VADJ: 4.2V +/- 5.25%
@@ -591,36 +591,66 @@ Wire Wire Line
 	5150 4700 5150 5100
 Text Notes 4900 1650 0    50   ~ 0
 T Version des IC für 4 Li-Ion Zellen
-Text Notes 6850 2350 0    50   ~ 0
+Text Notes 6950 2550 0    50   ~ 0
 R_CSS - Input Current Limit\n33m: Iin = 0.1V/RCSS = 3A
 $Comp
 L Mechanical:Heatsink_Pad HS?
 U 1 1 5E81D597
-P 7500 3100
-F 0 "HS?" H 7641 3141 50  0000 L CNN
-F 1 "Heatsink_Pad" H 7641 3050 50  0000 L CNN
-F 2 "" H 7512 3050 50  0001 C CNN
-F 3 "~" H 7512 3050 50  0001 C CNN
-	1    7500 3100
+P 8750 3400
+F 0 "HS?" H 8891 3441 50  0000 L CNN
+F 1 "Heatsink_Pad" H 8891 3350 50  0000 L CNN
+F 2 "" H 8762 3350 50  0001 C CNN
+F 3 "~" H 8762 3350 50  0001 C CNN
+	1    8750 3400
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5E81D759
-P 7500 3200
-F 0 "#PWR?" H 7500 2950 50  0001 C CNN
-F 1 "GND" H 7505 3027 50  0000 C CNN
-F 2 "" H 7500 3200 50  0001 C CNN
-F 3 "" H 7500 3200 50  0001 C CNN
-	1    7500 3200
+P 8750 3500
+F 0 "#PWR?" H 8750 3250 50  0001 C CNN
+F 1 "GND" H 8755 3327 50  0000 C CNN
+F 2 "" H 8750 3500 50  0001 C CNN
+F 3 "" H 8750 3500 50  0001 C CNN
+	1    8750 3500
 	1    0    0    -1  
 $EndComp
-Text GLabel 7950 3850 2    50   Output ~ 0
-CHARGE_BLOCK+
 Wire Wire Line
-	6600 3100 6600 3250
+	7400 3850 7800 3850
 Wire Wire Line
-	7550 3650 7500 3650
+	7800 3850 7800 4350
 Wire Wire Line
-	7400 3850 7950 3850
+	7900 4350 7800 4350
+Wire Wire Line
+	8050 3650 8050 3750
+Wire Wire Line
+	7500 3650 8050 3650
+Connection ~ 8050 3650
+Wire Wire Line
+	8050 3500 8050 3650
+Wire Wire Line
+	8050 3150 8050 3300
+Wire Wire Line
+	8600 3150 8050 3150
+Connection ~ 8050 3150
+Wire Wire Line
+	6600 3150 6600 3250
+Wire Wire Line
+	6600 3100 6600 3150
+Connection ~ 6600 3150
+Wire Wire Line
+	6600 3150 8050 3150
+$Comp
+L Device:CP1_Small C?
+U 1 1 5E75D16E
+P 8050 3400
+F 0 "C?" H 8141 3446 50  0000 L CNN
+F 1 "47u" H 8141 3355 50  0000 L CNN
+F 2 "" H 8050 3400 50  0001 C CNN
+F 3 "~" H 8050 3400 50  0001 C CNN
+	1    8050 3400
+	1    0    0    -1  
+$EndComp
+Text GLabel 8600 3150 2    50   Input ~ 0
+SYSTEM_LOAD
 $EndSCHEMATC

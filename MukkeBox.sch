@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 5
+Sheet 1 6
 Title ""
 Date ""
 Rev ""
@@ -14,17 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L MySymbols:TDA7418 U
-U 1 1 5E6D49E0
-P 9900 3600
-F 0 "U" H 10150 4550 50  0000 C CNN
-F 1 "TDA7418" H 9900 3650 50  0000 C CNN
-F 2 "" H 9700 3650 50  0001 C CNN
-F 3 "" H 9700 3650 50  0001 C CNN
-	1    9900 3600
-	1    0    0    -1  
-$EndComp
 $Comp
 L Audio:PCM5100 U
 U 1 1 5E6DC9C9
@@ -237,5 +226,11 @@ S 7900 800  1150 950
 U 5E751A81
 F0 "Amplifier" 50
 F1 "Amplifier.sch" 50
+$EndSheet
+$Sheet
+S 6800 800  1000 950 
+U 5EA6895E
+F0 "AudioProcessor" 50
+F1 "AudioProcessor.sch" 50
 $EndSheet
 $EndSCHEMATC
