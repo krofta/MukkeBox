@@ -14,17 +14,15 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Notes 6900 2900 0    50   ~ 0
-32Bit MCU \n
 $Comp
 L power:GND #PWR0103
 U 1 1 5E73F8A4
-P 2950 4800
-F 0 "#PWR0103" H 2950 4550 50  0001 C CNN
-F 1 "GND" H 2955 4627 50  0000 C CNN
-F 2 "" H 2950 4800 50  0001 C CNN
-F 3 "" H 2950 4800 50  0001 C CNN
-	1    2950 4800
+P 8750 2900
+F 0 "#PWR0103" H 8750 2650 50  0001 C CNN
+F 1 "GND" H 8755 2727 50  0000 C CNN
+F 2 "" H 8750 2900 50  0001 C CNN
+F 3 "" H 8750 2900 50  0001 C CNN
+	1    8750 2900
 	1    0    0    -1  
 $EndComp
 $Sheet
@@ -60,56 +58,54 @@ $EndSheet
 $Comp
 L power:+3.3V #PWR0101
 U 1 1 5E821BCE
-P 1000 4500
-F 0 "#PWR0101" H 1000 4350 50  0001 C CNN
-F 1 "+3.3V" H 1015 4673 50  0000 C CNN
-F 2 "" H 1000 4500 50  0001 C CNN
-F 3 "" H 1000 4500 50  0001 C CNN
-	1    1000 4500
+P 6800 2600
+F 0 "#PWR0101" H 6800 2450 50  0001 C CNN
+F 1 "+3.3V" H 6815 2773 50  0000 C CNN
+F 2 "" H 6800 2600 50  0001 C CNN
+F 3 "" H 6800 2600 50  0001 C CNN
+	1    6800 2600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1000 4500 1000 4550
-Text GLabel 1450 2350 0    50   Input ~ 0
+	7050 2400 7050 2450
+Text GLabel 4750 4100 0    50   Input ~ 0
 CHARGER_DISABLE
-Text GLabel 1350 2200 0    50   Input ~ 0
+Text GLabel 4750 4000 0    50   Input ~ 0
 CHARGER_IOUT
-Text GLabel 2800 2100 0    50   Input ~ 0
+Text GLabel 4750 4350 0    50   Input ~ 0
 BOOT_BQ76920
-Text GLabel 2800 2250 0    50   Input ~ 0
+Text GLabel 4750 4450 0    50   Input ~ 0
 ALERT_BQ76920
-Text GLabel 2800 2400 0    50   Input ~ 0
+Text GLabel 8750 4000 2    50   Input ~ 0
 SCL
-Text GLabel 2800 2550 0    50   Input ~ 0
+Text GLabel 8750 4100 2    50   Input ~ 0
 SDA
-Text GLabel 5300 2000 0    50   Input ~ 0
+Text GLabel 8750 4700 2    50   Input ~ 0
 ENABLE_9V
-Text GLabel 5300 2200 0    50   Input ~ 0
+Text GLabel 8750 4800 2    50   Input ~ 0
 MUTE_TDA7418
-Text GLabel 6650 2000 0    50   Input ~ 0
-MUTE_TDA7498L
-Text GLabel 6650 2150 0    50   Input ~ 0
-STBY_TDA7498L
-Text GLabel 6650 2300 0    50   Input ~ 0
-DIAG_TDA
+Text GLabel 4750 4700 0    50   Input ~ 0
+MUTE_TDA7498
+Text GLabel 4750 4800 0    50   Input ~ 0
+STBY_TDA7498
+Text GLabel 4750 4900 0    50   Input ~ 0
+DIAG_TDA7498
 Text Notes 750  2100 0    50   ~ 0
 Charging Current\n (max. 4V entspricht 200mV Shunt)
-Text Notes 1600 2350 0    50   ~ 0
+Text Notes 4900 4100 0    50   ~ 0
 GPO
-Text Notes 2900 2150 0    50   ~ 0
+Text Notes 4900 4350 0    50   ~ 0
 GPO
-Text Notes 2900 2300 0    50   ~ 0
+Text Notes 4900 4450 0    50   ~ 0
 GPI
-Text Notes 5400 2250 0    50   ~ 0
-GPO
-Text Notes 5400 2000 0    50   ~ 0
-GPO
-Text Notes 6800 2050 0    50   ~ 0
-GPO
-Text Notes 6800 2200 0    50   ~ 0
-GPO
-Text Notes 6800 2350 0    50   ~ 0
-GPI
+Text Notes 7650 4700 0    50   ~ 0
+GPO: active high
+Text Notes 4800 4700 0    50   ~ 0
+GPO: active low
+Text Notes 4800 4800 0    50   ~ 0
+GPO: active low
+Text Notes 4800 4900 0    50   ~ 0
+GPI: active low
 $Comp
 L Connector:ST_Link_V2_10P J101
 U 1 1 5E7E5D5D
@@ -119,17 +115,6 @@ F 1 "ST_Link_V2_10P" H 9575 1734 50  0000 C CNN
 F 2 "" H 9600 1900 50  0001 C CNN
 F 3 "" H 9600 1900 50  0001 C CNN
 	1    9600 1400
-	1    0    0    -1  
-$EndComp
-$Comp
-L MCU_ST_STM32F0:STM32F030C8Tx U101
-U 1 1 5E7E6D7A
-P 6500 4550
-F 0 "U101" H 6500 2864 50  0000 C CNN
-F 1 "STM32F030C8Tx" H 6500 2773 50  0000 C CNN
-F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 6000 3050 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00088500.pdf" H 6500 4550 50  0001 C CNN
-	1    6500 4550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -258,9 +243,9 @@ Wire Wire Line
 	10300 5500 9850 5500
 Wire Wire Line
 	9850 5200 10300 5200
-Text Notes 9900 4900 0    50   ~ 0
+Text Notes 9250 6300 0    50   ~ 0
 Helligkeit prüfen.
-Text Notes 9900 4750 0    89   ~ 0
+Text Notes 9700 5000 0    89   ~ 0
 Akkuanzeige
 Text Label 9500 5200 2    50   ~ 0
 Akku_25%
@@ -270,23 +255,15 @@ Text Label 9500 5800 2    50   ~ 0
 Akku_75%
 Text Label 9500 6100 2    50   ~ 0
 Akku_100%
-Wire Wire Line
-	9650 5200 9500 5200
-Wire Wire Line
-	9500 5500 9650 5500
-Wire Wire Line
-	9650 5800 9500 5800
-Wire Wire Line
-	9500 6100 9650 6100
 $Sheet
 S 7200 750  1150 1050
 U 5E7F4A39
 F0 "Bluetooth" 50
 F1 "Bluetooth.sch" 50
 $EndSheet
-Text GLabel 7850 2000 0    50   Input ~ 0
+Text GLabel 8750 4450 2    50   Input ~ 0
 RxT
-Text GLabel 7850 2100 0    50   Input ~ 0
+Text GLabel 8750 4350 2    50   Input ~ 0
 TxR
 $Comp
 L Regulator_Linear:TPS7B82-Q1 U?
@@ -441,10 +418,10 @@ Text Notes 2350 2000 0    50   ~ 0
 Startet das Batterie Management System
 Text GLabel 1250 3050 0    50   Input ~ 0
 BATTERY+
-Text GLabel 5300 2400 0    50   Input ~ 0
+Text GLabel 8750 4900 2    50   Input ~ 0
 AUX_DETECT
-Text Notes 5400 2450 0    50   ~ 0
-GPI
+Text Notes 7650 4900 0    50   ~ 0
+GPI: active low
 $Comp
 L power:+3.3V #PWR?
 U 1 1 5E92BC03
@@ -660,12 +637,12 @@ Wire Wire Line
 $Comp
 L Device:D_Small D?
 U 1 1 5E96790C
-P 3000 3800
-F 0 "D?" H 3000 4005 50  0000 C CNN
-F 1 "D_Small" H 3000 3914 50  0000 C CNN
-F 2 "" V 3000 3800 50  0001 C CNN
-F 3 "~" V 3000 3800 50  0001 C CNN
-	1    3000 3800
+P 3350 3800
+F 0 "D?" H 3350 4005 50  0000 C CNN
+F 1 "D_Small" H 3350 3914 50  0000 C CNN
+F 2 "" V 3350 3800 50  0001 C CNN
+F 3 "~" V 3350 3800 50  0001 C CNN
+	1    3350 3800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -680,85 +657,63 @@ F 3 "~" H 4000 3800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3900 3800 3450 3800
-Wire Wire Line
 	4100 3800 4200 3800
 Wire Wire Line
 	4200 3800 4200 3050
 Connection ~ 4200 3050
 Wire Wire Line
 	2300 3150 2300 3800
-Wire Wire Line
-	2300 3800 2900 3800
 Connection ~ 2300 3150
 Wire Wire Line
 	2300 3150 2000 3150
 Wire Wire Line
 	1500 5300 2100 5300
-Text Label 3550 5300 0    50   ~ 0
+Text Label 3850 5300 0    50   ~ 0
 EN_3V3
-Text Label 1700 3150 2    50   ~ 0
+Text Label 1900 3150 2    50   ~ 0
 EN_3V3
 Wire Wire Line
 	2000 3150 1900 3150
 Connection ~ 2000 3150
 Wire Wire Line
-	2950 4800 2950 4750
-$Comp
-L Device:Q_NPN_CBE Q?
-U 1 1 5E9A1F4F
-P 3550 4050
-F 0 "Q?" H 3740 4096 50  0000 L CNN
-F 1 "Q_NPN_CBE" H 3740 4005 50  0000 L CNN
-F 2 "" H 3750 4150 50  0001 C CNN
-F 3 "~" H 3550 4050 50  0001 C CNN
-	1    3550 4050
-	-1   0    0    -1  
-$EndComp
+	8750 2900 8750 2850
 Wire Wire Line
-	3450 3850 3450 3800
-Connection ~ 3450 3800
-Wire Wire Line
-	3450 3800 3100 3800
+	3150 3850 3150 3800
 $Comp
 L Device:R_Small R?
 U 1 1 5E9A523B
-P 4000 4050
-F 0 "R?" V 3804 4050 50  0000 C CNN
-F 1 "10K" V 3895 4050 50  0000 C CNN
-F 2 "" H 4000 4050 50  0001 C CNN
-F 3 "~" H 4000 4050 50  0001 C CNN
-	1    4000 4050
+P 3550 4050
+F 0 "R?" V 3450 3950 50  0000 C CNN
+F 1 "10K" V 3450 4150 50  0000 C CNN
+F 2 "" H 3550 4050 50  0001 C CNN
+F 3 "~" H 3550 4050 50  0001 C CNN
+	1    3550 4050
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	3900 4050 3750 4050
 $Comp
 L power:GND #PWR?
 U 1 1 5E9B1C1E
-P 3450 4500
-F 0 "#PWR?" H 3450 4250 50  0001 C CNN
-F 1 "GND" H 3455 4327 50  0000 C CNN
-F 2 "" H 3450 4500 50  0001 C CNN
-F 3 "" H 3450 4500 50  0001 C CNN
-	1    3450 4500
+P 3150 4500
+F 0 "#PWR?" H 3150 4250 50  0001 C CNN
+F 1 "GND" H 3155 4327 50  0000 C CNN
+F 2 "" H 3150 4500 50  0001 C CNN
+F 3 "" H 3150 4500 50  0001 C CNN
+	1    3150 4500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3450 4250 3450 4500
-Text Label 4300 4050 0    50   ~ 0
+	3150 4250 3150 4500
+Text Label 4350 5150 0    50   ~ 0
 POWER_OFF_O
-Wire Wire Line
-	4300 4050 4100 4050
 $Comp
 L Device:R_Small R?
 U 1 1 5E9B86C4
-P 1800 3150
-F 0 "R?" V 1900 3050 50  0000 C CNN
-F 1 "10K" V 1900 3250 50  0000 C CNN
-F 2 "" H 1800 3150 50  0001 C CNN
-F 3 "~" H 1800 3150 50  0001 C CNN
-	1    1800 3150
+P 3300 5300
+F 0 "R?" V 3200 5200 50  0000 C CNN
+F 1 "10K" V 3200 5400 50  0000 C CNN
+F 2 "" H 3300 5300 50  0001 C CNN
+F 3 "~" H 3300 5300 50  0001 C CNN
+	1    3300 5300
 	0    1    1    0   
 $EndComp
 $Comp
@@ -772,21 +727,19 @@ F 3 "~" H 2950 5550 50  0001 C CNN
 	1    2950 5550
 	-1   0    0    1   
 $EndComp
-Text Label 3550 5400 0    50   ~ 0
+Text Label 3850 5400 0    50   ~ 0
 POWER_I
 $Comp
 L Device:D_Small D?
 U 1 1 5E9D09C7
-P 3300 5300
-F 0 "D?" H 3300 5095 50  0000 C CNN
-F 1 "D_Small" H 3300 5186 50  0000 C CNN
-F 2 "" V 3300 5300 50  0001 C CNN
-F 3 "~" V 3300 5300 50  0001 C CNN
-	1    3300 5300
+P 3600 5300
+F 0 "D?" H 3600 5095 50  0000 C CNN
+F 1 "D_Small" H 3600 5186 50  0000 C CNN
+F 2 "" V 3600 5300 50  0001 C CNN
+F 3 "~" V 3600 5300 50  0001 C CNN
+	1    3600 5300
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	3550 5300 3400 5300
 Wire Wire Line
 	2950 5700 2950 5650
 Connection ~ 2950 5700
@@ -794,9 +747,6 @@ Wire Wire Line
 	2700 5300 2950 5300
 Wire Wire Line
 	2950 5450 2950 5400
-Connection ~ 2950 5300
-Wire Wire Line
-	2950 5300 3200 5300
 $Comp
 L Device:R_Small R?
 U 1 1 5E9F4A04
@@ -809,18 +759,14 @@ F 3 "~" H 3300 5400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3550 5400 3400 5400
-Wire Wire Line
 	3200 5400 2950 5400
 Connection ~ 2950 5400
 Wire Wire Line
 	2950 5400 2950 5300
-Text Notes 2650 3950 0    50   ~ 0
+Text Notes 2300 3950 0    50   ~ 0
 Selbsthaltung
-Text Notes 3600 5550 0    50   ~ 0
+Text Notes 3650 5650 0    50   ~ 0
 Schalter Abfrage
-Text Notes 3750 4200 0    50   ~ 0
-LDO über Controler abschalten
 $Comp
 L Switch:SW_MEC_5G SW?
 U 1 1 5EA0D62D
@@ -887,15 +833,15 @@ F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" 
 	1    2400 7450
 	1    0    0    -1  
 $EndComp
-Text Notes 1600 2200 0    50   ~ 0
+Text Notes 4900 4000 0    50   ~ 0
 ANA_IN
-Text Notes 2900 2450 0    50   ~ 0
+Text Notes 9000 4050 0    50   ~ 0
 GPIO
-Text Notes 2900 2600 0    50   ~ 0
+Text Notes 9000 4150 0    50   ~ 0
 GPIO
-Text Notes 8000 2050 0    50   ~ 0
+Text Notes 8950 4400 0    50   ~ 0
 GPIO
-Text Notes 8000 2150 0    50   ~ 0
+Text Notes 8950 4500 0    50   ~ 0
 GPIO
 Text Notes 8850 5200 0    50   ~ 0
 GPO
@@ -905,14 +851,12 @@ Text Notes 8850 5800 0    50   ~ 0
 GPO
 Text Notes 8850 6100 0    50   ~ 0
 GPO
-Text Notes 3950 5400 0    50   ~ 0
+Text Notes 3900 5500 0    50   ~ 0
 GPI
-Text Notes 4900 4050 0    50   ~ 0
-GPO
 Text Label 10250 1200 0    50   ~ 0
 SWDIO
 Text Label 10250 1400 0    50   ~ 0
-SWDIO
+SWCLK
 Wire Wire Line
 	10250 1400 9950 1400
 Wire Wire Line
@@ -933,7 +877,7 @@ Text Notes 1850 6900 0    50   ~ 0
 GPI
 Text Notes 1850 7250 0    50   ~ 0
 GPI
-Text Notes 6250 6850 0    50   ~ 0
+Text Notes 3900 7600 0    50   ~ 0
 GPI     10x\nGPO    11x\nGPIO   6x\nANA_IN 5x
 $Comp
 L Device:R_POT RV?
@@ -1094,7 +1038,7 @@ L Device:C_Small C?
 U 1 1 5EAA98D1
 P 10900 2600
 F 0 "C?" V 10671 2600 50  0000 C CNN
-F 1 "100nF" V 10762 2600 50  0000 C CNN
+F 1 "10nF" V 10762 2600 50  0000 C CNN
 F 2 "" H 10900 2600 50  0001 C CNN
 F 3 "~" H 10900 2600 50  0001 C CNN
 	1    10900 2600
@@ -1105,7 +1049,7 @@ L Device:C_Small C?
 U 1 1 5EAA9E05
 P 10900 3100
 F 0 "C?" V 10671 3100 50  0000 C CNN
-F 1 "100nF" V 10762 3100 50  0000 C CNN
+F 1 "10nF" V 10762 3100 50  0000 C CNN
 F 2 "" H 10900 3100 50  0001 C CNN
 F 3 "~" H 10900 3100 50  0001 C CNN
 	1    10900 3100
@@ -1116,7 +1060,7 @@ L Device:C_Small C?
 U 1 1 5EAA9E8D
 P 10900 3550
 F 0 "C?" V 10671 3550 50  0000 C CNN
-F 1 "100nF" V 10762 3550 50  0000 C CNN
+F 1 "10nF" V 10762 3550 50  0000 C CNN
 F 2 "" H 10900 3550 50  0001 C CNN
 F 3 "~" H 10900 3550 50  0001 C CNN
 	1    10900 3550
@@ -1127,7 +1071,7 @@ L Device:C_Small C?
 U 1 1 5EAA9F0D
 P 10900 4000
 F 0 "C?" V 10671 4000 50  0000 C CNN
-F 1 "100nF" V 10762 4000 50  0000 C CNN
+F 1 "10nF" V 10762 4000 50  0000 C CNN
 F 2 "" H 10900 4000 50  0001 C CNN
 F 3 "~" H 10900 4000 50  0001 C CNN
 	1    10900 4000
@@ -1228,79 +1172,410 @@ Wire Wire Line
 Text Notes 10050 2250 0    89   ~ 0
 Gain Potis
 Wire Wire Line
-	1000 4550 1400 4550
+	6800 2650 7200 2650
 Wire Wire Line
-	1000 4750 1400 4750
+	6800 2850 7200 2850
 $Comp
 L Device:C_Small C?
 U 1 1 5EB07F17
-P 1000 4650
-F 0 "C?" H 1092 4696 50  0000 L CNN
-F 1 "100nF" H 1092 4605 50  0000 L CNN
-F 2 "" H 1000 4650 50  0001 C CNN
-F 3 "~" H 1000 4650 50  0001 C CNN
-	1    1000 4650
+P 6800 2750
+F 0 "C?" H 6892 2796 50  0000 L CNN
+F 1 "100nF" H 6892 2705 50  0000 L CNN
+F 2 "" H 6800 2750 50  0001 C CNN
+F 3 "~" H 6800 2750 50  0001 C CNN
+	1    6800 2750
 	1    0    0    -1  
 $EndComp
-Connection ~ 1000 4550
 $Comp
 L Device:C_Small C?
 U 1 1 5EB07FAF
-P 1400 4650
-F 0 "C?" H 1492 4696 50  0000 L CNN
-F 1 "100nF" H 1492 4605 50  0000 L CNN
-F 2 "" H 1400 4650 50  0001 C CNN
-F 3 "~" H 1400 4650 50  0001 C CNN
-	1    1400 4650
+P 7200 2750
+F 0 "C?" H 7292 2796 50  0000 L CNN
+F 1 "100nF" H 7292 2705 50  0000 L CNN
+F 2 "" H 7200 2750 50  0001 C CNN
+F 3 "~" H 7200 2750 50  0001 C CNN
+	1    7200 2750
 	1    0    0    -1  
 $EndComp
-Connection ~ 1400 4550
+Connection ~ 7200 2650
 Wire Wire Line
-	1400 4550 1800 4550
+	7200 2650 7600 2650
 $Comp
 L Device:C_Small C?
 U 1 1 5EB08031
-P 1800 4650
-F 0 "C?" H 1892 4696 50  0000 L CNN
-F 1 "100nF" H 1892 4605 50  0000 L CNN
-F 2 "" H 1800 4650 50  0001 C CNN
-F 3 "~" H 1800 4650 50  0001 C CNN
-	1    1800 4650
+P 7600 2750
+F 0 "C?" H 7692 2796 50  0000 L CNN
+F 1 "100nF" H 7692 2705 50  0000 L CNN
+F 2 "" H 7600 2750 50  0001 C CNN
+F 3 "~" H 7600 2750 50  0001 C CNN
+	1    7600 2750
 	1    0    0    -1  
 $EndComp
-Connection ~ 1800 4550
+Connection ~ 7600 2650
 Wire Wire Line
-	1800 4550 2200 4550
+	7600 2650 8000 2650
 $Comp
 L Device:C_Small C?
 U 1 1 5EB080B5
-P 2200 4650
-F 0 "C?" H 2292 4696 50  0000 L CNN
-F 1 "100nF" H 2292 4605 50  0000 L CNN
-F 2 "" H 2200 4650 50  0001 C CNN
-F 3 "~" H 2200 4650 50  0001 C CNN
-	1    2200 4650
+P 8000 2750
+F 0 "C?" H 8092 2796 50  0000 L CNN
+F 1 "100nF" H 8092 2705 50  0000 L CNN
+F 2 "" H 8000 2750 50  0001 C CNN
+F 3 "~" H 8000 2750 50  0001 C CNN
+	1    8000 2750
 	1    0    0    -1  
 $EndComp
-Connection ~ 1400 4750
+Connection ~ 7200 2850
 Wire Wire Line
-	1400 4750 1800 4750
-Connection ~ 1800 4750
+	7200 2850 7600 2850
+Connection ~ 7600 2850
 Wire Wire Line
-	1800 4750 2200 4750
-Connection ~ 2200 4750
+	7600 2850 8000 2850
+Connection ~ 8000 2850
 Wire Wire Line
-	2200 4750 2950 4750
-Text Notes 950  4200 0    89   ~ 0
+	8000 2850 8750 2850
+Text Notes 6750 2300 0    89   ~ 0
 CAPS CPU
-Text Notes 950  5050 0    89   ~ 0
+Text Notes 1000 5050 0    89   ~ 0
 Power Schalter und Taster
 Wire Notes Line style solid
-	6200 6500 6750 6500
+	3850 7250 4400 7250
 Wire Notes Line style solid
-	6750 6500 6750 6900
+	4400 7250 4400 7650
 Wire Notes Line style solid
-	6750 6900 6200 6900
+	4400 7650 3850 7650
 Wire Notes Line style solid
-	6200 6900 6200 6500
+	3850 7650 3850 7250
+Wire Wire Line
+	3200 5300 2950 5300
+Connection ~ 2950 5300
+Wire Wire Line
+	3500 5300 3400 5300
+Wire Wire Line
+	2300 3800 3150 3800
+Connection ~ 3150 3800
+Wire Wire Line
+	3150 3800 3250 3800
+Wire Wire Line
+	3900 3800 3450 3800
+Wire Wire Line
+	3850 5300 3700 5300
+$Comp
+L MCU_ST_STM32F0:STM32F030C6Tx_MukkeBox U?
+U 1 1 5E9BA91E
+P 6050 4650
+F 0 "U?" H 6950 6050 50  0000 C CNN
+F 1 "STM32F030C6Tx_MukkeBox" H 6450 5850 50  0000 C CNN
+F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 4850 2550 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00088500.pdf" H 6050 4650 50  0001 C CNN
+	1    6050 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 6000 7400 6000
+Wire Wire Line
+	8600 5800 8600 5900
+Wire Wire Line
+	8600 5900 7400 5900
+Wire Wire Line
+	8600 5800 9650 5800
+Wire Wire Line
+	8500 5500 8500 5800
+Wire Wire Line
+	8500 5800 7400 5800
+Wire Wire Line
+	8500 5500 9650 5500
+Wire Wire Line
+	8400 5200 8400 5700
+Wire Wire Line
+	8400 5700 7400 5700
+Wire Wire Line
+	8400 5200 9650 5200
+Wire Wire Line
+	8600 6000 8600 6100
+Wire Wire Line
+	8600 6100 9650 6100
+$Comp
+L power:GND #PWR?
+U 1 1 5E9FB17B
+P 6750 6850
+F 0 "#PWR?" H 6750 6600 50  0001 C CNN
+F 1 "GND" H 6755 6677 50  0000 C CNN
+F 2 "" H 6750 6850 50  0001 C CNN
+F 3 "" H 6750 6850 50  0001 C CNN
+	1    6750 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 6550 6750 6700
+Wire Wire Line
+	6650 6550 6650 6700
+Wire Wire Line
+	6650 6700 6750 6700
+Connection ~ 6750 6700
+Wire Wire Line
+	6750 6700 6750 6850
+Wire Wire Line
+	6550 6550 6550 6700
+Wire Wire Line
+	6550 6700 6650 6700
+Connection ~ 6650 6700
+Text Label 7800 5150 0    50   ~ 0
+GAIN
+Text Label 7800 5250 0    50   ~ 0
+BASS
+Text Label 7800 5350 0    50   ~ 0
+MIDDLE
+Text Label 7800 5450 0    50   ~ 0
+TREBLE
+Wire Wire Line
+	7800 5150 7450 5150
+Wire Wire Line
+	7450 5250 7800 5250
+Wire Wire Line
+	7800 5350 7450 5350
+Wire Wire Line
+	7450 5450 7800 5450
+Text Label 8000 3650 0    50   ~ 0
+SWDIO
+Text Label 8000 3750 0    50   ~ 0
+SWCLK
+Wire Wire Line
+	8000 3750 7450 3750
+Wire Wire Line
+	8000 3650 7450 3650
+$Comp
+L Device:R_Small R?
+U 1 1 5EACF183
+P 5300 3050
+F 0 "R?" H 5500 3000 50  0000 C CNN
+F 1 "10K" H 5450 3100 50  0000 C CNN
+F 2 "" H 5300 3050 50  0001 C CNN
+F 3 "~" H 5300 3050 50  0001 C CNN
+	1    5300 3050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5450 3250 5300 3250
+Wire Wire Line
+	5300 3250 5300 3150
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5EAE0778
+P 5300 2950
+F 0 "#PWR?" H 5300 2800 50  0001 C CNN
+F 1 "+3.3V" H 5315 3123 50  0000 C CNN
+F 2 "" H 5300 2950 50  0001 C CNN
+F 3 "" H 5300 2950 50  0001 C CNN
+	1    5300 2950
+	1    0    0    -1  
+$EndComp
+Text Label 8900 1200 2    50   ~ 0
+RST
+Wire Wire Line
+	9200 1200 8900 1200
+Text Label 5150 3250 2    50   ~ 0
+RST
+Wire Wire Line
+	5300 3250 5150 3250
+Connection ~ 5300 3250
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5EAF21CB
+P 6250 2950
+F 0 "#PWR?" H 6250 2800 50  0001 C CNN
+F 1 "+3.3V" H 6265 3123 50  0000 C CNN
+F 2 "" H 6250 2950 50  0001 C CNN
+F 3 "" H 6250 2950 50  0001 C CNN
+	1    6250 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 3050 6550 2950
+Wire Wire Line
+	6550 2950 6450 2950
+Wire Wire Line
+	6250 3050 6250 2950
+Connection ~ 6250 2950
+Wire Wire Line
+	6350 3050 6350 2950
+Connection ~ 6350 2950
+Wire Wire Line
+	6350 2950 6250 2950
+Wire Wire Line
+	6450 3050 6450 2950
+Connection ~ 6450 2950
+Wire Wire Line
+	6450 2950 6350 2950
+Wire Wire Line
+	5450 5250 4250 5250
+Wire Wire Line
+	4250 5250 4250 5400
+Wire Wire Line
+	3400 5400 4250 5400
+Wire Wire Line
+	5450 5150 3750 5150
+Wire Wire Line
+	3750 5150 3750 4050
+Wire Wire Line
+	8750 4900 7450 4900
+Wire Wire Line
+	8750 4800 7450 4800
+$Comp
+L Connector_Generic:Conn_02x01 J?
+U 1 1 5EB922F7
+P 7900 4450
+F 0 "J?" H 7750 4350 50  0000 C CNN
+F 1 "Jumper" H 8100 4350 50  0000 C CNN
+F 2 "" H 7900 4450 50  0001 C CNN
+F 3 "~" H 7900 4450 50  0001 C CNN
+	1    7900 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x01 J?
+U 1 1 5EBA6EA9
+P 8250 4350
+F 0 "J?" H 8100 4450 50  0000 C CNN
+F 1 "Jumper" H 8500 4450 50  0000 C CNN
+F 2 "" H 8250 4350 50  0001 C CNN
+F 3 "~" H 8250 4350 50  0001 C CNN
+	1    8250 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 4350 8550 4350
+Wire Wire Line
+	8750 4450 8200 4450
+Wire Wire Line
+	7700 4450 7450 4450
+Wire Wire Line
+	8050 4350 7450 4350
+$Comp
+L Connector_Generic:Conn_02x01 J?
+U 1 1 5EC070B4
+P 8250 4000
+F 0 "J?" H 8100 4100 50  0000 C CNN
+F 1 "Jumper" H 8500 4100 50  0000 C CNN
+F 2 "" H 8250 4000 50  0001 C CNN
+F 3 "~" H 8250 4000 50  0001 C CNN
+	1    8250 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x01 J?
+U 1 1 5EC07148
+P 7900 4100
+F 0 "J?" H 7750 4000 50  0000 C CNN
+F 1 "Jumper" H 8100 4000 50  0000 C CNN
+F 2 "" H 7900 4100 50  0001 C CNN
+F 3 "~" H 7900 4100 50  0001 C CNN
+	1    7900 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 4000 7450 4000
+Wire Wire Line
+	7700 4100 7450 4100
+Wire Wire Line
+	8550 4000 8750 4000
+Wire Wire Line
+	8750 4100 8200 4100
+Wire Wire Line
+	4750 4900 5450 4900
+Wire Wire Line
+	4750 4800 5450 4800
+Wire Wire Line
+	4750 4700 5450 4700
+Wire Wire Line
+	7450 4700 8750 4700
+Text Notes 7650 4800 0    50   ~ 0
+GPO: active low?!
+$Comp
+L Device:Q_NMOS_GSD Q?
+U 1 1 5ECAF0C7
+P 3250 4050
+F 0 "Q?" H 3456 4096 50  0000 L CNN
+F 1 "NTK3043N" H 3456 4005 50  0000 L CNN
+F 2 "" H 3450 4150 50  0001 C CNN
+F 3 "~" H 3250 4050 50  0001 C CNN
+	1    3250 4050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 4050 3750 4050
+Text GLabel 4750 6000 0    50   Input ~ 0
+PACK_VOLTAGE
+Text GLabel 4750 6100 0    50   Input ~ 0
+CP_EN
+Text GLabel 4750 6200 0    50   Input ~ 0
+PMON_EN
+Text GLabel 4750 6300 0    50   Input ~ 0
+PCHG_EN
+Wire Wire Line
+	5450 6000 4750 6000
+Wire Wire Line
+	5450 6100 4750 6100
+Wire Wire Line
+	5450 6200 4750 6200
+Wire Wire Line
+	5450 6300 4750 6300
+Text GLabel 4750 6400 0    50   Input ~ 0
+CHARGER_PLUGGED
+Wire Wire Line
+	5450 6400 4750 6400
+Text Label 4700 5400 2    50   ~ 0
+Play
+Text Label 4700 5500 2    50   ~ 0
+Mute
+Text Label 4700 5600 2    50   ~ 0
+Next
+Text Label 4700 5700 2    50   ~ 0
+Back
+Text Label 4700 5800 2    50   ~ 0
+Vol+
+Text Label 4700 5900 2    50   ~ 0
+Vol-
+Wire Wire Line
+	5450 5400 4700 5400
+Wire Wire Line
+	4700 5500 5450 5500
+Wire Wire Line
+	5450 5600 4700 5600
+Wire Wire Line
+	5450 5700 4700 5700
+Wire Wire Line
+	4700 5800 5450 5800
+Wire Wire Line
+	5450 5900 4700 5900
+Wire Wire Line
+	5450 4350 4750 4350
+Wire Wire Line
+	4750 4450 5450 4450
+Wire Wire Line
+	5450 4000 4750 4000
+Wire Wire Line
+	4750 4100 5450 4100
+Text Notes 4800 6000 0    50   ~ 0
+ANA_IN
+Text Notes 4800 6100 0    50   ~ 0
+GPO: active high
+Text Notes 4800 6200 0    50   ~ 0
+GPO: active high
+Text Notes 4800 6300 0    50   ~ 0
+GPO: active high
+Text Notes 4800 6400 0    50   ~ 0
+GPI: active low
+Text Notes 4800 5400 0    50   ~ 0
+GPI: active low
+Text Notes 4800 5500 0    50   ~ 0
+GPI: active low
+Text Notes 4800 5600 0    50   ~ 0
+GPI: active low
+Text Notes 4800 5700 0    50   ~ 0
+GPI: active low
+Text Notes 4800 5800 0    50   ~ 0
+GPI: active low
+Text Notes 4800 5900 0    50   ~ 0
+GPI: active low
 $EndSCHEMATC
