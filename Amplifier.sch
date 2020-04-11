@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 7
+Sheet 5 8
 Title ""
 Date ""
 Rev ""
@@ -21,7 +21,7 @@ P 5400 3650
 F 0 "U501" H 5425 5415 50  0000 C CNN
 F 1 "TDA7498L" H 5425 5324 50  0000 C CNN
 F 2 "Package_SO:ST_PowerSSO-36_SlugDown_ThermalVias" H 5550 4250 50  0001 C CNN
-F 3 "" H 5550 4250 50  0001 C CNN
+F 3 "/home/niko/kicad/datasheet/TDA7498L.pdf" H 5550 4250 50  0001 C CNN
 	1    5400 3650
 	1    0    0    -1  
 $EndComp
@@ -42,8 +42,8 @@ U 1 1 5E758A6A
 P 7300 2150
 F 0 "L501" V 7505 2150 50  0000 C CNN
 F 1 "22uH 6100-220K-RC " V 7414 2150 50  0000 C CNN
-F 2 "" H 7300 2150 50  0001 C CNN
-F 3 "~" H 7300 2150 50  0001 C CNN
+F 2 "Inductor_THT:L_Radial_D12.0mm_P6.00mm_MuRATA_1900R" H 7300 2150 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/54/6100_series-776994.pdf" H 7300 2150 50  0001 C CNN
 	1    7300 2150
 	0    -1   -1   0   
 $EndComp
@@ -65,8 +65,8 @@ $Comp
 L Device:C_Small C517
 U 1 1 5E758E07
 P 6900 3050
-F 0 "C517" H 6992 3096 50  0000 L CNN
-F 1 "330pF" H 6992 3005 50  0000 L CNN
+F 0 "C517" H 7000 3250 50  0000 L CNN
+F 1 "330pF" H 7000 3150 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6900 3050 50  0001 C CNN
 F 3 "~" H 6900 3050 50  0001 C CNN
 	1    6900 3050
@@ -124,8 +124,8 @@ U 1 1 5E75A6E6
 P 7300 3300
 F 0 "L502" V 7505 3300 50  0000 C CNN
 F 1 "22uH 6100-220K-RC " V 7414 3300 50  0000 C CNN
-F 2 "" H 7300 3300 50  0001 C CNN
-F 3 "~" H 7300 3300 50  0001 C CNN
+F 2 "Inductor_THT:L_Radial_D12.0mm_P6.00mm_MuRATA_1900R" H 7300 3300 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/54/6100_series-776994.pdf" H 7300 3300 50  0001 C CNN
 	1    7300 3300
 	0    -1   -1   0   
 $EndComp
@@ -306,8 +306,8 @@ U 1 1 5E76685A
 P 7300 4000
 F 0 "L503" V 7505 4000 50  0000 C CNN
 F 1 "22uH 6100-220K-RC " V 7414 4000 50  0000 C CNN
-F 2 "" H 7300 4000 50  0001 C CNN
-F 3 "~" H 7300 4000 50  0001 C CNN
+F 2 "Inductor_THT:L_Radial_D12.0mm_P6.00mm_MuRATA_1900R" H 7300 4000 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/54/6100_series-776994.pdf" H 7300 4000 50  0001 C CNN
 	1    7300 4000
 	0    -1   -1   0   
 $EndComp
@@ -388,8 +388,8 @@ U 1 1 5E766895
 P 7300 5150
 F 0 "L504" V 7505 5150 50  0000 C CNN
 F 1 "22uH 6100-220K-RC " V 7414 5150 50  0000 C CNN
-F 2 "" H 7300 5150 50  0001 C CNN
-F 3 "~" H 7300 5150 50  0001 C CNN
+F 2 "Inductor_THT:L_Radial_D12.0mm_P6.00mm_MuRATA_1900R" H 7300 5150 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/54/6100_series-776994.pdf" H 7300 5150 50  0001 C CNN
 	1    7300 5150
 	0    -1   -1   0   
 $EndComp
@@ -939,7 +939,7 @@ P 4300 4100
 F 0 "SW501" H 4300 4467 50  0000 C CNN
 F 1 "DS04-254-2-02BK-SMT" H 4300 4376 50  0000 C CNN
 F 2 "Package_DIP:DIP-4_W8.89mm_SMDSocket_LongPads" H 4300 4100 50  0001 C CNN
-F 3 "" H 4300 4100 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/670/ds04-254-smt-1777718.pdf" H 4300 4100 50  0001 C CNN
 	1    4300 4100
 	1    0    0    -1  
 $EndComp
@@ -1188,7 +1188,7 @@ P 8250 3600
 F 0 "C525" H 8338 3646 50  0000 L CNN
 F 1 "560uF 50V" H 8050 3750 50  0000 L CNN
 F 2 "Capacitor_THT:CP_Radial_D13.0mm_P5.00mm" H 8250 3600 50  0001 C CNN
-F 3 "~" H 8250 3600 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/420/United-Chemi-Con-1109128.pdf" H 8250 3600 50  0001 C CNN
 	1    8250 3600
 	1    0    0    -1  
 $EndComp
@@ -1204,7 +1204,7 @@ P 8550 3600
 F 0 "C530" H 8638 3646 50  0000 L CNN
 F 1 "560uF 50V" H 8450 3800 50  0000 L CNN
 F 2 "Capacitor_THT:CP_Radial_D12.5mm_P5.00mm" H 8550 3600 50  0001 C CNN
-F 3 "~" H 8550 3600 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/420/United-Chemi-Con-1109128.pdf" H 8550 3600 50  0001 C CNN
 	1    8550 3600
 	1    0    0    -1  
 $EndComp
@@ -1216,7 +1216,7 @@ P 8800 3600
 F 0 "C531" H 8888 3646 50  0000 L CNN
 F 1 "560uF 50V" H 8700 3800 50  0000 L CNN
 F 2 "Capacitor_THT:CP_Radial_D12.5mm_P5.00mm" H 8800 3600 50  0001 C CNN
-F 3 "~" H 8800 3600 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/420/United-Chemi-Con-1109128.pdf" H 8800 3600 50  0001 C CNN
 	1    8800 3600
 	1    0    0    -1  
 $EndComp
@@ -1227,7 +1227,7 @@ P 9050 3600
 F 0 "C532" H 9138 3646 50  0000 L CNN
 F 1 "560uF 50V" H 8950 3800 50  0000 L CNN
 F 2 "Capacitor_THT:CP_Radial_D12.5mm_P5.00mm" H 9050 3600 50  0001 C CNN
-F 3 "~" H 9050 3600 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/420/United-Chemi-Con-1109128.pdf" H 9050 3600 50  0001 C CNN
 	1    9050 3600
 	1    0    0    -1  
 $EndComp
@@ -1257,4 +1257,26 @@ Connection ~ 8550 3800
 Wire Wire Line
 	9350 3500 9050 3500
 Connection ~ 9050 3500
+$Comp
+L Mechanical:Heatsink_Pad HS501
+U 1 1 5F733287
+P 5450 1300
+F 0 "HS501" H 5592 1341 50  0000 L CNN
+F 1 "537-95AB" H 5592 1250 50  0000 L CNN
+F 2 "" H 5462 1250 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/433/extruded-heat-sink-wakefield-365172.pdf" H 5462 1250 50  0001 C CNN
+	1    5450 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR0501
+U 1 1 5F7336DD
+P 5450 1400
+F 0 "#PWR0501" H 5450 1200 50  0001 C CNN
+F 1 "GNDPWR" H 5454 1246 50  0000 C CNN
+F 2 "" H 5450 1350 50  0001 C CNN
+F 3 "" H 5450 1350 50  0001 C CNN
+	1    5450 1400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

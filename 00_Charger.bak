@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 7
+Sheet 4 8
 Title ""
 Date ""
 Rev ""
@@ -88,7 +88,7 @@ U 1 1 5E73EFE1
 P 8000 3950
 F 0 "L401" V 8100 3950 50  0000 C CNN
 F 1 "10uH PQ2614BLA-100K" V 7950 4300 50  0000 C CNN
-F 2 "" H 8000 3950 50  0001 C CNN
+F 2 "Inductor_SMD:PQ2617BHA-330K" H 8000 3950 50  0001 C CNN
 F 3 "~" H 8000 3950 50  0001 C CNN
 	1    8000 3950
 	0    -1   -1   0   
@@ -603,29 +603,18 @@ PACK+
 Text Notes 3550 1750 0    50   ~ 0
 Spannung 20V in Ladekabel
 $Comp
-L Connector:Jack-DC J401
-U 1 1 5E8B7937
-P 2050 2300
-F 0 "J401" H 2105 2625 50  0000 C CNN
-F 1 "Jack-DC" H 2105 2534 50  0000 C CNN
-F 2 "" H 2100 2260 50  0001 C CNN
-F 3 "~" H 2100 2260 50  0001 C CNN
-	1    2050 2300
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GNDPWR #PWR0401
 U 1 1 5E8B9696
-P 2350 2600
-F 0 "#PWR0401" H 2350 2400 50  0001 C CNN
-F 1 "GNDPWR" H 2354 2446 50  0000 C CNN
-F 2 "" H 2350 2550 50  0001 C CNN
-F 3 "" H 2350 2550 50  0001 C CNN
-	1    2350 2600
+P 2250 2600
+F 0 "#PWR0401" H 2250 2400 50  0001 C CNN
+F 1 "GNDPWR" H 2254 2446 50  0000 C CNN
+F 2 "" H 2250 2550 50  0001 C CNN
+F 3 "" H 2250 2550 50  0001 C CNN
+	1    2250 2600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2350 2600 2350 2400
+	2250 2600 2250 2300
 Text Notes 1850 1900 0    50   ~ 0
 GND über Shunt verbinden
 Text Label 3550 2200 0    50   ~ 0
@@ -684,8 +673,6 @@ $EndComp
 Wire Wire Line
 	4100 5200 4100 4450
 Connection ~ 5550 2200
-Text Notes 4900 1950 0    50   ~ 0
-LC-Tiefpass\n32Hz Grenzfrequenz
 $Comp
 L Isolator:PC827 U402
 U 1 1 5EE6E88A
@@ -983,4 +970,15 @@ Wire Wire Line
 Connection ~ 8450 3750
 Wire Wire Line
 	4750 2200 5550 2200
+$Comp
+L Connector:Screw_Terminal_01x02 J401
+U 1 1 5F5663AE
+P 2050 2300
+F 0 "J401" H 1970 1975 50  0000 C CNN
+F 1 "TB001-500-02BE CUI_Devices" H 1970 2066 50  0000 C CNN
+F 2 "TerminalBlock_RND:TerminalBlock_RND_205-00045_1x02_P5.00mm_Horizontal" H 2050 2300 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/670/tb001-500-1550615.pdf" H 2050 2300 50  0001 C CNN
+	1    2050 2300
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC

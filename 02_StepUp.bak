@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 7
+Sheet 3 8
 Title ""
 Date ""
 Rev ""
@@ -96,7 +96,7 @@ U 1 1 5E796A70
 P 6550 2900
 F 0 "L301" H 6598 2946 50  0000 L CNN
 F 1 "10uH PQ2617BHA-100K " H 6598 2855 50  0000 L CNN
-F 2 "" H 6550 2900 50  0001 C CNN
+F 2 "Inductor_SMD:PQ2617BHA-330K" H 6550 2900 50  0001 C CNN
 F 3 "https://www.mouser.de/datasheet/2/54/bourns_PQ2617BHA_datasheet-1159314.pdf" H 6550 2900 50  0001 C CNN
 	1    6550 2900
 	1    0    0    -1  
