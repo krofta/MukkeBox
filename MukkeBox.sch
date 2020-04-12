@@ -777,7 +777,7 @@ U 1 1 5E9BA91E
 P 6050 4650
 F 0 "U102" H 6950 6050 50  0000 C CNN
 F 1 "STM32F030C6Tx_MukkeBox" H 6450 5850 50  0000 C CNN
-F 2 "Package_QFP:LQFP-64_10x10mm_P0.5mm" H 4850 2550 50  0001 R CNN
+F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 4850 2550 50  0001 R CNN
 F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00088500.pdf" H 6050 4650 50  0001 C CNN
 	1    6050 4650
 	1    0    0    -1  
@@ -1071,7 +1071,7 @@ U 1 1 5E918326
 P 5100 3700
 F 0 "Y101" V 5054 3831 50  0000 L CNN
 F 1 "FOXSDLF/080-20" V 4900 3450 50  0000 L CNN
-F 2 "Crystal:Crystal_SMD_HC49-SD_HandSoldering" H 5100 3700 50  0001 C CNN
+F 2 "Crystal:Crystal_SMD_HC49-SD" H 5100 3700 50  0001 C CNN
 F 3 "~" H 5100 3700 50  0001 C CNN
 	1    5100 3700
 	0    1    1    0   

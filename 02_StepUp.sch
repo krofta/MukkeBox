@@ -106,19 +106,8 @@ Wire Wire Line
 Connection ~ 6550 3150
 Wire Wire Line
 	6550 3150 6550 3200
-$Comp
-L Device:CP_Small C305
-U 1 1 5E796E0D
-P 7400 3600
-F 0 "C305" H 7488 3646 50  0000 L CNN
-F 1 "1000u60V EEV-FK1V102V " H 6800 3500 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_16x17.5" H 7400 3600 50  0001 C CNN
-F 3 "~" H 7400 3600 50  0001 C CNN
-	1    7400 3600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	7400 3500 7400 3150
+	7400 3500 7400 3400
 Wire Wire Line
 	7400 3150 7350 3150
 $Comp
@@ -144,7 +133,7 @@ F 3 "" H 7400 4150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7400 4200 7400 3700
+	7400 4200 7400 3800
 $Comp
 L Device:R_Small R308
 U 1 1 5E7975A3
@@ -344,17 +333,6 @@ F 1 "GNDPWR" H 4554 2946 50  0000 C CNN
 F 2 "" H 4550 3050 50  0001 C CNN
 F 3 "" H 4550 3050 50  0001 C CNN
 	1    4550 3100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP_Small C301
-U 1 1 5E7AB87B
-P 3950 3000
-F 0 "C301" H 4038 3046 50  0000 L CNN
-F 1 "1000u35V EEV-FK1V102V " H 3400 2900 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_16x17.5" H 3950 3000 50  0001 C CNN
-F 3 "~" H 3950 3000 50  0001 C CNN
-	1    3950 3000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -566,4 +544,77 @@ Wire Wire Line
 Connection ~ 7900 3600
 Wire Wire Line
 	7900 3600 7900 3550
+$Comp
+L Device:CP_Small C?
+U 1 1 5E9C5E68
+P 7400 3600
+AR Path="/5E751A81/5E9C5E68" Ref="C?"  Part="1" 
+AR Path="/5E73BAE8/5E9C5E68" Ref="C305"  Part="1" 
+F 0 "C305" V 7450 3100 50  0000 L CNN
+F 1 "560uF 50V" V 7550 3100 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D12.5mm_P5.00mm" H 7400 3600 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/420/United-Chemi-Con-1109128.pdf" H 7400 3600 50  0001 C CNN
+	1    7400 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP_Small C?
+U 1 1 5E9C790D
+P 7250 3600
+AR Path="/5E751A81/5E9C790D" Ref="C?"  Part="1" 
+AR Path="/5E73BAE8/5E9C790D" Ref="C308"  Part="1" 
+F 0 "C308" V 7150 3200 50  0000 L CNN
+F 1 "560uF 50V" V 7250 3000 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D12.5mm_P5.00mm" H 7250 3600 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/420/United-Chemi-Con-1109128.pdf" H 7250 3600 50  0001 C CNN
+	1    7250 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 3700 7250 3800
+Wire Wire Line
+	7250 3800 7400 3800
+Connection ~ 7400 3800
+Wire Wire Line
+	7400 3800 7400 3700
+Wire Wire Line
+	7250 3500 7250 3400
+Wire Wire Line
+	7250 3400 7400 3400
+Connection ~ 7400 3400
+Wire Wire Line
+	7400 3400 7400 3150
+$Comp
+L Device:CP_Small C?
+U 1 1 5E9CBBA9
+P 3950 3000
+AR Path="/5E751A81/5E9CBBA9" Ref="C?"  Part="1" 
+AR Path="/5E73BAE8/5E9CBBA9" Ref="C301"  Part="1" 
+F 0 "C301" H 4050 3000 50  0000 L CNN
+F 1 "560uF 50V" H 3950 2900 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D12.5mm_P5.00mm" H 3950 3000 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/420/United-Chemi-Con-1109128.pdf" H 3950 3000 50  0001 C CNN
+	1    3950 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP_Small C?
+U 1 1 5E9CD890
+P 3800 3000
+AR Path="/5E751A81/5E9CD890" Ref="C?"  Part="1" 
+AR Path="/5E73BAE8/5E9CD890" Ref="C307"  Part="1" 
+F 0 "C307" H 3500 3000 50  0000 L CNN
+F 1 "560uF 50V" H 3300 2900 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D12.5mm_P5.00mm" H 3800 3000 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/420/United-Chemi-Con-1109128.pdf" H 3800 3000 50  0001 C CNN
+	1    3800 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 2900 3800 2800
+Wire Wire Line
+	3800 2800 3950 2800
+Wire Wire Line
+	3800 3100 3950 3100
+Connection ~ 3950 3100
 $EndSCHEMATC
