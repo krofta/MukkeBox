@@ -1263,7 +1263,7 @@ U 1 1 5F733287
 P 5450 1300
 F 0 "HS501" H 5592 1341 50  0000 L CNN
 F 1 "537-95AB" H 5592 1250 50  0000 L CNN
-F 2 "" H 5462 1250 50  0001 C CNN
+F 2 "Heatsink:Heatsink_57.9x36.8mm_4xFixation3.17mm_537-95AB" H 5462 1250 50  0001 C CNN
 F 3 "https://www.mouser.de/datasheet/2/433/extruded-heat-sink-wakefield-365172.pdf" H 5462 1250 50  0001 C CNN
 	1    5450 1300
 	1    0    0    -1  

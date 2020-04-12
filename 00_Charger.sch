@@ -94,17 +94,6 @@ F 3 "~" H 8000 3950 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:Q_PMOS_SGD Q402
-U 1 1 5E740451
-P 7750 3550
-F 0 "Q402" H 7600 3750 50  0000 L CNN
-F 1 "FDD4685-F085" H 7150 3900 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:TO-263-2" H 7950 3650 50  0001 C CNN
-F 3 "~" H 7750 3550 50  0001 C CNN
-	1    7750 3550
-	1    0    0    1   
-$EndComp
-$Comp
 L Device:R_Small R402
 U 1 1 5E74495E
 P 5400 4050
@@ -117,17 +106,6 @@ F 3 "~" H 5400 4050 50  0001 C CNN
 $EndComp
 Text GLabel 2150 3950 0    50   Input ~ 0
 CHARGER_IOUT
-$Comp
-L Device:D_Schottky D401
-U 1 1 5E74F959
-P 4600 2200
-F 0 "D401" H 4600 1984 50  0000 C CNN
-F 1 "STPS2045C" H 4600 2075 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:TO-263-2" H 4600 2200 50  0001 C CNN
-F 3 "~" H 4600 2200 50  0001 C CNN
-	1    4600 2200
-	-1   0    0    1   
-$EndComp
 $Comp
 L Device:R_Small R405
 U 1 1 5E751602
@@ -488,23 +466,10 @@ F 3 "" H 9300 3850 50  0001 C CNN
 	1    9300 3850
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:D_Schottky D402
-U 1 1 5E838BD2
-P 8600 3750
-F 0 "D402" H 8600 3966 50  0000 C CNN
-F 1 "STPS2045C" H 8600 3875 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:TO-263-2" H 8600 3750 50  0001 C CNN
-F 3 "~" H 8600 3750 50  0001 C CNN
-	1    8600 3750
-	1    0    0    -1  
-$EndComp
-Connection ~ 7850 3350
 Wire Wire Line
 	7550 3550 7550 3800
 Wire Wire Line
 	7850 3750 7850 3950
-Connection ~ 7850 3750
 Wire Wire Line
 	8200 3950 8200 4050
 $Comp
@@ -568,8 +533,6 @@ Wire Wire Line
 	9150 4450 9050 4450
 Wire Wire Line
 	9300 3750 9300 3850
-Wire Wire Line
-	8750 3750 9300 3750
 Connection ~ 9300 3750
 Wire Wire Line
 	9300 3600 9300 3750
@@ -600,7 +563,7 @@ Text GLabel 9850 3250 2    50   Input ~ 0
 SYSTEM_LOAD
 Text GLabel 9150 4450 2    50   BiDi ~ 0
 PACK+
-Text Notes 3550 1750 0    50   ~ 0
+Text Notes 3500 1600 0    50   ~ 0
 Spannung 20V in Ladekabel
 $Comp
 L power:GNDPWR #PWR0401
@@ -617,7 +580,7 @@ Wire Wire Line
 	2250 2600 2250 2300
 Text Notes 1850 1900 0    50   ~ 0
 GND über Shunt verbinden
-Text Label 3550 2200 0    50   ~ 0
+Text Label 3300 2200 0    50   ~ 0
 DC_20V_POWER_SUPPLY
 $Comp
 L Device:Q_NMOS_GSD Q401
@@ -701,8 +664,6 @@ Wire Wire Line
 	3350 3000 3250 3000
 Wire Wire Line
 	3250 3000 3250 3100
-Wire Wire Line
-	2350 2200 2700 2200
 $Comp
 L Device:R_Small R412
 U 1 1 5EE96D0F
@@ -716,7 +677,7 @@ F 3 "~" H 3150 2300 50  0001 C CNN
 $EndComp
 Connection ~ 3150 2200
 Wire Wire Line
-	3150 2200 4450 2200
+	3150 2200 4350 2200
 $Comp
 L Device:R_Small R413
 U 1 1 5EE96E03
@@ -935,7 +896,6 @@ F 3 "~" H 4762 1400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4750 1550 4750 2200
-Connection ~ 4750 2200
 $Comp
 L Mechanical:Heatsink_Pad HS403
 U 1 1 5EC7F105
@@ -966,8 +926,7 @@ Connection ~ 8150 3750
 Wire Wire Line
 	8150 3750 8450 3750
 Wire Wire Line
-	8450 3500 8450 3750
-Connection ~ 8450 3750
+	8450 3500 8450 3600
 Wire Wire Line
 	4750 2200 5550 2200
 $Comp
@@ -981,4 +940,71 @@ F 3 "https://www.mouser.de/datasheet/2/670/tb001-500-1550615.pdf" H 2050 2300 50
 	1    2050 2300
 	-1   0    0    1   
 $EndComp
+Wire Wire Line
+	2250 2200 2700 2200
+$Comp
+L Device:Q_NMOS_GSD Q402
+U 1 1 5E98AB96
+P 7750 3550
+F 0 "Q402" H 7600 3350 50  0000 L CNN
+F 1 "FDD4685-F085" H 7200 3250 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-263-2" H 7950 3650 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/308/FDD4685_F085-D-1807000.pdf" H 7750 3550 50  0001 C CNN
+	1    7750 3550
+	1    0    0    -1  
+$EndComp
+Connection ~ 7850 3750
+Connection ~ 7850 3350
+$Comp
+L Device:D_Schottky_x2_KCom_AKA D?
+U 1 1 5E990B16
+P 4550 2200
+AR Path="/5E73BAE8/5E990B16" Ref="D?"  Part="1" 
+AR Path="/5E73BB4A/5E990B16" Ref="D401"  Part="1" 
+F 0 "D401" V 5050 2100 50  0000 L CNN
+F 1 "STPS2045C" V 4950 2050 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-263-2" H 4550 2200 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/389/cd00268203-1797199.pdf" H 4550 2200 50  0001 C CNN
+	1    4550 2200
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4750 2200
+Wire Wire Line
+	4550 1900 4350 1900
+Wire Wire Line
+	4350 1900 4350 2200
+Wire Wire Line
+	4550 2500 4350 2500
+Wire Wire Line
+	4350 2500 4350 2200
+Connection ~ 4350 2200
+$Comp
+L Device:D_Schottky_x2_KCom_AKA D?
+U 1 1 5E99FC60
+P 8850 3600
+AR Path="/5E73BAE8/5E99FC60" Ref="D?"  Part="1" 
+AR Path="/5E73BB4A/5E99FC60" Ref="D402"  Part="1" 
+F 0 "D402" V 9350 3500 50  0000 L CNN
+F 1 "STPS2045C" V 9250 3450 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-263-2" H 8850 3600 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/389/cd00268203-1797199.pdf" H 8850 3600 50  0001 C CNN
+	1    8850 3600
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	8650 3600 8450 3600
+Connection ~ 8450 3600
+Wire Wire Line
+	8450 3600 8450 3750
+Wire Wire Line
+	8850 3300 9000 3300
+Wire Wire Line
+	9000 3300 9000 3750
+Connection ~ 9000 3750
+Wire Wire Line
+	9000 3750 9300 3750
+Wire Wire Line
+	8850 3900 9000 3900
+Wire Wire Line
+	9000 3900 9000 3750
 $EndSCHEMATC

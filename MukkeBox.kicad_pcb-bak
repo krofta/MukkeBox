@@ -30,7 +30,7 @@
     (44 Edge.Cuts user)
     (45 Margin user)
     (46 B.CrtYd user)
-    (47 F.CrtYd user)
+    (47 F.CrtYd user hide)
     (48 B.Fab user)
     (49 F.Fab user hide)
   )
@@ -1898,7 +1898,7 @@
   )
 
   (module Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder (layer F.Cu) (tedit 5B301BBE) (tstamp 5E9F3904)
-    (at 75.7 54.9)
+    (at 75.7 53.5)
     (descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags "capacitor handsolder")
     (path /5E73BB4A/5E73D01B)
@@ -2258,7 +2258,7 @@
   )
 
   (module Capacitor_SMD:CP_Elec_5x5.4 (layer F.Cu) (tedit 5BCA39CF) (tstamp 5EA0E9FF)
-    (at 124.7 56.2 270)
+    (at 124.9 57.7 270)
     (descr "SMD capacitor, aluminum electrolytic, Nichicon, 5.0x5.4mm")
     (tags "capacitor electrolytic")
     (path /5E73BB4A/5E823336)
@@ -5381,7 +5381,7 @@
   )
 
   (module Package_TO_SOT_SMD:TO-263-2 (layer F.Cu) (tedit 5A70FB7B) (tstamp 5E9F41BB)
-    (at 96.6 61.7 90)
+    (at 103.8 61.6 90)
     (descr "TO-263 / D2PAK / DDPAK SMD package, http://www.infineon.com/cms/en/product/packages/PG-TO263/PG-TO263-3-1/")
     (tags "D2PAK DDPAK TO-263 D2PAK-3 TO-263-3 SOT-404")
     (path /5E73BB4A/5E99FC60)
@@ -5909,7 +5909,7 @@
   )
 
   (module Heatsink:Heatsink_AAVID_573300D00010G_TO-263 (layer F.Cu) (tedit 5BE6CFB0) (tstamp 5E9F42CF)
-    (at 96.6 58.325)
+    (at 103.8 58.225)
     (descr "Heatsink, 12.70mm x 26.16mm x 10.16, SMD, 18K/W, TO-263, D2 Pak, https://www.shopaavid.com/Product/573300D00000G")
     (tags "Heatsink AAVID TO-263 D2 Pak")
     (path /5E73BB4A/5EC7F105)
@@ -9608,12 +9608,12 @@
   )
 
   (module Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder (layer F.Cu) (tedit 5B301BBD) (tstamp 5E9F4AC6)
-    (at 75.7 53.3)
+    (at 62.2 54.2)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags "resistor handsolder")
     (path /5E73BB4A/5E799522)
     (attr smd)
-    (fp_text reference R403 (at 3.7 0) (layer F.SilkS)
+    (fp_text reference R403 (at -3.7 0) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value "4.7k 1%" (at 0 1.43) (layer F.Fab)
@@ -11660,7 +11660,7 @@
   )
 
   (module Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder (layer F.Cu) (tedit 5B301BBD) (tstamp 5E9F4E8F)
-    (at 123.2 50.3)
+    (at 123.4 51.8)
     (descr "Resistor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags "resistor handsolder")
     (path /5E73BB4A/5E7F4B39)

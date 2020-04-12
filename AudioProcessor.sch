@@ -20,7 +20,7 @@ U 1 1 5EA689DD
 P 7450 4650
 F 0 "U602" H 7450 4850 50  0000 C CNN
 F 1 "TDA7418" H 7450 4500 50  0000 C CNN
-F 2 "Package_SO:SOIC-18W_7.5x11.6mm_P1.27mm" H 7250 4700 50  0001 C CNN
+F 2 "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm" H 7250 4700 50  0001 C CNN
 F 3 "" H 7250 4700 50  0001 C CNN
 	1    7450 4650
 	1    0    0    -1  
@@ -507,8 +507,6 @@ Wire Wire Line
 	6800 3900 6550 3900
 Wire Wire Line
 	6800 4050 6550 4050
-Wire Wire Line
-	3050 5200 3050 4950
 $Comp
 L power:GNDA #PWR0604
 U 1 1 5E90960C
@@ -622,10 +620,6 @@ F 3 "" H 3050 5200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4750 4600 4750 4650
-Wire Wire Line
-	3250 4650 4750 4650
-Wire Wire Line
-	3250 4750 5150 4750
 Text Label 3750 4650 0    50   ~ 0
 AUX_L
 Text Label 3750 4750 0    50   ~ 0
@@ -658,14 +652,22 @@ Wire Wire Line
 	6400 2000 6050 2000
 Connection ~ 6050 2000
 $Comp
-L Connector:AudioJack2_Ground J601
-U 1 1 5E98AE8D
-P 3050 4750
-F 0 "J601" H 3080 5075 50  0000 C CNN
-F 1 "SJ1-3533 CUI Devices" H 3080 4984 50  0000 C CNN
-F 2 "Connector_Audio:Jack_3.5mm_CUI_SJ1-3533NG_Horizontal" H 3050 4750 50  0001 C CNN
-F 3 "~" H 3050 4750 50  0001 C CNN
-	1    3050 4750
-	1    0    0    -1  
+L Connector:Conn_01x03_Female J601
+U 1 1 5E973DDA
+P 2750 4750
+F 0 "J601" H 2644 4425 50  0000 C CNN
+F 1 "Conn_01x03_Female" H 2644 4516 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2750 4750 50  0001 C CNN
+F 3 "~" H 2750 4750 50  0001 C CNN
+	1    2750 4750
+	-1   0    0    1   
 $EndComp
+Wire Wire Line
+	2950 4650 4750 4650
+Wire Wire Line
+	2950 4750 5150 4750
+Wire Wire Line
+	2950 4850 3050 4850
+Wire Wire Line
+	3050 4850 3050 5200
 $EndSCHEMATC
