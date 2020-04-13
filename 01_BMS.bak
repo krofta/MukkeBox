@@ -795,7 +795,7 @@ Text Label 4300 4200 1    50   ~ 0
 C_SENSE_N
 Text Notes 4650 1550 0    129  ~ 0
 Battery Balancer
-Text Notes 8200 850  0    129  ~ 0
+Text Notes 8300 750  0    129  ~ 0
 NFET High Side Driver
 Text GLabel 10050 3700 2    50   Input ~ 0
 CP_EN
@@ -1234,9 +1234,9 @@ P 10100 950
 AR Path="/5E73BAE8/5E9AC02A" Ref="HS?"  Part="1" 
 AR Path="/5E73BADE/5E9AC02A" Ref="HS203"  Part="1" 
 F 0 "HS203" H 10241 991 50  0000 L CNN
-F 1 "Heatsink_Pad" H 10241 900 50  0000 L CNN
+F 1 "573300D00000G" H 10241 900 50  0000 L CNN
 F 2 "Heatsink:Heatsink_AAVID_573300D00010G_TO-263" H 10112 900 50  0001 C CNN
-F 3 "~" H 10112 900 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/2/Aavid-Board-Level-Heatsinks-Catalog-2018-1507171.pdf" H 10112 900 50  0001 C CNN
 	1    10100 950 
 	1    0    0    -1  
 $EndComp
@@ -1251,10 +1251,10 @@ U 1 1 5E9B8E57
 P 9100 1700
 AR Path="/5E73BAE8/5E9B8E57" Ref="HS?"  Part="1" 
 AR Path="/5E73BADE/5E9B8E57" Ref="HS201"  Part="1" 
-F 0 "HS201" H 9241 1741 50  0000 L CNN
-F 1 "Heatsink_Pad" H 9241 1650 50  0000 L CNN
+F 0 "HS201" H 8650 1800 50  0000 L CNN
+F 1 "573300D00000G" H 8350 1700 50  0000 L CNN
 F 2 "Heatsink:Heatsink_AAVID_573300D00010G_TO-263" H 9112 1650 50  0001 C CNN
-F 3 "~" H 9112 1650 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/2/Aavid-Board-Level-Heatsinks-Catalog-2018-1507171.pdf" H 9112 1650 50  0001 C CNN
 	1    9100 1700
 	1    0    0    -1  
 $EndComp
@@ -1265,9 +1265,9 @@ P 9900 1700
 AR Path="/5E73BAE8/5E9BEE65" Ref="HS?"  Part="1" 
 AR Path="/5E73BADE/5E9BEE65" Ref="HS202"  Part="1" 
 F 0 "HS202" H 10041 1741 50  0000 L CNN
-F 1 "Heatsink_Pad" H 10041 1650 50  0000 L CNN
+F 1 "573300D00000G" H 10041 1650 50  0000 L CNN
 F 2 "Heatsink:Heatsink_AAVID_573300D00010G_TO-263" H 9912 1650 50  0001 C CNN
-F 3 "~" H 9912 1650 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/2/Aavid-Board-Level-Heatsinks-Catalog-2018-1507171.pdf" H 9912 1650 50  0001 C CNN
 	1    9900 1700
 	1    0    0    -1  
 $EndComp

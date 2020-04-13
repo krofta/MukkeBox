@@ -565,21 +565,6 @@ Text GLabel 9150 4450 2    50   BiDi ~ 0
 PACK+
 Text Notes 3500 1600 0    50   ~ 0
 Spannung 20V in Ladekabel
-$Comp
-L power:GNDPWR #PWR0401
-U 1 1 5E8B9696
-P 2250 2600
-F 0 "#PWR0401" H 2250 2400 50  0001 C CNN
-F 1 "GNDPWR" H 2254 2446 50  0000 C CNN
-F 2 "" H 2250 2550 50  0001 C CNN
-F 3 "" H 2250 2550 50  0001 C CNN
-	1    2250 2600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2250 2600 2250 2300
-Text Notes 1850 1900 0    50   ~ 0
-GND über Shunt verbinden
 Text Label 3300 2200 0    50   ~ 0
 DC_20V_POWER_SUPPLY
 $Comp
@@ -1007,4 +992,17 @@ Wire Wire Line
 	8850 3900 9000 3900
 Wire Wire Line
 	9000 3900 9000 3750
+$Comp
+L power:GND #PWR0191
+U 1 1 5E980EB1
+P 2250 3100
+F 0 "#PWR0191" H 2250 2850 50  0001 C CNN
+F 1 "GND" H 2255 2927 50  0000 C CNN
+F 2 "" H 2250 3100 50  0001 C CNN
+F 3 "" H 2250 3100 50  0001 C CNN
+	1    2250 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 2300 2250 3100
 $EndSCHEMATC

@@ -178,8 +178,6 @@ Wire Wire Line
 Wire Wire Line
 	7900 3150 7600 3150
 Connection ~ 7400 3150
-Wire Wire Line
-	8250 3150 7900 3150
 Connection ~ 7900 3150
 $Comp
 L Device:C_Small C303
@@ -298,7 +296,7 @@ Wire Wire Line
 Wire Wire Line
 	6050 2600 6050 2800
 Connection ~ 6050 2600
-Text GLabel 3900 2600 0    50   Input ~ 0
+Text GLabel 3350 2600 0    50   Input ~ 0
 SYSTEM_LOAD
 $Comp
 L Regulator_Linear:L7812 U301
@@ -319,7 +317,7 @@ Wire Wire Line
 	3950 2800 3950 2600
 Connection ~ 3950 2600
 Wire Wire Line
-	3950 2600 6050 2600
+	3950 2600 5450 2600
 Wire Wire Line
 	4850 2800 4900 2800
 Wire Wire Line
@@ -391,7 +389,7 @@ F 3 "" H 5900 4150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5900 4200 5900 3700
-Text GLabel 8250 3150 2    50   Output ~ 0
+Text GLabel 9150 3150 2    50   Output ~ 0
 POWER_AMP
 $Comp
 L Device:C_Small C306
@@ -444,9 +442,9 @@ L Mechanical:Heatsink_Pad HS301
 U 1 1 5EC9B13F
 P 7600 2700
 F 0 "HS301" H 7741 2741 50  0000 L CNN
-F 1 "Heatsink_Pad" H 7741 2650 50  0000 L CNN
+F 1 "573300D00000G" H 7741 2650 50  0000 L CNN
 F 2 "Heatsink:Heatsink_AAVID_573300D00010G_TO-263" H 7612 2650 50  0001 C CNN
-F 3 "~" H 7612 2650 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/2/Aavid-Board-Level-Heatsinks-Catalog-2018-1507171.pdf" H 7612 2650 50  0001 C CNN
 	1    7600 2700
 	1    0    0    -1  
 $EndComp
@@ -471,9 +469,9 @@ L Mechanical:Heatsink_Pad HS302
 U 1 1 5E929E76
 P 6400 2450
 F 0 "HS302" H 6541 2491 50  0000 L CNN
-F 1 "Heatsink_Pad" H 6541 2400 50  0000 L CNN
+F 1 "573300D00000G" H 6541 2400 50  0000 L CNN
 F 2 "Heatsink:Heatsink_AAVID_573300D00010G_TO-263" H 6412 2400 50  0001 C CNN
-F 3 "~" H 6412 2400 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/2/Aavid-Board-Level-Heatsinks-Catalog-2018-1507171.pdf" H 6412 2400 50  0001 C CNN
 	1    6400 2450
 	1    0    0    -1  
 $EndComp
@@ -622,9 +620,9 @@ L Mechanical:Heatsink_Pad HS303
 U 1 1 5E9A5BF9
 P 4200 2350
 F 0 "HS303" H 4341 2391 50  0000 L CNN
-F 1 "Heatsink_Pad" H 4341 2300 50  0000 L CNN
+F 1 "573300D00000G" H 4341 2300 50  0000 L CNN
 F 2 "Heatsink:Heatsink_AAVID_573300D00010G_TO-263" H 4212 2300 50  0001 C CNN
-F 3 "~" H 4212 2300 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/2/Aavid-Board-Level-Heatsinks-Catalog-2018-1507171.pdf" H 4212 2300 50  0001 C CNN
 	1    4200 2350
 	1    0    0    -1  
 $EndComp
@@ -638,9 +636,9 @@ L Mechanical:Heatsink_Pad HS304
 U 1 1 5E9D1B13
 P 2700 2950
 F 0 "HS304" H 2841 2991 50  0000 L CNN
-F 1 "Heatsink_Pad" H 2700 2750 50  0000 L CNN
+F 1 "573300D00000G" H 2700 2750 50  0000 L CNN
 F 2 "Heatsink:Heatsink_AAVID_573300D00010G_TO-263" H 2712 2900 50  0001 C CNN
-F 3 "~" H 2712 2900 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/2/Aavid-Board-Level-Heatsinks-Catalog-2018-1507171.pdf" H 2712 2900 50  0001 C CNN
 	1    2700 2950
 	1    0    0    -1  
 $EndComp
@@ -649,4 +647,86 @@ Wire Wire Line
 Wire Wire Line
 	2700 3100 3800 3100
 Connection ~ 3800 3100
+Wire Wire Line
+	3400 2600 3350 2600
+Wire Wire Line
+	7900 3150 8450 3150
+Wire Wire Line
+	9150 3150 8950 3150
+Text Notes 3750 4850 0    50   ~ 0
+F_osc = 1,72/(R_rc*C_rc)\nF_osc = 1,72/(15K*1n2)\nF_osc=95555Hz
+Text Notes 5800 4850 0    50   ~ 0
+Gate-Strom:\n95,5kHz*13nC =1,2mA
+$Comp
+L Connector_Generic:Conn_02x04_Odd_Even J301
+U 1 1 5EA860C7
+P 3600 2400
+F 0 "J301" H 3650 2717 50  0000 C CNN
+F 1 "Conn_02x04_Odd_Even" H 3650 2626 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 3600 2400 50  0001 C CNN
+F 3 "~" H 3600 2400 50  0001 C CNN
+	1    3600 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 2500 3400 2600
+Wire Wire Line
+	3900 2500 3900 2600
+Connection ~ 3400 2600
+Connection ~ 3900 2600
+$Comp
+L Connector_Generic:Conn_02x04_Odd_Even J302
+U 1 1 5EA865EB
+P 8650 2950
+F 0 "J302" H 8700 3267 50  0000 C CNN
+F 1 "Conn_02x04_Odd_Even" H 8700 3176 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 8650 2950 50  0001 C CNN
+F 3 "~" H 8650 2950 50  0001 C CNN
+	1    8650 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 3050 8450 3150
+Wire Wire Line
+	8950 3050 8950 3150
+Connection ~ 8450 3150
+Connection ~ 8950 3150
+Wire Wire Line
+	8950 2850 8950 2950
+Connection ~ 8950 3050
+Connection ~ 8950 2950
+Wire Wire Line
+	8950 2950 8950 3050
+Wire Wire Line
+	8450 2850 8450 2950
+Connection ~ 8450 3050
+Connection ~ 8450 2950
+Wire Wire Line
+	8450 2950 8450 3050
+Wire Wire Line
+	3900 2300 3900 2400
+Connection ~ 3900 2500
+Connection ~ 3900 2400
+Wire Wire Line
+	3900 2400 3900 2500
+Wire Wire Line
+	3400 2300 3400 2400
+Connection ~ 3400 2500
+Connection ~ 3400 2400
+Wire Wire Line
+	3400 2400 3400 2500
+$Comp
+L power:PWR_FLAG #FLG0113
+U 1 1 5E9902DB
+P 5450 2600
+F 0 "#FLG0113" H 5450 2675 50  0001 C CNN
+F 1 "PWR_FLAG" H 5450 2774 50  0000 C CNN
+F 2 "" H 5450 2600 50  0001 C CNN
+F 3 "~" H 5450 2600 50  0001 C CNN
+	1    5450 2600
+	1    0    0    -1  
+$EndComp
+Connection ~ 5450 2600
+Wire Wire Line
+	5450 2600 6050 2600
 $EndSCHEMATC

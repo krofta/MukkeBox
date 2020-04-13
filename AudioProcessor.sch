@@ -630,7 +630,7 @@ U 1 1 5EC2DF69
 P 5500 2000
 F 0 "J602" H 5550 2217 50  0000 C CNN
 F 1 "Conn_02x01" H 5550 2126 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5500 2000 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Left" H 5500 2000 50  0001 C CNN
 F 3 "~" H 5500 2000 50  0001 C CNN
 	1    5500 2000
 	1    0    0    -1  
@@ -657,7 +657,7 @@ U 1 1 5E973DDA
 P 2750 4750
 F 0 "J601" H 2644 4425 50  0000 C CNN
 F 1 "Conn_01x03_Female" H 2644 4516 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2750 4750 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical_SMD_Pin1Left" H 2750 4750 50  0001 C CNN
 F 3 "~" H 2750 4750 50  0001 C CNN
 	1    2750 4750
 	-1   0    0    1   
@@ -670,4 +670,6 @@ Wire Wire Line
 	2950 4850 3050 4850
 Wire Wire Line
 	3050 4850 3050 5200
+Text Notes 6950 2750 0    128  ~ 0
+Audio DSP
 $EndSCHEMATC

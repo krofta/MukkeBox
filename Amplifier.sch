@@ -1193,7 +1193,7 @@ F 3 "https://www.mouser.de/datasheet/2/420/United-Chemi-Con-1109128.pdf" H 8250 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6500 3500 8250 3500
+	6500 3500 7300 3500
 Connection ~ 8250 3500
 Wire Wire Line
 	8250 3500 8550 3500
@@ -1279,4 +1279,18 @@ F 3 "" H 5450 1350 50  0001 C CNN
 	1    5450 1400
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:PWR_FLAG #FLG0114
+U 1 1 5E990599
+P 7300 3500
+F 0 "#FLG0114" H 7300 3575 50  0001 C CNN
+F 1 "PWR_FLAG" H 7550 3600 50  0000 C CNN
+F 2 "" H 7300 3500 50  0001 C CNN
+F 3 "~" H 7300 3500 50  0001 C CNN
+	1    7300 3500
+	1    0    0    -1  
+$EndComp
+Connection ~ 7300 3500
+Wire Wire Line
+	7300 3500 8250 3500
 $EndSCHEMATC
