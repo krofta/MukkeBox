@@ -603,8 +603,8 @@ U 1 1 5E9CD890
 P 3800 3000
 AR Path="/5E751A81/5E9CD890" Ref="C?"  Part="1" 
 AR Path="/5E73BAE8/5E9CD890" Ref="C307"  Part="1" 
-F 0 "C307" H 3500 3000 50  0000 L CNN
-F 1 "560uF 50V" H 3300 2900 50  0000 L CNN
+F 0 "C307" H 3500 3100 50  0000 L CNN
+F 1 "560uF 50V" H 3300 2950 50  0000 L CNN
 F 2 "Capacitor_THT:CP_Radial_D12.5mm_P5.00mm" H 3800 3000 50  0001 C CNN
 F 3 "https://www.mouser.de/datasheet/2/420/United-Chemi-Con-1109128.pdf" H 3800 3000 50  0001 C CNN
 	1    3800 3000
@@ -617,4 +617,36 @@ Wire Wire Line
 Wire Wire Line
 	3800 3100 3950 3100
 Connection ~ 3950 3100
+$Comp
+L Mechanical:Heatsink_Pad HS303
+U 1 1 5E9A5BF9
+P 4200 2350
+F 0 "HS303" H 4341 2391 50  0000 L CNN
+F 1 "Heatsink_Pad" H 4341 2300 50  0000 L CNN
+F 2 "Heatsink:Heatsink_AAVID_573300D00010G_TO-263" H 4212 2300 50  0001 C CNN
+F 3 "~" H 4212 2300 50  0001 C CNN
+	1    4200 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 3100 4200 3100
+Wire Wire Line
+	4200 3100 4200 2450
+Connection ~ 4550 3100
+$Comp
+L Mechanical:Heatsink_Pad HS304
+U 1 1 5E9D1B13
+P 2700 2950
+F 0 "HS304" H 2841 2991 50  0000 L CNN
+F 1 "Heatsink_Pad" H 2700 2750 50  0000 L CNN
+F 2 "Heatsink:Heatsink_AAVID_573300D00010G_TO-263" H 2712 2900 50  0001 C CNN
+F 3 "~" H 2712 2900 50  0001 C CNN
+	1    2700 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 3050 2700 3100
+Wire Wire Line
+	2700 3100 3800 3100
+Connection ~ 3800 3100
 $EndSCHEMATC

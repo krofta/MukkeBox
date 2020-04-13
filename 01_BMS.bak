@@ -225,8 +225,6 @@ Wire Wire Line
 Wire Wire Line
 	2300 2150 2300 2300
 Connection ~ 2300 2300
-Wire Wire Line
-	2300 2150 4950 2150
 $Comp
 L Device:R_Small R209
 U 1 1 5E76D25F
@@ -871,7 +869,6 @@ To voltage devider
 Wire Wire Line
 	5400 2150 5200 2150
 Connection ~ 5400 2150
-Connection ~ 4950 2150
 Wire Wire Line
 	5200 2550 5200 2150
 Connection ~ 5200 2150
@@ -882,7 +879,7 @@ Wire Wire Line
 Wire Wire Line
 	10200 1150 10200 2150
 Wire Wire Line
-	9850 1150 10200 1150
+	9850 1150 10100 1150
 Connection ~ 10200 2150
 Wire Wire Line
 	10200 2150 10000 2150
@@ -1214,4 +1211,74 @@ Text Notes 8200 2100 0    50   ~ 0
 <--- Charge Batterie
 Text Notes 9850 2100 0    50   ~ 0
 Discharge Batterie--->
+$Comp
+L Device:Fuse F201
+U 1 1 5E961D10
+P 3800 2150
+F 0 "F201" V 3603 2150 50  0000 C CNN
+F 1 "Fuse" V 3694 2150 50  0000 C CNN
+F 2 "Fuse:Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open" V 3730 2150 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/358/typ_OGN-14523.pdf" H 3800 2150 50  0001 C CNN
+	1    3800 2150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4950 2150 3950 2150
+Connection ~ 4950 2150
+Wire Wire Line
+	3650 2150 2300 2150
+$Comp
+L Mechanical:Heatsink_Pad HS?
+U 1 1 5E9AC02A
+P 10100 950
+AR Path="/5E73BAE8/5E9AC02A" Ref="HS?"  Part="1" 
+AR Path="/5E73BADE/5E9AC02A" Ref="HS203"  Part="1" 
+F 0 "HS203" H 10241 991 50  0000 L CNN
+F 1 "Heatsink_Pad" H 10241 900 50  0000 L CNN
+F 2 "Heatsink:Heatsink_AAVID_573300D00010G_TO-263" H 10112 900 50  0001 C CNN
+F 3 "~" H 10112 900 50  0001 C CNN
+	1    10100 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10100 1150 10100 1050
+Connection ~ 10100 1150
+Wire Wire Line
+	10100 1150 10200 1150
+$Comp
+L Mechanical:Heatsink_Pad HS?
+U 1 1 5E9B8E57
+P 9100 1700
+AR Path="/5E73BAE8/5E9B8E57" Ref="HS?"  Part="1" 
+AR Path="/5E73BADE/5E9B8E57" Ref="HS201"  Part="1" 
+F 0 "HS201" H 9241 1741 50  0000 L CNN
+F 1 "Heatsink_Pad" H 9241 1650 50  0000 L CNN
+F 2 "Heatsink:Heatsink_AAVID_573300D00010G_TO-263" H 9112 1650 50  0001 C CNN
+F 3 "~" H 9112 1650 50  0001 C CNN
+	1    9100 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Heatsink_Pad HS?
+U 1 1 5E9BEE65
+P 9900 1700
+AR Path="/5E73BAE8/5E9BEE65" Ref="HS?"  Part="1" 
+AR Path="/5E73BADE/5E9BEE65" Ref="HS202"  Part="1" 
+F 0 "HS202" H 10041 1741 50  0000 L CNN
+F 1 "Heatsink_Pad" H 10041 1650 50  0000 L CNN
+F 2 "Heatsink:Heatsink_AAVID_573300D00010G_TO-263" H 9912 1650 50  0001 C CNN
+F 3 "~" H 9912 1650 50  0001 C CNN
+	1    9900 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 1800 9450 1800
+Wire Wire Line
+	9450 1800 9450 2150
+Connection ~ 9450 2150
+Wire Wire Line
+	9100 1800 9350 1800
+Wire Wire Line
+	9350 1800 9350 2150
+Connection ~ 9350 2150
 $EndSCHEMATC

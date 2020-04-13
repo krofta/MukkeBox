@@ -1585,17 +1585,6 @@ U 5F5BEFD4
 F0 "Anzeige" 50
 F1 "Anzeige.sch" 50
 $EndSheet
-$Comp
-L Device:Rotary_Encoder_Switch SW101
-U 1 1 5F64B493
-P 9300 5800
-F 0 "SW101" H 9300 6167 50  0000 C CNN
-F 1 "Rotary_Encoder_Switch" H 9400 6100 50  0000 C CNN
-F 2 "Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm_CircularMountingHoles" H 9150 5960 50  0001 C CNN
-F 3 "https://www.mouser.de/datasheet/2/54/PEC12R-777795.pdf" H 9300 6060 50  0001 C CNN
-	1    9300 5800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9000 5700 8400 5700
 $Comp
@@ -1693,8 +1682,6 @@ F 3 "~" H 10000 5450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10000 5550 10000 5700
-Wire Wire Line
-	10000 5700 9600 5700
 Text Label 10100 5700 0    50   ~ 0
 ENC_SW
 Wire Wire Line
@@ -1724,4 +1711,126 @@ Wire Wire Line
 Wire Wire Line
 	7950 5900 7450 5900
 NoConn ~ 7450 6000
+$Comp
+L Connector_Generic:Conn_02x03_Counter_Clockwise J109
+U 1 1 5E96EE08
+P 9200 5800
+F 0 "J109" H 9250 6000 50  0000 C CNN
+F 1 "PinHeader" H 9250 5550 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical_SMD" H 9200 5800 50  0001 C CNN
+F 3 "~" H 9200 5800 50  0001 C CNN
+	1    9200 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 5900 9500 5900
+Wire Wire Line
+	9500 5700 10000 5700
+NoConn ~ 9500 5800
+$Comp
+L Mechanical:MountingHole_Pad H101
+U 1 1 5E9D647A
+P 10300 800
+F 0 "H101" V 10254 950 50  0000 L CNN
+F 1 "MountingHole_Pad" V 10345 950 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 10300 800 50  0001 C CNN
+F 3 "~" H 10300 800 50  0001 C CNN
+	1    10300 800 
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H102
+U 1 1 5E9D663C
+P 10300 1000
+F 0 "H102" V 10254 1150 50  0000 L CNN
+F 1 "MountingHole_Pad" V 10345 1150 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 10300 1000 50  0001 C CNN
+F 3 "~" H 10300 1000 50  0001 C CNN
+	1    10300 1000
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H103
+U 1 1 5E9D66BC
+P 10300 1200
+F 0 "H103" V 10254 1350 50  0000 L CNN
+F 1 "MountingHole_Pad" V 10345 1350 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 10300 1200 50  0001 C CNN
+F 3 "~" H 10300 1200 50  0001 C CNN
+	1    10300 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H104
+U 1 1 5E9D673A
+P 10300 1400
+F 0 "H104" V 10254 1550 50  0000 L CNN
+F 1 "MountingHole_Pad" V 10345 1550 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 10300 1400 50  0001 C CNN
+F 3 "~" H 10300 1400 50  0001 C CNN
+	1    10300 1400
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H105
+U 1 1 5E9D6872
+P 10300 1600
+F 0 "H105" V 10254 1750 50  0000 L CNN
+F 1 "MountingHole_Pad" V 10345 1750 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 10300 1600 50  0001 C CNN
+F 3 "~" H 10300 1600 50  0001 C CNN
+	1    10300 1600
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H106
+U 1 1 5E9D68F4
+P 10300 1800
+F 0 "H106" V 10254 1950 50  0000 L CNN
+F 1 "MountingHole_Pad" V 10345 1950 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 10300 1800 50  0001 C CNN
+F 3 "~" H 10300 1800 50  0001 C CNN
+	1    10300 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0190
+U 1 1 5E9D6DA0
+P 10150 1950
+F 0 "#PWR0190" H 10150 1700 50  0001 C CNN
+F 1 "GND" H 10155 1777 50  0000 C CNN
+F 2 "" H 10150 1950 50  0001 C CNN
+F 3 "" H 10150 1950 50  0001 C CNN
+	1    10150 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10200 800  10150 800 
+Wire Wire Line
+	10150 800  10150 1000
+Wire Wire Line
+	10200 1800 10150 1800
+Connection ~ 10150 1800
+Wire Wire Line
+	10150 1800 10150 1950
+Wire Wire Line
+	10200 1600 10150 1600
+Connection ~ 10150 1600
+Wire Wire Line
+	10150 1600 10150 1800
+Wire Wire Line
+	10200 1400 10150 1400
+Connection ~ 10150 1400
+Wire Wire Line
+	10150 1400 10150 1600
+Wire Wire Line
+	10200 1200 10150 1200
+Connection ~ 10150 1200
+Wire Wire Line
+	10150 1200 10150 1400
+Wire Wire Line
+	10200 1000 10150 1000
+Connection ~ 10150 1000
+Wire Wire Line
+	10150 1000 10150 1200
 $EndSCHEMATC
