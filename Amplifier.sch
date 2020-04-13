@@ -551,15 +551,9 @@ Wire Wire Line
 Wire Wire Line
 	8450 2150 9950 2150
 Wire Wire Line
-	10100 3850 9950 3850
-Wire Wire Line
-	9950 3850 9950 5150
-Wire Wire Line
 	8450 5150 9950 5150
 Wire Wire Line
-	10100 3750 9900 3750
-Wire Wire Line
-	9900 3750 9900 4000
+	9900 3850 9900 4000
 Wire Wire Line
 	8450 4000 9900 4000
 Wire Wire Line
@@ -1293,4 +1287,10 @@ $EndComp
 Connection ~ 7300 3500
 Wire Wire Line
 	7300 3500 8250 3500
+Wire Wire Line
+	9950 3750 10100 3750
+Wire Wire Line
+	9950 3750 9950 5150
+Wire Wire Line
+	9900 3850 10100 3850
 $EndSCHEMATC
