@@ -602,17 +602,6 @@ TO_SPEAKER_L
 Text GLabel 2800 4750 0    50   Input ~ 0
 TO_SPEAKER_R
 $Comp
-L Device:C_Small C506
-U 1 1 5E7A16FA
-P 4050 2150
-F 0 "C506" V 4279 2150 50  0000 C CNN
-F 1 "1uF" V 4188 2150 50  0000 C CNN
-F 2 "Capacitor_THT:C_Rect_L7.0mm_W2.5mm_P5.00mm" H 4050 2150 50  0001 C CNN
-F 3 "~" H 4050 2150 50  0001 C CNN
-	1    4050 2150
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:C_Small C507
 U 1 1 5E7A1887
 P 4250 1750
@@ -759,17 +748,6 @@ Wire Wire Line
 Wire Wire Line
 	4600 4600 4600 4550
 $Comp
-L Device:C_Small C508
-U 1 1 5E8A8398
-P 3750 4750
-F 0 "C508" V 3979 4750 50  0000 C CNN
-F 1 "1uF" V 3888 4750 50  0000 C CNN
-F 2 "Capacitor_THT:C_Rect_L7.0mm_W2.5mm_P5.00mm" H 3750 4750 50  0001 C CNN
-F 3 "~" H 3750 4750 50  0001 C CNN
-	1    3750 4750
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:C_Small C509
 U 1 1 5E8B9322
 P 4200 5150
@@ -780,8 +758,6 @@ F 3 "~" H 4200 5150 50  0001 C CNN
 	1    4200 5150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3650 4750 2800 4750
 $Comp
 L Device:CP_Small C505
 U 1 1 5E92B6ED
@@ -918,8 +894,6 @@ Wire Wire Line
 	3000 2500 3000 2750
 Wire Wire Line
 	3000 2500 4750 2500
-Wire Wire Line
-	2800 2150 3950 2150
 Text Notes 2150 4600 0    50   ~ 0
 Single Ended Input
 Text Notes 2150 2000 0    50   ~ 0
@@ -1295,8 +1269,6 @@ F 3 "~" H 4400 1750 50  0001 C CNN
 	1    4400 1750
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	4150 2150 4250 2150
 $Comp
 L power:GNDA #PWR0508
 U 1 1 5EACB3CB
@@ -1346,8 +1318,6 @@ F 3 "~" H 4050 5150 50  0001 C CNN
 	1    4050 5150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3850 4750 4050 4750
 $Comp
 L Device:C_Small C533
 U 1 1 5EAFE6F2
@@ -1395,4 +1365,8 @@ F 3 "" H 3600 4900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3750 4900 3600 4900
+Wire Wire Line
+	2800 4750 4050 4750
+Wire Wire Line
+	2800 2150 4250 2150
 $EndSCHEMATC

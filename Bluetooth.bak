@@ -121,53 +121,20 @@ $EndComp
 Connection ~ 4350 2800
 Wire Wire Line
 	4350 3300 4350 3000
-$Comp
-L Connector:TestPoint TP703
-U 1 1 5E8B85B3
-P 3700 2400
-F 0 "TP703" V 3900 2500 50  0000 C CNN
-F 1 "STAT" V 3804 2474 50  0000 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 3900 2400 50  0001 C CNN
-F 3 "~" H 3900 2400 50  0001 C CNN
-	1    3700 2400
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector:TestPoint TP702
-U 1 1 5E8BA0BF
-P 3400 2450
-F 0 "TP702" V 3600 2550 50  0000 C CNN
-F 1 "CHARGE" V 3504 2524 50  0000 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 3600 2450 50  0001 C CNN
-F 3 "~" H 3600 2450 50  0001 C CNN
-	1    3400 2450
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector:TestPoint TP701
-U 1 1 5E8BA0EF
-P 3000 2500
-F 0 "TP701" V 3200 2600 50  0000 C CNN
-F 1 "CH_POWER" V 3104 2574 50  0000 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 3200 2500 50  0001 C CNN
-F 3 "~" H 3200 2500 50  0001 C CNN
-	1    3000 2500
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	5200 2300 5000 2300
 Wire Wire Line
 	5000 2300 5000 2400
 Wire Wire Line
-	3700 2400 5000 2400
+	4350 2400 5000 2400
 Wire Wire Line
 	5200 2400 5050 2400
 Wire Wire Line
 	5050 2400 5050 2450
 Wire Wire Line
-	5050 2450 3400 2450
+	5050 2450 4350 2450
 Wire Wire Line
-	5200 2500 3000 2500
+	5200 2500 4350 2500
 Text GLabel 6900 2300 2    50   Output ~ 0
 RxT
 Wire Wire Line
@@ -176,30 +143,8 @@ Text GLabel 6900 2200 2    50   Input ~ 0
 TxR
 Wire Wire Line
 	6900 2200 6650 2200
-$Comp
-L Connector:TestPoint TP704
-U 1 1 5E8C05F5
-P 4000 2350
-F 0 "TP704" V 4200 2450 50  0000 C CNN
-F 1 "TP MIC-" V 4104 2424 50  0000 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 4200 2350 50  0001 C CNN
-F 3 "~" H 4200 2350 50  0001 C CNN
-	1    4000 2350
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector:TestPoint TP705
-U 1 1 5E8C0653
-P 4350 2300
-F 0 "TP705" V 4550 2400 50  0000 C CNN
-F 1 "TP MIC+" V 4454 2374 50  0000 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 4550 2300 50  0001 C CNN
-F 3 "~" H 4550 2300 50  0001 C CNN
-	1    4350 2300
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
-	4000 2350 4950 2350
+	4350 2350 4950 2350
 Wire Wire Line
 	4350 2300 4900 2300
 Wire Wire Line
@@ -263,97 +208,6 @@ F 3 "" H 4350 3300 50  0001 C CNN
 	1    4350 3300
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:TestPoint TP707
-U 1 1 5E91FE52
-P 7050 1800
-F 0 "TP707" V 7050 2050 50  0000 L CNN
-F 1 "Play" V 7050 2350 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7250 1800 50  0001 C CNN
-F 3 "~" H 7250 1800 50  0001 C CNN
-	1    7050 1800
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:TestPoint TP708
-U 1 1 5E920C0B
-P 7050 1900
-F 0 "TP708" V 7050 2150 50  0000 L CNN
-F 1 "Back" V 7050 2450 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7250 1900 50  0001 C CNN
-F 3 "~" H 7250 1900 50  0001 C CNN
-	1    7050 1900
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:TestPoint TP709
-U 1 1 5E920C33
-P 7050 2000
-F 0 "TP709" V 7050 2250 50  0000 L CNN
-F 1 "Next" V 7050 2550 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7250 2000 50  0001 C CNN
-F 3 "~" H 7250 2000 50  0001 C CNN
-	1    7050 2000
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:TestPoint TP710
-U 1 1 5E920C5F
-P 7050 2100
-F 0 "TP710" V 7050 2350 50  0000 L CNN
-F 1 "---" V 7050 2650 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7250 2100 50  0001 C CNN
-F 3 "~" H 7250 2100 50  0001 C CNN
-	1    7050 2100
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:TestPoint TP711
-U 1 1 5E921198
-P 7050 2400
-F 0 "TP711" V 7050 2650 50  0000 L CNN
-F 1 "42" V 7050 2950 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7250 2400 50  0001 C CNN
-F 3 "~" H 7250 2400 50  0001 C CNN
-	1    7050 2400
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:TestPoint TP712
-U 1 1 5E9211DE
-P 7050 2500
-F 0 "TP712" V 7050 2750 50  0000 L CNN
-F 1 "Vol-" V 7050 3050 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7250 2500 50  0001 C CNN
-F 3 "~" H 7250 2500 50  0001 C CNN
-	1    7050 2500
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:TestPoint TP713
-U 1 1 5E92120E
-P 7050 2600
-F 0 "TP713" V 7050 2850 50  0000 L CNN
-F 1 "Vol+" V 7050 3150 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7250 2600 50  0001 C CNN
-F 3 "~" H 7250 2600 50  0001 C CNN
-	1    7050 2600
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:TestPoint TP714
-U 1 1 5E921240
-P 7050 3100
-F 0 "TP714" V 7050 3350 50  0000 L CNN
-F 1 "TestPoint" V 7050 3650 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7250 3100 50  0001 C CNN
-F 3 "~" H 7250 3100 50  0001 C CNN
-	1    7050 3100
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7050 3100 6800 3100
-Connection ~ 6800 3100
 Wire Wire Line
 	7050 1800 6650 1800
 Wire Wire Line
@@ -368,24 +222,18 @@ Wire Wire Line
 	7050 2500 6650 2500
 Wire Wire Line
 	7050 2600 6650 2600
-$Comp
-L Connector:TestPoint TP706
-U 1 1 5E924588
-P 4850 1600
-F 0 "TP706" V 4850 1850 50  0000 L CNN
-F 1 "GNDA_TP" V 4850 2150 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5050 1600 50  0001 C CNN
-F 3 "~" H 5050 1600 50  0001 C CNN
-	1    4850 1600
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
-	4850 1600 5000 1600
-Wire Wire Line
-	5000 1600 5000 1800
-Wire Wire Line
-	5000 1800 4800 1800
-Wire Wire Line
-	5200 1800 5000 1800
-Connection ~ 5000 1800
+	4800 1800 5200 1800
+NoConn ~ 7050 1800
+NoConn ~ 7050 1900
+NoConn ~ 7050 2000
+NoConn ~ 7050 2100
+NoConn ~ 7050 2400
+NoConn ~ 7050 2500
+NoConn ~ 7050 2600
+NoConn ~ 4350 2500
+NoConn ~ 4350 2450
+NoConn ~ 4350 2400
+NoConn ~ 4350 2350
+NoConn ~ 4350 2300
 $EndSCHEMATC

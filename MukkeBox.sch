@@ -1714,15 +1714,8 @@ Connection ~ 10150 1400
 Wire Wire Line
 	10150 1400 10150 1600
 Wire Wire Line
-	10200 1200 10150 1200
-Connection ~ 10150 1200
-Wire Wire Line
-	10150 1200 10150 1400
-Wire Wire Line
 	10200 1000 10150 1000
 Connection ~ 10150 1000
-Wire Wire Line
-	10150 1000 10150 1200
 Wire Wire Line
 	8750 4100 8450 4100
 Wire Wire Line
@@ -1792,4 +1785,11 @@ Wire Wire Line
 	10750 4100 10900 4100
 Wire Wire Line
 	9300 4100 9450 4100
+Wire Wire Line
+	10150 1000 10150 1200
+Wire Wire Line
+	10200 1200 10150 1200
+Connection ~ 10150 1200
+Wire Wire Line
+	10150 1200 10150 1400
 $EndSCHEMATC
