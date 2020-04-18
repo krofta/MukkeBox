@@ -436,7 +436,7 @@ F 3 "" H 3150 4500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3150 4250 3150 4500
+	3150 4250 3150 4450
 Text Label 4350 5150 0    50   ~ 0
 POWER_OFF_O
 $Comp
@@ -899,9 +899,9 @@ Wire Wire Line
 Wire Wire Line
 	3400 5400 4250 5400
 Wire Wire Line
-	5450 5150 3750 5150
+	5450 5150 3900 5150
 Wire Wire Line
-	3750 5150 3750 4050
+	3900 5150 3900 4050
 Wire Wire Line
 	8100 4900 7450 4900
 Wire Wire Line
@@ -925,12 +925,12 @@ P 3250 4050
 F 0 "Q101" H 3456 4096 50  0000 L CNN
 F 1 "NTK3043N" H 3456 4005 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-723" H 3450 4150 50  0001 C CNN
-F 3 "~" H 3250 4050 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/308/NTK3043N-D-1814099.pdf" H 3250 4050 50  0001 C CNN
 	1    3250 4050
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	3650 4050 3750 4050
+	3650 4050 3700 4050
 Text GLabel 4750 6000 0    50   Input ~ 0
 PACK_VOLTAGE
 Text GLabel 4750 6100 0    50   Input ~ 0
@@ -1441,12 +1441,6 @@ Wire Wire Line
 Wire Wire Line
 	9850 3900 9850 4200
 Connection ~ 9850 4200
-Wire Wire Line
-	9700 3650 9700 3800
-Connection ~ 9700 3800
-Wire Wire Line
-	10550 3650 10550 3800
-Connection ~ 10550 3800
 $Comp
 L power:GND #PWR0184
 U 1 1 5F529E46
@@ -1600,7 +1594,6 @@ Wire Wire Line
 	8700 5900 9000 5900
 Wire Wire Line
 	7950 5900 7450 5900
-NoConn ~ 7450 6000
 $Comp
 L Connector_Generic:Conn_02x03_Counter_Clockwise J109
 U 1 1 5E96EE08
@@ -1792,4 +1785,85 @@ Wire Wire Line
 Connection ~ 10150 1200
 Wire Wire Line
 	10150 1200 10150 1400
+$Comp
+L Device:R_Small R104
+U 1 1 5E9BF0D7
+P 3700 4350
+F 0 "R104" H 3550 4300 50  0000 C CNN
+F 1 "1M" H 3600 4400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3700 4350 50  0001 C CNN
+F 3 "~" H 3700 4350 50  0001 C CNN
+	1    3700 4350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C114
+U 1 1 5E9BF274
+P 3450 4350
+F 0 "C114" H 3150 4400 50  0000 L CNN
+F 1 "100nF" H 3150 4300 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3450 4350 50  0001 C CNN
+F 3 "~" H 3450 4350 50  0001 C CNN
+	1    3450 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 4250 3700 4050
+Connection ~ 3700 4050
+Wire Wire Line
+	3700 4050 3900 4050
+Wire Wire Line
+	3450 4250 3450 4050
+Connection ~ 3450 4050
+Wire Wire Line
+	3700 4450 3450 4450
+Wire Wire Line
+	3150 4450 3450 4450
+Connection ~ 3150 4450
+Wire Wire Line
+	3150 4450 3150 4500
+Connection ~ 3450 4450
+$Comp
+L Device:R_Small R124
+U 1 1 5EA46EE7
+P 7850 6250
+F 0 "R124" V 7650 6250 50  0000 C CNN
+F 1 "1K" V 7750 6250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7850 6250 50  0001 C CNN
+F 3 "~" H 7850 6250 50  0001 C CNN
+	1    7850 6250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D101
+U 1 1 5EA471AF
+P 8200 6250
+F 0 "D101" H 8200 6045 50  0000 C CNN
+F 1 "LED_Small" H 8200 6136 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" V 8200 6250 50  0001 C CNN
+F 3 "~" V 8200 6250 50  0001 C CNN
+	1    8200 6250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0193
+U 1 1 5EA47367
+P 8500 6250
+F 0 "#PWR0193" H 8500 6000 50  0001 C CNN
+F 1 "GND" H 8505 6077 50  0000 C CNN
+F 2 "" H 8500 6250 50  0001 C CNN
+F 3 "" H 8500 6250 50  0001 C CNN
+	1    8500 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 6250 8300 6250
+Wire Wire Line
+	8100 6250 7950 6250
+Wire Wire Line
+	7550 6250 7550 6000
+Wire Wire Line
+	7550 6000 7450 6000
+Wire Wire Line
+	7550 6250 7750 6250
 $EndSCHEMATC
