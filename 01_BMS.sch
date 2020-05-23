@@ -1302,4 +1302,10 @@ Wire Wire Line
 Connection ~ 9200 3700
 Wire Wire Line
 	9200 3700 10050 3700
+Text Notes 10550 3950 0    50   ~ 0
+Precharge gate enable
+Text Notes 10550 3850 0    50   ~ 0
+Pack Monitor Enable
+Text Notes 10550 3750 0    50   ~ 0
+Charge Pump enable
 $EndSCHEMATC
