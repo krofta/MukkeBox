@@ -80,7 +80,7 @@ F 3 "~" H 7350 4600 50  0001 C CNN
 	1    7350 4600
 	0    1    1    0   
 $EndComp
-Text Notes 650  6450 0    50   ~ 0
+Text Notes 750  5550 0    50   ~ 0
 Zum Lition-Zellen-Block
 $Comp
 L Device:R_Small R402
@@ -765,19 +765,6 @@ F 3 "https://www.mouser.de/datasheet/2/670/tb001-500-1550615.pdf" H 2050 2300 50
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:Q_NMOS_GSD Q402
-U 1 1 5E98AB96
-P 7750 3550
-F 0 "Q402" H 7600 3350 50  0000 L CNN
-F 1 "FDD4685-F085" H 7200 3250 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:TO-252-2" H 7950 3650 50  0001 C CNN
-F 3 "https://www.mouser.de/datasheet/2/308/FDD4685_F085-D-1807000.pdf" H 7750 3550 50  0001 C CNN
-	1    7750 3550
-	1    0    0    -1  
-$EndComp
-Connection ~ 7850 3750
-Connection ~ 7850 3350
-$Comp
 L Device:D_Schottky_x2_KCom_AKA D?
 U 1 1 5E990B16
 P 4550 2200
@@ -877,34 +864,34 @@ F 3 "" H 4950 2550 50  0001 C CNN
 	1    4950 2550
 	1    0    0    -1  
 $EndComp
-Text GLabel 2000 7050 2    50   BiDi ~ 0
+Text GLabel 2900 6150 2    50   BiDi ~ 0
 PACK+
 $Comp
 L Connector:Screw_Terminal_01x02 J303
 U 1 1 5ED37ADF
-P 1150 7150
-F 0 "J303" H 1400 6800 50  0000 C CNN
-F 1 "TB001-500-02BE CUI_Devices" V 1550 7150 50  0000 C CNN
-F 2 "TerminalBlock_RND:TerminalBlock_RND_205-00045_1x02_P5.00mm_Horizontal" H 1150 7150 50  0001 C CNN
-F 3 "https://www.mouser.de/datasheet/2/670/tb001-500-1550615.pdf" H 1150 7150 50  0001 C CNN
-	1    1150 7150
+P 1250 6250
+F 0 "J303" H 1500 5900 50  0000 C CNN
+F 1 "TB001-500-02BE CUI_Devices" V 1650 6250 50  0000 C CNN
+F 2 "TerminalBlock_RND:TerminalBlock_RND_205-00045_1x02_P5.00mm_Horizontal" H 1250 6250 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/670/tb001-500-1550615.pdf" H 1250 6250 50  0001 C CNN
+	1    1250 6250
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR0301
 U 1 1 5ED37D03
-P 1400 7250
-F 0 "#PWR0301" H 1400 7000 50  0001 C CNN
-F 1 "GND" H 1405 7077 50  0000 C CNN
-F 2 "" H 1400 7250 50  0001 C CNN
-F 3 "" H 1400 7250 50  0001 C CNN
-	1    1400 7250
+P 1500 6350
+F 0 "#PWR0301" H 1500 6100 50  0001 C CNN
+F 1 "GND" H 1505 6177 50  0000 C CNN
+F 2 "" H 1500 6350 50  0001 C CNN
+F 3 "" H 1500 6350 50  0001 C CNN
+	1    1500 6350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1400 7150 1350 7150
+	1500 6250 1450 6250
 Wire Wire Line
-	1400 7150 1400 7250
+	1500 6250 1500 6350
 Wire Wire Line
 	10600 3250 10500 3250
 $Comp
@@ -978,16 +965,16 @@ Wire Wire Line
 $Comp
 L Device:Fuse_Small F301
 U 1 1 5EDE4BFA
-P 1750 7050
-F 0 "F301" H 1750 7235 50  0000 C CNN
-F 1 "Fuse_Small" H 1750 7144 50  0000 C CNN
-F 2 "Fuse:Fuseholder_Cylinder-5x20mm_Schurter_0031-8002_Horizontal_Open" H 1750 7050 50  0001 C CNN
-F 3 "~" H 1750 7050 50  0001 C CNN
-	1    1750 7050
+P 1850 6150
+F 0 "F301" H 1850 6335 50  0000 C CNN
+F 1 "Fuse_Small" H 1850 6244 50  0000 C CNN
+F 2 "Fuse:Fuseholder_Cylinder-5x20mm_Schurter_0031-8002_Horizontal_Open" H 1850 6150 50  0001 C CNN
+F 3 "~" H 1850 6150 50  0001 C CNN
+	1    1850 6150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1350 7050 1650 7050
+	1450 6150 1750 6150
 Wire Wire Line
 	7850 3750 8450 3750
 $Comp
@@ -1077,8 +1064,6 @@ Wire Wire Line
 Connection ~ 2500 2200
 Wire Wire Line
 	2500 2200 3950 2200
-Wire Wire Line
-	1850 7050 2000 7050
 Text GLabel 10800 4450 2    50   Input ~ 0
 PWR_EN
 Wire Wire Line
@@ -1126,4 +1111,191 @@ Wire Wire Line
 	7900 3950 7850 3950
 Text Notes 4950 3850 0    50   ~ 0
 ca. 4-5V
+$Comp
+L Transistor_FET:BSS84 Q307
+U 1 1 5F19A986
+P 2400 6650
+F 0 "Q307" H 2606 6604 50  0000 L CNN
+F 1 "BSS84" H 2606 6695 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2600 6575 50  0001 L CIN
+F 3 "http://assets.nexperia.com/documents/data-sheet/BSS84.pdf" H 2400 6650 50  0001 L CNN
+	1    2400 6650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2300 6450 2300 6150
+Wire Wire Line
+	1950 6150 2300 6150
+Wire Wire Line
+	2900 6150 2850 6150
+Connection ~ 2300 6150
+$Comp
+L Transistor_FET:2N7002 Q308
+U 1 1 5F1BD299
+P 2950 7300
+F 0 "Q308" H 3155 7346 50  0000 L CNN
+F 1 "2N7002" H 3155 7255 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3150 7225 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 2950 7300 50  0001 L CNN
+	1    2950 7300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R316
+U 1 1 5F1C25F3
+P 2850 6900
+F 0 "R316" H 2791 6854 50  0000 R CNN
+F 1 "100K" H 2791 6945 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2850 6900 50  0001 C CNN
+F 3 "~" H 2850 6900 50  0001 C CNN
+	1    2850 6900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R315
+U 1 1 5F1C28BE
+P 2850 6400
+F 0 "R315" H 2791 6354 50  0000 R CNN
+F 1 "100K" H 2791 6445 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2850 6400 50  0001 C CNN
+F 3 "~" H 2850 6400 50  0001 C CNN
+	1    2850 6400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2850 6300 2850 6150
+Connection ~ 2850 6150
+Wire Wire Line
+	2850 6150 2300 6150
+Wire Wire Line
+	2850 6500 2850 6650
+Wire Wire Line
+	2850 6650 2600 6650
+Wire Wire Line
+	2850 6650 2850 6800
+Connection ~ 2850 6650
+Wire Wire Line
+	2850 7000 2850 7100
+$Comp
+L power:GND #PWR0306
+U 1 1 5F1D7D48
+P 2850 7550
+F 0 "#PWR0306" H 2850 7300 50  0001 C CNN
+F 1 "GND" H 2855 7377 50  0000 C CNN
+F 2 "" H 2850 7550 50  0001 C CNN
+F 3 "" H 2850 7550 50  0001 C CNN
+	1    2850 7550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 7550 2850 7500
+$Comp
+L Device:R_Small R318
+U 1 1 5F1DD6B9
+P 3450 7450
+F 0 "R318" H 3391 7404 50  0000 R CNN
+F 1 "100K" H 3391 7495 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3450 7450 50  0001 C CNN
+F 3 "~" H 3450 7450 50  0001 C CNN
+	1    3450 7450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3450 7550 2850 7550
+Connection ~ 2850 7550
+$Comp
+L Device:R_Small R317
+U 1 1 5F1E33A0
+P 3300 7300
+F 0 "R317" V 3100 7300 50  0000 C CNN
+F 1 "1K" V 3200 7300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3300 7300 50  0001 C CNN
+F 3 "~" H 3300 7300 50  0001 C CNN
+	1    3300 7300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3450 7350 3450 7300
+Wire Wire Line
+	3450 7300 3400 7300
+Wire Wire Line
+	3200 7300 3150 7300
+$Comp
+L Device:R_Small R313
+U 1 1 5F1F0273
+P 2300 7050
+F 0 "R313" H 2600 7000 50  0000 R CNN
+F 1 "470K" H 2600 7100 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2300 7050 50  0001 C CNN
+F 3 "~" H 2300 7050 50  0001 C CNN
+	1    2300 7050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2300 6950 2300 6850
+$Comp
+L Device:R_Small R314
+U 1 1 5F1F63D6
+P 2300 7350
+F 0 "R314" H 2600 7300 50  0000 R CNN
+F 1 "47K" H 2600 7400 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2300 7350 50  0001 C CNN
+F 3 "~" H 2300 7350 50  0001 C CNN
+	1    2300 7350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2300 7150 2300 7200
+Wire Wire Line
+	2850 7550 2300 7550
+Wire Wire Line
+	2300 7550 2300 7450
+Text GLabel 3750 7300 2    50   Input ~ 0
+EN_PACK_SENSE
+Wire Wire Line
+	3750 7300 3450 7300
+Connection ~ 3450 7300
+Text GLabel 1500 7200 0    50   Output ~ 0
+PACK_SENSE
+Wire Wire Line
+	2300 7200 1800 7200
+Connection ~ 2300 7200
+Wire Wire Line
+	2300 7200 2300 7250
+$Comp
+L Device:C_Small C309
+U 1 1 5F2113EB
+P 1800 7350
+F 0 "C309" H 1600 7400 50  0000 C CNN
+F 1 "100n" H 1600 7300 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1800 7350 50  0001 C CNN
+F 3 "~" H 1800 7350 50  0001 C CNN
+	1    1800 7350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 7250 1800 7200
+Connection ~ 1800 7200
+Wire Wire Line
+	1800 7200 1500 7200
+Wire Wire Line
+	2300 7550 1800 7550
+Wire Wire Line
+	1800 7550 1800 7450
+Connection ~ 2300 7550
+$Comp
+L Device:Q_PMOS_GDS Q309
+U 1 1 5F227964
+P 7750 3550
+F 0 "Q309" H 7956 3504 50  0000 L CNN
+F 1 "FDD4685-F085" H 7956 3595 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 7950 3650 50  0001 C CNN
+F 3 "~" H 7750 3550 50  0001 C CNN
+	1    7750 3550
+	1    0    0    1   
+$EndComp
+Connection ~ 7850 3750
+Connection ~ 7850 3350
+Text Notes 600  7100 0    50   ~ 0
+1,64V bei 18V Eingangsspannung
 $EndSCHEMATC

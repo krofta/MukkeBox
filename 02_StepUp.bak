@@ -103,33 +103,31 @@ Wire Wire Line
 $Comp
 L Device:R_Small R308
 U 1 1 5E7975A3
-P 8700 5450
-F 0 "R308" H 8641 5404 50  0000 R CNN
-F 1 "2K94" H 8641 5495 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8700 5450 50  0001 C CNN
-F 3 "~" H 8700 5450 50  0001 C CNN
-	1    8700 5450
+P 9100 5450
+F 0 "R308" H 9041 5404 50  0000 R CNN
+F 1 "2K94" H 9041 5495 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9100 5450 50  0001 C CNN
+F 3 "~" H 9100 5450 50  0001 C CNN
+	1    9100 5450
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R_Small R309
 U 1 1 5E79763C
-P 8700 5750
-F 0 "R309" H 8641 5704 50  0000 R CNN
-F 1 "1K" H 8641 5795 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8700 5750 50  0001 C CNN
-F 3 "~" H 8700 5750 50  0001 C CNN
-	1    8700 5750
+P 9100 5750
+F 0 "R309" H 9041 5704 50  0000 R CNN
+F 1 "1K" H 9041 5795 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9100 5750 50  0001 C CNN
+F 3 "~" H 9100 5750 50  0001 C CNN
+	1    9100 5750
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	8700 5650 8700 5600
+	9100 5350 9100 5300
 Wire Wire Line
-	8700 5350 8700 5300
+	9100 5900 9100 5850
 Wire Wire Line
-	8700 5900 8700 5850
-Wire Wire Line
-	8700 4950 8700 4850
+	9100 4950 9100 4850
 Wire Wire Line
 	8700 4850 8400 4850
 Connection ~ 8200 4850
@@ -147,9 +145,6 @@ F 3 "~" H 4550 5450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4700 5350 4550 5350
-Connection ~ 8700 5600
-Wire Wire Line
-	8700 5600 8700 5550
 Text Label 4700 5800 0    50   ~ 0
 FB_BOOST
 Wire Wire Line
@@ -217,17 +212,6 @@ Text GLabel 1550 1650 0    50   Input ~ 0
 SYSTEM_LOAD
 Wire Wire Line
 	3500 1750 3500 1650
-$Comp
-L power:GNDPWR #PWR0126
-U 1 1 5E7ACC52
-P 3500 1950
-F 0 "#PWR0126" H 3500 1750 50  0001 C CNN
-F 1 "GNDPWR" H 3504 1796 50  0000 C CNN
-F 2 "" H 3500 1900 50  0001 C CNN
-F 3 "" H 3500 1900 50  0001 C CNN
-	1    3500 1950
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GNDPWR #PWR0128
 U 1 1 5E7AEF97
@@ -321,23 +305,23 @@ $EndComp
 $Comp
 L Device:R_POT RV301
 U 1 1 5EEEB2DA
-P 8700 5100
-F 0 "RV301" H 8630 5146 50  0000 R CNN
-F 1 "10K" H 8630 5055 50  0000 R CNN
-F 2 "Potentiometer_SMD:Potentiometer_Bourns_3314J_Vertical" H 8700 5100 50  0001 C CNN
-F 3 "https://www.mouser.de/datasheet/2/54/tc33-778219.pdf" H 8700 5100 50  0001 C CNN
-	1    8700 5100
+P 9100 5100
+F 0 "RV301" H 9030 5146 50  0000 R CNN
+F 1 "10K" H 9030 5055 50  0000 R CNN
+F 2 "Potentiometer_SMD:Potentiometer_Bourns_3314J_Vertical" H 9100 5100 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/54/tc33-778219.pdf" H 9100 5100 50  0001 C CNN
+	1    9100 5100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8850 5100 8900 5100
+	9250 5100 9300 5100
 Wire Wire Line
-	8900 5100 8900 5300
+	9300 5100 9300 5300
 Wire Wire Line
-	8900 5300 8700 5300
-Connection ~ 8700 5300
+	9300 5300 9100 5300
+Connection ~ 9100 5300
 Wire Wire Line
-	8700 5300 8700 5250
+	9100 5300 9100 5250
 $Comp
 L Device:CP_Small C?
 U 1 1 5E9C5E68
@@ -411,7 +395,7 @@ Wire Wire Line
 Wire Wire Line
 	2150 1650 1550 1650
 Wire Wire Line
-	8700 4850 9250 4850
+	8700 4850 9100 4850
 Wire Wire Line
 	9950 4850 9750 4850
 Text Notes 3700 6550 0    50   ~ 0
@@ -492,7 +476,6 @@ Text Notes 4400 6800 0    50   ~ 0
 Timing Cap so nah wie möglich am IC (Single Ground Point)!
 Wire Wire Line
 	5200 5900 3950 5900
-Connection ~ 3500 1950
 Wire Wire Line
 	4650 4950 4700 4950
 Wire Wire Line
@@ -508,17 +491,15 @@ Wire Wire Line
 Connection ~ 3500 1650
 Text Label 5700 1650 0    50   ~ 0
 IN_STEPUP
-Text Label 9200 5600 0    50   ~ 0
+Text Label 8950 5600 2    50   ~ 0
 FB_BOOST
-Wire Wire Line
-	9200 5600 8700 5600
 Wire Wire Line
 	6850 4850 7350 4850
 Wire Wire Line
 	7900 4850 8200 4850
-Text Label 5750 5500 0    50   ~ 0
+Text Label 6100 5650 2    50   ~ 0
 STEPUP_CS
-Text Label 2900 6000 0    50   ~ 0
+Text Label 3750 6000 0    50   ~ 0
 STEPUP_CS
 Wire Wire Line
 	3550 5900 3550 6000
@@ -527,7 +508,7 @@ Wire Wire Line
 Wire Wire Line
 	2750 6000 3550 6000
 Wire Wire Line
-	5700 5500 6300 5500
+	5700 5500 6200 5500
 Text Label 2950 4950 0    50   ~ 0
 IN_STEPUP
 Wire Wire Line
@@ -838,18 +819,16 @@ Text Label 4450 4950 2    50   ~ 0
 STPUP_GND
 Text Label 5650 5900 0    50   ~ 0
 STEPUP_GND
-Wire Wire Line
-	5650 5900 5500 5900
 Connection ~ 5200 5900
 $Comp
 L power:GND #PWR0209
 U 1 1 5EEA9D8A
-P 8700 5900
-F 0 "#PWR0209" H 8700 5650 50  0001 C CNN
-F 1 "GND" H 8705 5727 50  0000 C CNN
-F 2 "" H 8700 5900 50  0001 C CNN
-F 3 "" H 8700 5900 50  0001 C CNN
-	1    8700 5900
+P 9100 5900
+F 0 "#PWR0209" H 9100 5650 50  0001 C CNN
+F 1 "GND" H 9105 5727 50  0000 C CNN
+F 2 "" H 9100 5900 50  0001 C CNN
+F 3 "" H 9100 5900 50  0001 C CNN
+	1    9100 5900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -861,17 +840,6 @@ F 1 "GND" H 8205 5727 50  0000 C CNN
 F 2 "" H 8200 5900 50  0001 C CNN
 F 3 "" H 8200 5900 50  0001 C CNN
 	1    8200 5900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0207
-U 1 1 5EEA9E33
-P 6850 5900
-F 0 "#PWR0207" H 6850 5650 50  0001 C CNN
-F 1 "GND" H 6855 5727 50  0000 C CNN
-F 2 "" H 6850 5900 50  0001 C CNN
-F 3 "" H 6850 5900 50  0001 C CNN
-	1    6850 5900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -927,4 +895,40 @@ F 3 "https://www.mouser.de/datasheet/2/389/cd00268203-1797199.pdf" H 7700 4850 5
 	1    7700 4850
 	0    -1   -1   0   
 $EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F07DA47
+P 3500 1950
+AR Path="/5EA6895E/5F07DA47" Ref="#PWR?"  Part="1" 
+AR Path="/5E73BAE8/5F07DA47" Ref="#PWR0207"  Part="1" 
+F 0 "#PWR0207" H 3500 1700 50  0001 C CNN
+F 1 "GND" H 3505 1777 50  0000 C CNN
+F 2 "" H 3500 1950 50  0001 C CNN
+F 3 "" H 3500 1950 50  0001 C CNN
+	1    3500 1950
+	1    0    0    -1  
+$EndComp
+Connection ~ 3500 1950
+Wire Wire Line
+	3750 6000 3550 6000
+Connection ~ 3550 6000
+Wire Wire Line
+	6200 5500 6200 5650
+Wire Wire Line
+	6200 5650 6100 5650
+Connection ~ 6200 5500
+Wire Wire Line
+	6200 5500 6300 5500
+Connection ~ 9100 4850
+Wire Wire Line
+	9100 4850 9250 4850
+Wire Wire Line
+	9100 5550 9100 5600
+Wire Wire Line
+	8950 5600 9100 5600
+Connection ~ 9100 5600
+Wire Wire Line
+	9100 5600 9100 5650
+Wire Wire Line
+	5500 5900 6850 5900
 $EndSCHEMATC

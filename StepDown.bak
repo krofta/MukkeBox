@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 6
+Sheet 6 6
 Title ""
 Date ""
 Rev ""
@@ -380,14 +380,14 @@ Wire Wire Line
 $Comp
 L Device:R_Small R?
 U 1 1 5EE77708
-P 3850 5300
+P 3850 4700
 AR Path="/5EE77708" Ref="R?"  Part="1" 
 AR Path="/5ED2496F/5EE77708" Ref="R609"  Part="1" 
-F 0 "R609" H 3650 5400 50  0000 C CNN
-F 1 "100K" H 3650 5300 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3850 5300 50  0001 C CNN
-F 3 "~" H 3850 5300 50  0001 C CNN
-	1    3850 5300
+F 0 "R609" H 3650 4800 50  0000 C CNN
+F 1 "100K" H 3650 4700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3850 4700 50  0001 C CNN
+F 3 "~" H 3850 4700 50  0001 C CNN
+	1    3850 4700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -403,9 +403,6 @@ Text GLabel 3700 4450 0    50   Input ~ 0
 3V3_EN
 Wire Wire Line
 	3700 4450 3850 4450
-Wire Wire Line
-	3850 4450 3850 5000
-Connection ~ 3850 5000
 Wire Wire Line
 	4400 3250 4400 4100
 Wire Wire Line
@@ -435,4 +432,22 @@ Wire Wire Line
 	8350 3250 8000 3250
 Wire Wire Line
 	6700 3250 7500 3250
+$Comp
+L Device:R_Small R?
+U 1 1 5F175CD1
+P 3850 5300
+AR Path="/5F175CD1" Ref="R?"  Part="1" 
+AR Path="/5ED2496F/5F175CD1" Ref="R604"  Part="1" 
+F 0 "R604" H 3650 5400 50  0000 C CNN
+F 1 "47K" H 3650 5300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3850 5300 50  0001 C CNN
+F 3 "~" H 3850 5300 50  0001 C CNN
+	1    3850 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 5000 3850 4800
+Connection ~ 3850 5000
+Wire Wire Line
+	3850 4600 3850 4450
 $EndSCHEMATC

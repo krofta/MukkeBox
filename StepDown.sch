@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 6
+Sheet 6 6
 Title ""
 Date ""
 Rev ""
@@ -167,17 +167,6 @@ Wire Wire Line
 Wire Wire Line
 	3600 3650 5100 4000
 $Comp
-L power:PWR_FLAG #FLG0602
-U 1 1 5ED2C8B6
-P 8350 3250
-F 0 "#FLG0602" H 8350 3325 50  0001 C CNN
-F 1 "PWR_FLAG" H 8350 3424 50  0000 C CNN
-F 2 "" H 8350 3250 50  0001 C CNN
-F 3 "~" H 8350 3250 50  0001 C CNN
-	1    8350 3250
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+3V3 #PWR0606
 U 1 1 5ED2C931
 P 8750 3250
@@ -268,7 +257,7 @@ F 3 "~" H 4400 3150 50  0001 C CNN
 $EndComp
 Connection ~ 4400 3050
 Wire Wire Line
-	4400 3050 3600 3050
+	4400 3050 3900 3050
 Wire Wire Line
 	4600 3250 4400 3250
 $Comp
@@ -380,14 +369,14 @@ Wire Wire Line
 $Comp
 L Device:R_Small R?
 U 1 1 5EE77708
-P 3850 5300
+P 3850 4700
 AR Path="/5EE77708" Ref="R?"  Part="1" 
 AR Path="/5ED2496F/5EE77708" Ref="R609"  Part="1" 
-F 0 "R609" H 3650 5400 50  0000 C CNN
-F 1 "100K" H 3650 5300 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3850 5300 50  0001 C CNN
-F 3 "~" H 3850 5300 50  0001 C CNN
-	1    3850 5300
+F 0 "R609" H 3650 4800 50  0000 C CNN
+F 1 "100K" H 3650 4700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3850 4700 50  0001 C CNN
+F 3 "~" H 3850 4700 50  0001 C CNN
+	1    3850 4700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -403,9 +392,6 @@ Text GLabel 3700 4450 0    50   Input ~ 0
 3V3_EN
 Wire Wire Line
 	3700 4450 3850 4450
-Wire Wire Line
-	3850 4450 3850 5000
-Connection ~ 3850 5000
 Wire Wire Line
 	4400 3250 4400 4100
 Wire Wire Line
@@ -429,10 +415,39 @@ F 3 "~" H 7700 3250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8750 3250 8350 3250
-Connection ~ 8350 3250
-Wire Wire Line
-	8350 3250 8000 3250
-Wire Wire Line
 	6700 3250 7500 3250
+$Comp
+L Device:R_Small R?
+U 1 1 5F175CD1
+P 3850 5300
+AR Path="/5F175CD1" Ref="R?"  Part="1" 
+AR Path="/5ED2496F/5F175CD1" Ref="R604"  Part="1" 
+F 0 "R604" H 3650 5400 50  0000 C CNN
+F 1 "47K" H 3650 5300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3850 5300 50  0001 C CNN
+F 3 "~" H 3850 5300 50  0001 C CNN
+	1    3850 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 5000 3850 4800
+Connection ~ 3850 5000
+Wire Wire Line
+	3850 4600 3850 4450
+Wire Wire Line
+	8000 3250 8750 3250
+$Comp
+L power:PWR_FLAG #FLG0104
+U 1 1 5FE15C0B
+P 3900 3050
+F 0 "#FLG0104" H 3900 3125 50  0001 C CNN
+F 1 "PWR_FLAG" H 3900 3224 50  0000 C CNN
+F 2 "" H 3900 3050 50  0001 C CNN
+F 3 "~" H 3900 3050 50  0001 C CNN
+	1    3900 3050
+	1    0    0    -1  
+$EndComp
+Connection ~ 3900 3050
+Wire Wire Line
+	3900 3050 3600 3050
 $EndSCHEMATC
