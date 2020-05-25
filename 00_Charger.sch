@@ -59,10 +59,10 @@ F 3 "~" H 7350 4950 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small Rcss401
+L Device:R_Small R_CSS401
 U 1 1 5E73D449
 P 7850 3100
-F 0 "Rcss401" H 7909 3146 50  0000 L CNN
+F 0 "R_CSS401" H 7909 3146 50  0000 L CNN
 F 1 "33m" H 7909 3055 50  0000 L CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 7850 3100 50  0001 C CNN
 F 3 "~" H 7850 3100 50  0001 C CNN
@@ -401,7 +401,7 @@ L Device:R_Small R_CSB401
 U 1 1 5E7F4B39
 P 8350 3950
 F 0 "R_CSB401" V 8450 3900 50  0000 C CNN
-F 1 "68m" V 8250 3950 50  0000 C CNN
+F 1 "200m" V 8250 3950 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 8350 3950 50  0001 C CNN
 F 3 "~" H 8350 3950 50  0001 C CNN
 	1    8350 3950
@@ -834,20 +834,6 @@ Wire Wire Line
 Connection ~ 3800 3950
 Wire Wire Line
 	3800 3950 3600 3950
-$Comp
-L Device:CP_Small C?
-U 1 1 5ED2EE33
-P 4950 2450
-AR Path="/5E751A81/5ED2EE33" Ref="C?"  Part="1" 
-AR Path="/5E73BAE8/5ED2EE33" Ref="C?"  Part="1" 
-AR Path="/5E73BB4A/5ED2EE33" Ref="C304"  Part="1" 
-F 0 "C304" H 5100 2550 50  0000 L CNN
-F 1 "560u 50V" H 5100 2400 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D12.5mm_P5.00mm" H 4950 2450 50  0001 C CNN
-F 3 "https://www.mouser.de/datasheet/2/420/United-Chemi-Con-1109128.pdf" H 4950 2450 50  0001 C CNN
-	1    4950 2450
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4950 2350 4950 2200
 Connection ~ 4950 2200
@@ -1298,4 +1284,43 @@ Connection ~ 7850 3750
 Connection ~ 7850 3350
 Text Notes 600  7100 0    50   ~ 0
 1,64V bei 18V Eingangsspannung
+$Comp
+L Device:CP1_Small C304
+U 1 1 5ED25F5D
+P 4950 2450
+F 0 "C304" H 5041 2496 50  0000 L CNN
+F 1 "68u" H 5041 2405 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 4950 2450 50  0001 C CNN
+F 3 "~" H 4950 2450 50  0001 C CNN
+	1    4950 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5ED2EDE0
+P 2650 4300
+F 0 "C?" H 2800 4400 50  0000 C CNN
+F 1 "100n" H 2850 4300 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2650 4300 50  0001 C CNN
+F 3 "~" H 2650 4300 50  0001 C CNN
+	1    2650 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 4200 2650 3950
+Wire Wire Line
+	2650 3950 2250 3950
+$Comp
+L power:GND #PWR?
+U 1 1 5ED36D0B
+P 2650 4600
+F 0 "#PWR?" H 2650 4350 50  0001 C CNN
+F 1 "GND" H 2655 4427 50  0000 C CNN
+F 2 "" H 2650 4600 50  0001 C CNN
+F 3 "" H 2650 4600 50  0001 C CNN
+	1    2650 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 4400 2650 4600
 $EndSCHEMATC

@@ -607,7 +607,7 @@ U 1 1 5F04C120
 P 7200 2700
 F 0 "TP501" H 7258 2820 50  0000 L CNN
 F 1 "TestPoint" H 7258 2729 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_2.0x2.0mm" H 7400 2700 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 7400 2700 50  0001 C CNN
 F 3 "~" H 7400 2700 50  0001 C CNN
 	1    7200 2700
 	1    0    0    -1  
@@ -618,7 +618,7 @@ U 1 1 5F04C2E9
 P 7700 2700
 F 0 "TP502" H 7758 2820 50  0000 L CNN
 F 1 "TestPoint" H 7758 2729 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_2.0x2.0mm" H 7900 2700 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 7900 2700 50  0001 C CNN
 F 3 "~" H 7900 2700 50  0001 C CNN
 	1    7700 2700
 	1    0    0    -1  
@@ -639,7 +639,7 @@ U 1 1 5F0535DB
 P 8400 3400
 F 0 "TP503" H 8458 3520 50  0000 L CNN
 F 1 "TestPoint" H 8458 3429 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_2.0x2.0mm" H 8600 3400 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 8600 3400 50  0001 C CNN
 F 3 "~" H 8600 3400 50  0001 C CNN
 	1    8400 3400
 	1    0    0    -1  
