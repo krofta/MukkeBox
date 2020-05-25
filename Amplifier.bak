@@ -567,28 +567,6 @@ POWER_AMP
 Connection ~ 6500 3500
 Wire Wire Line
 	6500 3500 6500 4350
-$Comp
-L Device:C_Small C513
-U 1 1 5E79098E
-P 6350 5600
-F 0 "C513" H 6100 5650 50  0000 L CNN
-F 1 "10uF 10V" H 5900 5500 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6350 5600 50  0001 C CNN
-F 3 "~" H 6350 5600 50  0001 C CNN
-	1    6350 5600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C516
-U 1 1 5E7909FE
-P 6800 5600
-F 0 "C516" H 6892 5646 50  0000 L CNN
-F 1 "10uF 10V" H 6892 5555 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6800 5600 50  0001 C CNN
-F 3 "~" H 6800 5600 50  0001 C CNN
-	1    6800 5600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6350 5500 6350 5400
 Wire Wire Line
@@ -1441,4 +1419,26 @@ Connection ~ 1750 5550
 Connection ~ 8400 3800
 Wire Wire Line
 	8400 3800 8550 3800
+$Comp
+L Device:CP_Small C413
+U 1 1 5FEA7896
+P 6350 5600
+F 0 "C413" H 6438 5646 50  0000 L CNN
+F 1 "10u" H 6438 5555 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm" H 6350 5600 50  0001 C CNN
+F 3 "~" H 6350 5600 50  0001 C CNN
+	1    6350 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP_Small C414
+U 1 1 5FEA7BCB
+P 6800 5600
+F 0 "C414" H 6888 5646 50  0000 L CNN
+F 1 "10u" H 6888 5555 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm" H 6800 5600 50  0001 C CNN
+F 3 "~" H 6800 5600 50  0001 C CNN
+	1    6800 5600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

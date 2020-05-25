@@ -968,7 +968,7 @@ U 1 1 5EDE4BFA
 P 1850 6150
 F 0 "F301" H 1850 6335 50  0000 C CNN
 F 1 "Fuse_Small" H 1850 6244 50  0000 C CNN
-F 2 "Fuse:Fuseholder_Cylinder-5x20mm_Schurter_0031-8002_Horizontal_Open" H 1850 6150 50  0001 C CNN
+F 2 "Fuse:Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open" H 1850 6150 50  0001 C CNN
 F 3 "~" H 1850 6150 50  0001 C CNN
 	1    1850 6150
 	1    0    0    -1  
