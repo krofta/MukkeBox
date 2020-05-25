@@ -782,20 +782,6 @@ F 3 "~" H 5050 3350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP1_Small C?
-U 1 1 5EE9A404
-P 2600 3350
-AR Path="/5E73BB4A/5EE9A404" Ref="C?"  Part="1" 
-AR Path="/5ED2496F/5EE9A404" Ref="C?"  Part="1" 
-AR Path="/5E73BAE8/5EE9A404" Ref="C_5_3"  Part="1" 
-F 0 "C_5_3" H 2691 3396 50  0000 L CNN
-F 1 "68u" H 2691 3305 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 2600 3350 50  0001 C CNN
-F 3 "~" H 2600 3350 50  0001 C CNN
-	1    2600 3350
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C_Small C202
 U 1 1 5EE9DD35
 P 5000 4600
@@ -944,4 +930,15 @@ F 3 "" H 8900 2400 50  0001 C CNN
 $EndComp
 Text Notes 8350 1950 0    50   ~ 0
 Möglichkeit fertigen StepUp aufzusetzen
+$Comp
+L Device:C_Small C201
+U 1 1 5ED41E8D
+P 2600 3350
+F 0 "C201" H 2300 3400 50  0000 L CNN
+F 1 "100n" H 2250 3300 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2600 3350 50  0001 C CNN
+F 3 "~" H 2600 3350 50  0001 C CNN
+	1    2600 3350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
