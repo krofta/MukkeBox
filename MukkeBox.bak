@@ -272,7 +272,7 @@ Connection ~ 2850 2900
 Text Notes 2000 2400 0    89   ~ 0
 CAPS CPU
 $Comp
-L MCU_ST_STM32F0:STM32F030C6Tx_MukkeBox U102
+L MukkeBox-rescue:STM32F030C6Tx_MukkeBox-MCU_ST_STM32F0 U102
 U 1 1 5E9BA91E
 P 7600 3950
 F 0 "U102" H 8500 5350 50  0000 C CNN
@@ -1503,7 +1503,6 @@ NoConn ~ 9000 4600
 NoConn ~ 9000 4700
 NoConn ~ 9000 4300
 NoConn ~ 9000 4400
-NoConn ~ 9000 3150
 $Comp
 L Sensor_Temperature:LM35-LP U101
 U 1 1 5FD76FCF
@@ -1579,4 +1578,8 @@ Wire Wire Line
 Wire Wire Line
 	3100 7350 3100 7300
 Connection ~ 4650 7350
+Text GLabel 9700 3150 2    50   Input ~ 0
+3V3_ENABLED
+Wire Wire Line
+	9700 3150 9000 3150
 $EndSCHEMATC

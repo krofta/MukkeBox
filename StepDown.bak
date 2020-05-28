@@ -89,13 +89,13 @@ Wire Wire Line
 Wire Wire Line
 	9000 3200 8250 3200
 $Comp
-L Regulator_Switching:TPS560430 U602
+L MukkeBox-rescue:TPS560430-Regulator_Switching U602
 U 1 1 5ECDAABE
 P 5950 3150
 F 0 "U602" H 5950 3475 50  0000 C CNN
 F 1 "TPS560430" H 5950 3384 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-6_Handsoldering" H 5150 2750 50  0001 L CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tps560200.pdf" H 5700 2800 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/tps560430.pdf?ts=1590476433528" H 5700 2800 50  0001 C CNN
 	1    5950 3150
 	1    0    0    -1  
 $EndComp
@@ -415,4 +415,113 @@ $EndComp
 Connection ~ 4500 3050
 Wire Wire Line
 	4500 3050 5650 3050
+$Comp
+L power:GND #PWR?
+U 1 1 5ED4AAC5
+P 6700 2400
+AR Path="/5E73BB4A/5ED4AAC5" Ref="#PWR?"  Part="1" 
+AR Path="/5ED2496F/5ED4AAC5" Ref="#PWR01"  Part="1" 
+F 0 "#PWR01" H 6700 2150 50  0001 C CNN
+F 1 "GND" H 6705 2227 50  0000 C CNN
+F 2 "" H 6700 2400 50  0001 C CNN
+F 3 "" H 6700 2400 50  0001 C CNN
+	1    6700 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5ED4AACB
+P 6700 1850
+AR Path="/5E73BB4A/5ED4AACB" Ref="R?"  Part="1" 
+AR Path="/5ED2496F/5ED4AACB" Ref="R1"  Part="1" 
+F 0 "R1" H 6759 1896 50  0000 L CNN
+F 1 "100K" H 6759 1805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6700 1850 50  0001 C CNN
+F 3 "~" H 6700 1850 50  0001 C CNN
+	1    6700 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5ED4AAD1
+P 6700 2300
+AR Path="/5E73BB4A/5ED4AAD1" Ref="R?"  Part="1" 
+AR Path="/5ED2496F/5ED4AAD1" Ref="R2"  Part="1" 
+F 0 "R2" H 6759 2346 50  0000 L CNN
+F 1 "47K" H 6759 2255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6700 2300 50  0001 C CNN
+F 3 "~" H 6700 2300 50  0001 C CNN
+	1    6700 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5ED4AAD7
+P 7200 1650
+AR Path="/5E73BB4A/5ED4AAD7" Ref="#PWR?"  Part="1" 
+AR Path="/5ED2496F/5ED4AAD7" Ref="#PWR02"  Part="1" 
+F 0 "#PWR02" H 7200 1500 50  0001 C CNN
+F 1 "+3V3" H 7215 1823 50  0000 C CNN
+F 2 "" H 7200 1650 50  0001 C CNN
+F 3 "" H 7200 1650 50  0001 C CNN
+	1    7200 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5ED4AADD
+P 7200 1750
+AR Path="/5E73BB4A/5ED4AADD" Ref="R?"  Part="1" 
+AR Path="/5ED2496F/5ED4AADD" Ref="R3"  Part="1" 
+F 0 "R3" H 7259 1796 50  0000 L CNN
+F 1 "10K" H 7259 1705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7200 1750 50  0001 C CNN
+F 3 "~" H 7200 1750 50  0001 C CNN
+	1    7200 1750
+	1    0    0    -1  
+$EndComp
+Text GLabel 7450 1850 2    50   Input ~ 0
+3V3_ENABLED
+Wire Wire Line
+	7450 1850 7200 1850
+Connection ~ 7200 1850
+$Comp
+L Transistor_FET:2N7002 Q?
+U 1 1 5ED4AAE6
+P 7100 2050
+AR Path="/5E73BB4A/5ED4AAE6" Ref="Q?"  Part="1" 
+AR Path="/5ED2496F/5ED4AAE6" Ref="Q1"  Part="1" 
+F 0 "Q1" H 7305 2096 50  0000 L CNN
+F 1 "2N7002" H 7305 2005 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7300 1975 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 7100 2050 50  0001 L CNN
+	1    7100 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 2050 6700 2050
+Wire Wire Line
+	6700 2050 6700 1950
+Wire Wire Line
+	6700 2200 6700 2050
+Connection ~ 6700 2050
+$Comp
+L power:GND #PWR?
+U 1 1 5ED4AAF0
+P 7200 2400
+AR Path="/5E73BB4A/5ED4AAF0" Ref="#PWR?"  Part="1" 
+AR Path="/5ED2496F/5ED4AAF0" Ref="#PWR03"  Part="1" 
+F 0 "#PWR03" H 7200 2150 50  0001 C CNN
+F 1 "GND" H 7205 2227 50  0000 C CNN
+F 2 "" H 7200 2400 50  0001 C CNN
+F 3 "" H 7200 2400 50  0001 C CNN
+	1    7200 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 2400 7200 2250
+Wire Wire Line
+	6700 1750 6700 1600
+Text GLabel 6700 1600 0    50   Input ~ 0
+3V3_EN
 $EndSCHEMATC

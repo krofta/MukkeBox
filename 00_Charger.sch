@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Battery_Management:MAX1873TEEE U401
+L MukkeBox-rescue:MAX1873TEEE-Battery_Management U401
 U 1 1 5E73C573
 P 6400 3800
 F 0 "U401" H 6450 4550 50  0000 C CNN

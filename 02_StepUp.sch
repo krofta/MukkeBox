@@ -17,7 +17,7 @@ $EndDescr
 Text Notes 6100 1150 0    50   ~ 0
 UC1842 Step Up von aliexpress yo\nhttps://www.360customs.de/2014/05/103050100w-led-applikation-treiber/?cookie-state-change=1586628857397\n
 $Comp
-L Regulator_Controller:UC3843_SOIC8 U_2
+L MukkeBox-rescue:UC3843_SOIC8-Regulator_Controller U_2
 U 1 1 5E7948D1
 P 5200 5300
 F 0 "U_2" H 5450 5650 50  0000 C CNN
@@ -212,17 +212,6 @@ Text GLabel 1550 1650 0    50   Input ~ 0
 SYSTEM_LOAD
 Wire Wire Line
 	3500 1750 3500 1650
-$Comp
-L power:GNDPWR #PWR0128
-U 1 1 5E7AEF97
-P 6050 4700
-F 0 "#PWR0128" H 6050 4500 50  0001 C CNN
-F 1 "GNDPWR" V 6150 4650 50  0000 C CNN
-F 2 "" H 6050 4650 50  0001 C CNN
-F 3 "" H 6050 4650 50  0001 C CNN
-	1    6050 4700
-	0    -1   -1   0   
-$EndComp
 Text GLabel 9950 4850 2    50   Output ~ 0
 POWER_AMP
 $Comp
@@ -568,7 +557,7 @@ Wire Wire Line
 	4550 5800 4550 5600
 Connection ~ 4550 5600
 $Comp
-L Regulator_Linear:XC6216C U?
+L MukkeBox-rescue:XC6216C-Regulator_Linear U?
 U 1 1 5ECF85A5
 P 4250 3200
 AR Path="/5EA6895E/5ECF85A5" Ref="U?"  Part="1" 
@@ -797,26 +786,11 @@ Wire Wire Line
 Connection ~ 5200 4600
 Wire Wire Line
 	5200 4600 5200 4550
-Text Label 4750 4600 2    50   ~ 0
-STPUP_GND
 Wire Wire Line
 	4900 4600 4750 4600
-Text Label 4450 4950 2    50   ~ 0
-STPUP_GND
 Text Label 5650 5900 0    50   ~ 0
 STEPUP_GND
 Connection ~ 5200 5900
-$Comp
-L power:GND #PWR0209
-U 1 1 5EEA9D8A
-P 9100 5900
-F 0 "#PWR0209" H 9100 5650 50  0001 C CNN
-F 1 "GND" H 9105 5727 50  0000 C CNN
-F 2 "" H 9100 5900 50  0001 C CNN
-F 3 "" H 9100 5900 50  0001 C CNN
-	1    9100 5900
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR0208
 U 1 1 5EEA9DE2
@@ -859,7 +833,7 @@ U 1 1 5EEADE53
 P 5500 6050
 F 0 "R206" H 5559 6096 50  0000 L CNN
 F 1 "0R" H 5559 6005 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5500 6050 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5500 6050 50  0001 C CNN
 F 3 "~" H 5500 6050 50  0001 C CNN
 	1    5500 6050
 	1    0    0    -1  
@@ -918,7 +892,7 @@ Wire Wire Line
 Wire Wire Line
 	5500 5900 6850 5900
 $Comp
-L MySymbols:StepUp U202
+L MukkeBox-rescue:StepUp-MySymbols U202
 U 1 1 5FE6AEE3
 P 8900 2400
 F 0 "U202" H 9378 2371 50  0000 L CNN
@@ -941,4 +915,12 @@ F 3 "~" H 2600 3350 50  0001 C CNN
 	1    2600 3350
 	1    0    0    -1  
 $EndComp
+Text Label 4750 4600 2    50   ~ 0
+STEPUP_GND
+Text Label 4450 4950 2    50   ~ 0
+STEPUP_GND
+Text Label 6050 4700 0    50   ~ 0
+STEPUP_GND
+Text Label 9100 5900 0    50   ~ 0
+STEPUP_GND
 $EndSCHEMATC
