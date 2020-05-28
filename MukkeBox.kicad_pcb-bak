@@ -6483,12 +6483,12 @@
     (pad 1 thru_hole circle (at -23.62 13.08) (size 6.5 6.5) (drill 3.17) (layers *.Cu *.Mask)
       (net 6 GNDPWR))
     (model ${KISYS3DMOD}/Heatsink.3dshapes/Heatsink_62x40mm_2xFixation3mm.wrl
-      (at (xyz 0 0 0))
+      (offset (xyz 0 3.5 6.5))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
     (model ${KISYS3DMOD}/Heatsink.3dshapes/537-95AB.STEP
-      (offset (xyz -29 -18.5 4.5))
+      (offset (xyz -29 -18.5 30))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )

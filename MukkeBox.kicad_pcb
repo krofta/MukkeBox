@@ -6488,7 +6488,7 @@
       (rotate (xyz 0 0 0))
     )
     (model ${KISYS3DMOD}/Heatsink.3dshapes/537-95AB.STEP
-      (offset (xyz -29 -18.5 30))
+      (offset (xyz -29 -18.5 4.5))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
