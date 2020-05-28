@@ -607,12 +607,12 @@ $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H104
 U 1 1 5E9D673A
-P 10300 1400
-F 0 "H104" V 10254 1550 50  0000 L CNN
-F 1 "MountingHole_Pad" V 10345 1550 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 10300 1400 50  0001 C CNN
-F 3 "~" H 10300 1400 50  0001 C CNN
-	1    10300 1400
+P 10300 2100
+F 0 "H104" V 10254 2250 50  0000 L CNN
+F 1 "MountingHole_Pad" V 10345 2250 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 10300 2100 50  0001 C CNN
+F 3 "~" H 10300 2100 50  0001 C CNN
+	1    10300 2100
 	0    1    1    0   
 $EndComp
 $Comp
@@ -640,33 +640,21 @@ $EndComp
 $Comp
 L power:GND #PWR0190
 U 1 1 5E9D6DA0
-P 10150 1950
-F 0 "#PWR0190" H 10150 1700 50  0001 C CNN
-F 1 "GND" H 10155 1777 50  0000 C CNN
-F 2 "" H 10150 1950 50  0001 C CNN
-F 3 "" H 10150 1950 50  0001 C CNN
-	1    10150 1950
-	1    0    0    -1  
+P 10150 1600
+F 0 "#PWR0190" H 10150 1350 50  0001 C CNN
+F 1 "GND" H 10155 1427 50  0000 C CNN
+F 2 "" H 10150 1600 50  0001 C CNN
+F 3 "" H 10150 1600 50  0001 C CNN
+	1    10150 1600
+	0    1    1    0   
 $EndComp
 Wire Wire Line
 	10200 800  10150 800 
 Wire Wire Line
 	10150 800  10150 1000
 Wire Wire Line
-	10200 1800 10150 1800
-Connection ~ 10150 1800
-Wire Wire Line
-	10150 1800 10150 1950
-Wire Wire Line
 	10200 1600 10150 1600
 Connection ~ 10150 1600
-Wire Wire Line
-	10150 1600 10150 1800
-Wire Wire Line
-	10200 1400 10150 1400
-Connection ~ 10150 1400
-Wire Wire Line
-	10150 1400 10150 1600
 Wire Wire Line
 	10200 1000 10150 1000
 Connection ~ 10150 1000
@@ -703,8 +691,6 @@ Wire Wire Line
 Wire Wire Line
 	10200 1200 10150 1200
 Connection ~ 10150 1200
-Wire Wire Line
-	10150 1200 10150 1400
 $Comp
 L Device:R_Small R124
 U 1 1 5EA46EE7
@@ -1499,9 +1485,7 @@ $EndComp
 Wire Wire Line
 	2850 5400 2650 5400
 NoConn ~ 2650 5500
-NoConn ~ 9000 4600
 NoConn ~ 9000 4700
-NoConn ~ 9000 4300
 NoConn ~ 9000 4400
 $Comp
 L Sensor_Temperature:LM35-LP U101
@@ -1528,22 +1512,16 @@ $EndComp
 $Comp
 L Device:C_Small C103
 U 1 1 5FD77740
-P 4650 3000
-F 0 "C103" V 4750 2850 50  0000 L CNN
-F 1 "100nF" V 4850 2850 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4650 3000 50  0001 C CNN
-F 3 "~" H 4650 3000 50  0001 C CNN
-	1    4650 3000
+P 4950 3050
+F 0 "C103" V 5050 2900 50  0000 L CNN
+F 1 "100nF" V 5150 2900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4950 3050 50  0001 C CNN
+F 3 "~" H 4950 3050 50  0001 C CNN
+	1    4950 3050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4650 2900 4650 2800
-Wire Wire Line
-	4650 2800 4600 2800
-Wire Wire Line
-	4650 3100 4650 3150
-Wire Wire Line
-	4650 3150 4200 3150
+	4950 2950 4950 2800
 Wire Wire Line
 	4200 3150 4200 3100
 $Comp
@@ -1558,11 +1536,10 @@ F 3 "" H 4200 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 4200 3150
-Text Label 4800 2800 0    50   ~ 0
+Text Label 5000 2800 0    50   ~ 0
 TEMP_SENSOR2
 Wire Wire Line
-	4800 2800 4650 2800
-Connection ~ 4650 2800
+	5000 2800 4950 2800
 Text Label 6250 4500 2    50   ~ 0
 TEMP_SENSOR2
 Wire Wire Line
@@ -1582,4 +1559,48 @@ Text GLabel 9700 3150 2    50   Input ~ 0
 3V3_ENABLED
 Wire Wire Line
 	9700 3150 9000 3150
+Wire Wire Line
+	4200 3150 4950 3150
+$Comp
+L Device:R_Small R6
+U 1 1 5EE577C4
+P 4700 2800
+F 0 "R6" V 4900 2800 50  0000 C CNN
+F 1 "1K" V 4800 2800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4700 2800 50  0001 C CNN
+F 3 "~" H 4700 2800 50  0001 C CNN
+	1    4700 2800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4950 2800 4800 2800
+Connection ~ 4950 2800
+Text GLabel 9500 4300 2    50   Output ~ 0
+3V3_BT_EN
+Wire Wire Line
+	9500 4300 9000 4300
+Text GLabel 9500 4600 2    50   Input ~ 0
+3V3_BT_FAULT
+Wire Wire Line
+	9000 4600 9500 4600
+$Comp
+L power:GNDA #PWR?
+U 1 1 5ED26B3D
+P 10150 1950
+F 0 "#PWR?" H 10150 1700 50  0001 C CNN
+F 1 "GNDA" V 10155 1823 50  0000 R CNN
+F 2 "" H 10150 1950 50  0001 C CNN
+F 3 "" H 10150 1950 50  0001 C CNN
+	1    10150 1950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10200 1800 10200 1950
+Wire Wire Line
+	10150 1950 10200 1950
+Connection ~ 10200 1950
+Wire Wire Line
+	10200 1950 10200 2100
+Wire Wire Line
+	10150 1200 10150 1600
 $EndSCHEMATC

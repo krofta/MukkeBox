@@ -1498,9 +1498,7 @@ $EndComp
 Wire Wire Line
 	2850 5400 2650 5400
 NoConn ~ 2650 5500
-NoConn ~ 9000 4600
 NoConn ~ 9000 4700
-NoConn ~ 9000 4300
 NoConn ~ 9000 4400
 $Comp
 L Sensor_Temperature:LM35-LP U101
@@ -1527,22 +1525,16 @@ $EndComp
 $Comp
 L Device:C_Small C103
 U 1 1 5FD77740
-P 4650 3000
-F 0 "C103" V 4750 2850 50  0000 L CNN
-F 1 "100nF" V 4850 2850 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4650 3000 50  0001 C CNN
-F 3 "~" H 4650 3000 50  0001 C CNN
-	1    4650 3000
+P 4950 3050
+F 0 "C103" V 5050 2900 50  0000 L CNN
+F 1 "100nF" V 5150 2900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4950 3050 50  0001 C CNN
+F 3 "~" H 4950 3050 50  0001 C CNN
+	1    4950 3050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4650 2900 4650 2800
-Wire Wire Line
-	4650 2800 4600 2800
-Wire Wire Line
-	4650 3100 4650 3150
-Wire Wire Line
-	4650 3150 4200 3150
+	4950 2950 4950 2800
 Wire Wire Line
 	4200 3150 4200 3100
 $Comp
@@ -1557,11 +1549,10 @@ F 3 "" H 4200 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 4200 3150
-Text Label 4800 2800 0    50   ~ 0
+Text Label 5000 2800 0    50   ~ 0
 TEMP_SENSOR2
 Wire Wire Line
-	4800 2800 4650 2800
-Connection ~ 4650 2800
+	5000 2800 4950 2800
 Text Label 6250 4500 2    50   ~ 0
 TEMP_SENSOR2
 Wire Wire Line
@@ -1581,4 +1572,28 @@ Text GLabel 9700 3150 2    50   Input ~ 0
 3V3_ENABLED
 Wire Wire Line
 	9700 3150 9000 3150
+Wire Wire Line
+	4200 3150 4950 3150
+$Comp
+L Device:R_Small R6
+U 1 1 5EE577C4
+P 4700 2800
+F 0 "R6" V 4900 2800 50  0000 C CNN
+F 1 "1K" V 4800 2800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4700 2800 50  0001 C CNN
+F 3 "~" H 4700 2800 50  0001 C CNN
+	1    4700 2800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4950 2800 4800 2800
+Connection ~ 4950 2800
+Text GLabel 9500 4300 2    50   Output ~ 0
+3V3_BT_EN
+Wire Wire Line
+	9500 4300 9000 4300
+Text GLabel 9500 4600 2    50   Input ~ 0
+3V3_BT_FAULT
+Wire Wire Line
+	9000 4600 9500 4600
 $EndSCHEMATC
