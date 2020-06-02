@@ -1,5 +1,6 @@
 EESchema Schematic File Version 4
-EELAYER 30 0
+LIBS:MukkeBox-cache
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -39,9 +40,9 @@ F 3 "~" H 5400 3550 50  0001 C CNN
 	1    5400 3550
 	1    0    0    -1  
 $EndComp
-Text Label 4850 2500 0    50   ~ 0
+Text Label 4950 2500 2    50   ~ 0
 3V3_ON_OFF
-Text GLabel 5500 1600 0    50   Input ~ 0
+Text GLabel 5650 1600 0    50   Input ~ 0
 3V3_EN
 $Comp
 L Connector_Generic:Conn_02x01 J?
@@ -291,17 +292,9 @@ Wire Wire Line
 Wire Wire Line
 	3350 3050 3900 3050
 Wire Wire Line
-	5650 2250 5650 2500
-Wire Wire Line
-	4550 2500 4550 2250
-Wire Wire Line
 	5050 3200 5400 3200
-Text GLabel 4400 1600 0    50   Input ~ 0
+Text GLabel 5050 1600 0    50   Input ~ 0
 DC_20V_POWER_SUPPLY
-Wire Wire Line
-	4400 1600 4550 1600
-Wire Wire Line
-	5500 1600 5650 1600
 $Comp
 L Device:C_Small C?
 U 1 1 5ED1796C
@@ -339,7 +332,7 @@ Connection ~ 5400 3750
 Wire Wire Line
 	5400 3750 5550 3750
 Wire Wire Line
-	4550 2500 5400 2500
+	4950 2500 5400 2500
 $Comp
 L Device:R_Small R?
 U 1 1 5ED1E785
@@ -358,8 +351,6 @@ Wire Wire Line
 Wire Wire Line
 	5400 2700 5400 2500
 Connection ~ 5400 2500
-Wire Wire Line
-	5400 2500 5650 2500
 $Comp
 L power:PWR_FLAG #FLG0107
 U 1 1 5ED238F3
@@ -483,44 +474,25 @@ Wire Wire Line
 	6700 1750 6700 1600
 Text GLabel 6700 1600 0    50   Input ~ 0
 3V3_EN
-Wire Wire Line
-	5650 1600 5650 1850
-Wire Wire Line
-	4550 1600 4550 1850
-Wire Wire Line
-	5350 1850 5650 1850
-Wire Wire Line
-	5350 2050 5350 1850
-Wire Wire Line
-	4250 2050 4250 1850
-Wire Wire Line
-	4250 1850 4550 1850
-Connection ~ 4550 1850
 $Comp
-L Device:Q_NPN_BEC S_?
-U 1 1 5ED0F92E
-P 4450 2050
-AR Path="/5E73BAE8/5ED0F92E" Ref="S_?"  Part="1" 
-AR Path="/5ED2496F/5ED0F92E" Ref="S_601"  Part="1" 
-F 0 "S_601" H 4640 2096 50  0000 L CNN
-F 1 "MMBT2222LT1G" H 4640 2005 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 4650 2150 50  0001 C CNN
-F 3 "https://www.mouser.de/datasheet/2/308/MMBT2222LT1-D-1811600.pdf" H 4450 2050 50  0001 C CNN
-	1    4450 2050
+L Diode:BAT54C D?
+U 1 1 5F7DF8E3
+P 5400 2300
+AR Path="/5E73BB4A/5F7DF8E3" Ref="D?"  Part="1" 
+AR Path="/5ED2496F/5F7DF8E3" Ref="D601"  Part="1" 
+F 0 "D601" H 5400 2525 50  0000 C CNN
+F 1 "BAT54C" H 5400 2434 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5475 2425 50  0001 L CNN
+F 3 "http://www.diodes.com/_files/datasheets/ds11005.pdf" H 5320 2300 50  0001 C CNN
+	1    5400 2300
 	1    0    0    -1  
 $EndComp
-Connection ~ 5650 1850
-$Comp
-L Device:Q_NPN_BEC S_?
-U 1 1 5ED128E5
-P 5550 2050
-AR Path="/5E73BAE8/5ED128E5" Ref="S_?"  Part="1" 
-AR Path="/5ED2496F/5ED128E5" Ref="S_602"  Part="1" 
-F 0 "S_602" H 5740 2096 50  0000 L CNN
-F 1 "MMBT2222LT1G" H 5740 2005 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 5750 2150 50  0001 C CNN
-F 3 "https://www.mouser.de/datasheet/2/308/MMBT2222LT1-D-1811600.pdf" H 5550 2050 50  0001 C CNN
-	1    5550 2050
-	1    0    0    -1  
-$EndComp
+Wire Wire Line
+	5050 1600 5100 1600
+Wire Wire Line
+	5100 1600 5100 2300
+Wire Wire Line
+	5650 1600 5700 1600
+Wire Wire Line
+	5700 1600 5700 2300
 $EndSCHEMATC

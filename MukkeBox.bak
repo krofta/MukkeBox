@@ -62,8 +62,6 @@ F 3 "" H 1650 2700 50  0001 C CNN
 $EndComp
 Text GLabel 6300 2750 0    50   Output ~ 0
 CHARGER_DISABLE
-Text GLabel 6300 3750 0    50   Input ~ 0
-CHARGER_IOUT
 Text GLabel 3100 6900 2    50   Input ~ 0
 SCL
 Text GLabel 3100 7000 2    50   Input ~ 0
@@ -1485,8 +1483,6 @@ $EndComp
 Wire Wire Line
 	2850 5400 2650 5400
 NoConn ~ 2650 5500
-NoConn ~ 9000 4700
-NoConn ~ 9000 4400
 $Comp
 L Sensor_Temperature:LM35-LP U101
 U 1 1 5FD76FCF
@@ -1603,4 +1599,14 @@ Wire Wire Line
 	10200 1950 10200 2100
 Wire Wire Line
 	10150 1200 10150 1600
+Text GLabel 9500 4700 2    50   Input ~ 0
+CHARGER_STAT1
+Wire Wire Line
+	9500 4700 9000 4700
+Text GLabel 9500 4400 2    50   Input ~ 0
+CHARGER_STAT2
+Wire Wire Line
+	9500 4400 9000 4400
+Text GLabel 6300 3750 0    50   Input ~ 0
+CHARGER_PG
 $EndSCHEMATC
