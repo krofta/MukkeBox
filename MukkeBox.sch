@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:MukkeBox-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -371,8 +370,6 @@ Wire Wire Line
 Connection ~ 8000 2250
 Wire Wire Line
 	8000 2250 7900 2250
-Wire Wire Line
-	9700 3700 9000 3700
 Wire Wire Line
 	9700 2650 9000 2650
 Wire Wire Line
@@ -935,8 +932,6 @@ Text GLabel 2000 4600 0    50   BiDi ~ 0
 PACK+
 Wire Wire Line
 	2000 4600 2150 4600
-Text GLabel 9700 3700 2    50   Output ~ 0
-ENABLE_12V
 Text GLabel 9700 3050 2    50   Output ~ 0
 RST_BT
 Text GLabel 6300 2650 0    50   Output ~ 0
@@ -1609,4 +1604,5 @@ Wire Wire Line
 	9500 4400 9000 4400
 Text GLabel 6300 3750 0    50   Input ~ 0
 CHARGER_PG
+NoConn ~ 9000 3700
 $EndSCHEMATC
