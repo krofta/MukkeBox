@@ -1,5 +1,6 @@
 EESchema Schematic File Version 4
-EELAYER 30 0
+LIBS:MukkeBox-cache
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -205,29 +206,16 @@ Wire Wire Line
 Text GLabel 2300 6200 2    50   BiDi ~ 0
 PACK+
 $Comp
-L Connector:Screw_Terminal_01x02 J303
-U 1 1 5ED37ADF
-P 1150 6300
-F 0 "J303" H 1150 6050 50  0000 C CNN
-F 1 "TB001-500-02BE CUI_Devices" V 1300 6500 50  0000 C CNN
-F 2 "TerminalBlock_RND:TerminalBlock_RND_205-00045_1x02_P5.00mm_Horizontal" H 1150 6300 50  0001 C CNN
-F 3 "https://www.mouser.de/datasheet/2/670/tb001-500-1550615.pdf" H 1150 6300 50  0001 C CNN
-	1    1150 6300
-	-1   0    0    1   
-$EndComp
-$Comp
 L power:GND #PWR0301
 U 1 1 5ED37D03
-P 1350 6400
-F 0 "#PWR0301" H 1350 6150 50  0001 C CNN
-F 1 "GND" H 1500 6300 50  0000 C CNN
-F 2 "" H 1350 6400 50  0001 C CNN
-F 3 "" H 1350 6400 50  0001 C CNN
-	1    1350 6400
+P 1350 6800
+F 0 "#PWR0301" H 1350 6550 50  0001 C CNN
+F 1 "GND" H 1500 6700 50  0000 C CNN
+F 2 "" H 1350 6800 50  0001 C CNN
+F 3 "" H 1350 6800 50  0001 C CNN
+	1    1350 6800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1350 6300 1350 6400
 Wire Wire Line
 	10650 1100 10500 1100
 $Comp
@@ -1661,4 +1649,47 @@ $EndComp
 Connection ~ 6600 2850
 Wire Wire Line
 	6600 2850 7000 2850
+$Comp
+L power:GND #PWR0131
+U 1 1 5EDA6D9E
+P 6100 4700
+F 0 "#PWR0131" H 6100 4450 50  0001 C CNN
+F 1 "GND" H 6105 4527 50  0000 C CNN
+F 2 "" H 6100 4700 50  0001 C CNN
+F 3 "" H 6100 4700 50  0001 C CNN
+	1    6100 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 4700 6100 4400
+$Comp
+L Connector:Screw_Terminal_01x04 J?
+U 1 1 5EDE91C5
+P 1000 6400
+AR Path="/5E751A81/5EDE91C5" Ref="J?"  Part="1" 
+AR Path="/5E73BB4A/5EDE91C5" Ref="J303"  Part="1" 
+F 0 "J303" H 900 5900 50  0000 L CNN
+F 1 "TB001-500-04BE CUI_Devices" V 1150 5900 50  0000 L CNN
+F 2 "TerminalBlock_RND:TerminalBlock_RND_205-00047_1x04_P5.00mm_Horizontal" H 1000 6400 50  0001 C CNN
+F 3 "~" H 1000 6400 50  0001 C CNN
+	1    1000 6400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1350 6800 1350 6500
+Wire Wire Line
+	1350 6500 1200 6500
+Wire Wire Line
+	1200 6300 1350 6300
+Wire Wire Line
+	1350 6300 1350 6500
+Connection ~ 1350 6500
+Wire Wire Line
+	1350 6200 1200 6200
+Text Label 4150 4400 2    50   ~ 0
+TS
+Wire Wire Line
+	4550 4400 4150 4400
+Text Label 1200 6400 0    50   ~ 0
+TS
 $EndSCHEMATC

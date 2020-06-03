@@ -1,5 +1,6 @@
 EESchema Schematic File Version 4
-EELAYER 30 0
+LIBS:MukkeBox-cache
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -25,17 +26,6 @@ F 2 "Resistor_SMD:R_2010_5025Metric_Pad1.52x2.65mm_HandSolder" H 6700 4550 50  0
 F 3 "~" H 6700 4550 50  0001 C CNN
 	1    6700 4550
 	-1   0    0    1   
-$EndComp
-$Comp
-L Device:L_Small L301
-U 1 1 5E796A70
-P 6700 3300
-F 0 "L301" V 6600 3200 50  0000 L CNN
-F 1 "22uH PQ2617BHA-220K" V 6800 3150 50  0000 L CNN
-F 2 "Inductor_SMD:PQ2617BHA-330K" H 6700 3300 50  0001 C CNN
-F 3 "https://www.mouser.de/datasheet/2/54/bourns_PQ2617BHA_datasheet-1159314.pdf" H 6700 3300 50  0001 C CNN
-	1    6700 3300
-	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	6700 3400 6700 3550
@@ -639,8 +629,6 @@ F 3 "~" H 6150 3900 50  0001 C CNN
 $EndComp
 Text Notes 5800 4600 0    50   ~ 0
 180p
-Text Notes 6950 3450 1    50   ~ 0
-13-39uH
 Text Notes 7950 5550 0    50   ~ 0
 50A
 Text Notes 7600 3200 0    50   ~ 0
@@ -776,4 +764,28 @@ Wire Wire Line
 Connection ~ 6300 3800
 Wire Wire Line
 	6300 3800 6400 3800
+$Comp
+L Device:L_Small_3 L301
+U 1 1 5EDD1CAF
+P 6700 3300
+F 0 "L301" H 6747 3346 50  0000 L CNN
+F 1 "22uH PQ2617BHA-220K" H 6747 3255 50  0000 L CNN
+F 2 "Inductor_SMD:PQ2617BHA-330K" H 6700 3300 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/54/bourns_PQ2617BHA_datasheet-1159314.pdf" H 6700 3300 50  0001 C CNN
+	1    6700 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0201
+U 1 1 5EDD85E2
+P 6500 3200
+F 0 "#PWR0201" H 6500 2950 50  0001 C CNN
+F 1 "GND" H 6505 3027 50  0000 C CNN
+F 2 "" H 6500 3200 50  0001 C CNN
+F 3 "" H 6500 3200 50  0001 C CNN
+	1    6500 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 3200 6500 3200
 $EndSCHEMATC
