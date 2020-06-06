@@ -62,9 +62,9 @@ F 3 "" H 800 2250 50  0001 C CNN
 $EndComp
 Text GLabel 6300 2750 0    50   Output ~ 0
 CHARGER_DISABLE
-Text GLabel 3100 6900 2    50   Input ~ 0
+Text GLabel 3100 6950 2    50   Input ~ 0
 SCL
-Text GLabel 3100 7000 2    50   Input ~ 0
+Text GLabel 3100 7050 2    50   Input ~ 0
 SDA
 Text GLabel 9700 3800 2    50   Output ~ 0
 ENABLE_8V
@@ -74,9 +74,9 @@ Text GLabel 9700 2750 2    50   Output ~ 0
 STBY_TDA7498
 Text GLabel 9700 2650 2    50   Input ~ 0
 DIAG_TDA7498
-Text GLabel 3100 7200 2    50   Input ~ 0
+Text GLabel 3100 7250 2    50   Input ~ 0
 RxT
-Text GLabel 3100 7100 2    50   Input ~ 0
+Text GLabel 3100 7150 2    50   Input ~ 0
 TxR
 Text Label 5600 6800 0    50   ~ 0
 SWDIO
@@ -463,12 +463,12 @@ Wire Wire Line
 $Comp
 L power:+3.3V #PWR0177
 U 1 1 5EB4E6E4
-P 2250 7300
-F 0 "#PWR0177" H 2250 7150 50  0001 C CNN
-F 1 "+3.3V" V 2150 7300 50  0000 C CNN
-F 2 "" H 2250 7300 50  0001 C CNN
-F 3 "" H 2250 7300 50  0001 C CNN
-	1    2250 7300
+P 2250 7350
+F 0 "#PWR0177" H 2250 7200 50  0001 C CNN
+F 1 "+3.3V" V 2150 7350 50  0000 C CNN
+F 2 "" H 2250 7350 50  0001 C CNN
+F 3 "" H 2250 7350 50  0001 C CNN
+	1    2250 7350
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -651,20 +651,20 @@ Wire Wire Line
 	10200 1000 10150 1000
 Connection ~ 10150 1000
 Wire Wire Line
-	2750 7100 3100 7100
+	2750 7150 3100 7150
 Wire Wire Line
-	2750 7200 3100 7200
+	2750 7250 3100 7250
 Text Label 3400 7350 0    50   ~ 0
 ST_Link_3V3
 $Comp
 L Connector_Generic:Conn_02x05_Odd_Even J104
 U 1 1 5EAA894B
-P 2450 7100
-F 0 "J104" H 2500 6750 50  0000 C CNN
-F 1 "Conn_02x05_Odd_Even" H 2550 6650 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 2450 7100 50  0001 C CNN
-F 3 "~" H 2450 7100 50  0001 C CNN
-	1    2450 7100
+P 2450 7150
+F 0 "J104" H 2500 6800 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 2550 6700 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 2450 7150 50  0001 C CNN
+F 3 "~" H 2450 7150 50  0001 C CNN
+	1    2450 7150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -725,51 +725,51 @@ F0 "StepDown" 50
 F1 "StepDown.sch" 50
 $EndSheet
 Wire Wire Line
-	2750 7300 3100 7300
+	2750 7350 3100 7350
 $Comp
 L Device:R_Small R101
 U 1 1 5EEF1498
-P 1800 6700
-F 0 "R101" H 2050 6650 50  0000 R CNN
-F 1 "2K2" H 2050 6750 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1800 6700 50  0001 C CNN
-F 3 "~" H 1800 6700 50  0001 C CNN
-	1    1800 6700
+P 1800 6750
+F 0 "R101" H 2050 6700 50  0000 R CNN
+F 1 "2K2" H 2050 6800 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1800 6750 50  0001 C CNN
+F 3 "~" H 1800 6750 50  0001 C CNN
+	1    1800 6750
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R_Small R102
 U 1 1 5EEF16A3
-P 2100 6700
-F 0 "R102" H 2350 6650 50  0000 R CNN
-F 1 "2K2" H 2350 6750 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2100 6700 50  0001 C CNN
-F 3 "~" H 2100 6700 50  0001 C CNN
-	1    2100 6700
+P 2100 6750
+F 0 "R102" H 2350 6700 50  0000 R CNN
+F 1 "2K2" H 2350 6800 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2100 6750 50  0001 C CNN
+F 3 "~" H 2100 6750 50  0001 C CNN
+	1    2100 6750
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	1800 6800 1800 7000
+	1800 6850 1800 7050
 Wire Wire Line
-	2100 6800 2100 6900
+	2100 6850 2100 6950
 $Comp
 L power:+3.3V #PWR0104
 U 1 1 5EEFB145
-P 1800 6500
-F 0 "#PWR0104" H 1800 6350 50  0001 C CNN
-F 1 "+3.3V" H 1815 6673 50  0000 C CNN
-F 2 "" H 1800 6500 50  0001 C CNN
-F 3 "" H 1800 6500 50  0001 C CNN
-	1    1800 6500
+P 1800 6550
+F 0 "#PWR0104" H 1800 6400 50  0001 C CNN
+F 1 "+3.3V" H 1815 6723 50  0000 C CNN
+F 2 "" H 1800 6550 50  0001 C CNN
+F 3 "" H 1800 6550 50  0001 C CNN
+	1    1800 6550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2100 6600 2100 6500
+	2100 6650 2100 6550
 Wire Wire Line
-	2100 6500 1800 6500
+	2100 6550 1800 6550
 Wire Wire Line
-	1800 6600 1800 6500
-Connection ~ 1800 6500
+	1800 6650 1800 6550
+Connection ~ 1800 6550
 Wire Wire Line
 	9000 5350 9300 5350
 $Comp
@@ -1150,23 +1150,23 @@ Wire Wire Line
 Wire Wire Line
 	6200 5100 7000 5100
 Wire Wire Line
-	2750 7000 3100 7000
+	2750 7050 3100 7050
 Wire Wire Line
-	2750 6900 3100 6900
-Text Label 1650 7000 2    50   ~ 0
+	2750 6950 3100 6950
+Text Label 1650 7050 2    50   ~ 0
 I2C1_SDA
-Text Label 1650 6900 2    50   ~ 0
+Text Label 1650 6950 2    50   ~ 0
 I2C1_SCL
 Wire Wire Line
-	1650 6900 2100 6900
-Connection ~ 2100 6900
+	1650 6950 2100 6950
+Connection ~ 2100 6950
 Wire Wire Line
-	2100 6900 2250 6900
+	2100 6950 2250 6950
 Wire Wire Line
-	1650 7000 1800 7000
-Connection ~ 1800 7000
+	1650 7050 1800 7050
+Connection ~ 1800 7050
 Wire Wire Line
-	1800 7000 2250 7000
+	1800 7050 2250 7050
 Text Label 9100 5050 0    50   ~ 0
 UART1_TX
 Text Label 9100 4950 0    50   ~ 0
@@ -1175,14 +1175,14 @@ Wire Wire Line
 	9100 4950 9000 4950
 Wire Wire Line
 	9100 5050 9000 5050
-Text Label 1650 7100 2    50   ~ 0
+Text Label 1650 7150 2    50   ~ 0
 UART1_TX
-Text Label 1650 7200 2    50   ~ 0
+Text Label 1650 7250 2    50   ~ 0
 UART1_RX
 Wire Wire Line
-	1650 7100 2250 7100
+	1650 7150 2250 7150
 Wire Wire Line
-	1650 7200 2250 7200
+	1650 7250 2250 7250
 Text Label 6200 4650 2    50   ~ 0
 OUTPUT1
 Text Label 6200 4750 2    50   ~ 0
@@ -1520,9 +1520,6 @@ Wire Wire Line
 	7000 3850 6850 3850
 Wire Wire Line
 	4650 7350 3100 7350
-Wire Wire Line
-	3100 7350 3100 7300
-Connection ~ 4650 7350
 Text GLabel 9700 3150 2    50   Input ~ 0
 3V3_ENABLED
 Wire Wire Line
@@ -1686,4 +1683,5 @@ F 3 "" H 4100 5800 50  0001 C CNN
 	1    4100 5800
 	1    0    0    -1  
 $EndComp
+Connection ~ 4650 7350
 $EndSCHEMATC

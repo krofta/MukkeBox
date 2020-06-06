@@ -93,7 +93,7 @@ U 1 1 5EEEB2DA
 P 8950 3800
 F 0 "RV_1" H 8880 3846 50  0000 R CNN
 F 1 "10K" H 8880 3755 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical" H 8950 3800 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_P250" H 8950 3800 50  0001 C CNN
 F 3 "https://www.mouser.de/datasheet/2/54/tc33-778219.pdf" H 8950 3800 50  0001 C CNN
 	1    8950 3800
 	1    0    0    -1  
