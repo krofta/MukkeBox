@@ -45,7 +45,7 @@ L Device:R_Small R_3
 U 1 1 5E79763C
 P 8950 4450
 F 0 "R_3" H 8891 4404 50  0000 R CNN
-F 1 "422R" H 8891 4495 50  0000 R CNN
+F 1 "1K" H 8891 4495 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8950 4450 50  0001 C CNN
 F 3 "~" H 8950 4450 50  0001 C CNN
 	1    8950 4450
@@ -263,7 +263,7 @@ AR Path="/5E73BAE8/5EDD3766" Ref="U203"  Part="1"
 F 0 "U203" H 4350 4415 50  0000 C CNN
 F 1 "TPS40210" H 4350 4324 50  0000 C CNN
 F 2 "Package_SO:MSOP-10-1EP_3x3mm_P0.5mm_EP1.68x1.88mm" H 4300 3800 50  0001 C CNN
-F 3 "" H 4300 3800 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/tps40210.pdf?ts=1591439964953&ref_url=https://www.ti.com/product/TPS40210?utm_source%3Dgoogle&utm_medium=cpc&utm_campaign=app-null-null-GPN_EN-cpc-pf-google-eu&utm_content=TPS40210&ds_k=TPS40210&DCM=yes&gclid=EAIaIQobChMIqenB5v_s6QIVme3tCh1OGAzwEAAYASAAEgJRsvD_BwE&gclsrc=aw.ds" H 4300 3800 50  0001 C CNN
 	1    4300 3800
 	1    0    0    -1  
 $EndComp
@@ -770,8 +770,8 @@ U 1 1 5EDD1CAF
 P 6700 3300
 AR Path="/5EDD1CAF" Ref="L301"  Part="1" 
 AR Path="/5E73BAE8/5EDD1CAF" Ref="L301"  Part="1" 
-F 0 "L301" H 6747 3346 50  0000 L CNN
-F 1 "22uH PQ2617BHA-220K" H 6747 3255 50  0000 L CNN
+F 0 "L301" V 6900 3200 50  0000 L CNN
+F 1 "22uH PQ2617BHA-220K" V 6800 3200 50  0000 L CNN
 F 2 "Inductor_SMD:PQ2617BHA-330K" H 6700 3300 50  0001 C CNN
 F 3 "https://www.mouser.de/datasheet/2/54/bourns_PQ2617BHA_datasheet-1159314.pdf" H 6700 3300 50  0001 C CNN
 	1    6700 3300
@@ -794,7 +794,7 @@ $Comp
 L Device:L_Small L201
 U 1 1 5EFA9CC8
 P 6050 3300
-F 0 "L201" H 6098 3346 50  0000 L CNN
+F 0 "L201" V 6150 3200 50  0000 L CNN
 F 1 "22uH TAITEC TMPC1265HP-220MG-D " V 5950 2950 50  0000 L CNN
 F 2 "Inductor_SMD:TAITEC TMPC1265HP-220MG-D" H 6050 3300 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/TAITEC-TMPC1265HP-220MG-D_C305224.pdf" H 6050 3300 50  0001 C CNN
@@ -814,4 +814,6 @@ Wire Wire Line
 	6050 3550 6700 3550
 Text Notes 6050 3100 0    50   ~ 0
 alternativ
+Text Notes 4200 4650 0    50   ~ 0
+0,7V FB
 $EndSCHEMATC
