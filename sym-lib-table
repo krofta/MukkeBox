@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name MukkeBox-rescue)(type Legacy)(uri ${KIPRJMOD}/MukkeBox-rescue.lib)(options "")(descr ""))
+  (lib (name MukkeBox)(type Legacy)(uri ${KIPRJMOD}/MukkeBox.lib)(options "")(descr ""))
 )

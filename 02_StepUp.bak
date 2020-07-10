@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:MukkeBox-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -45,7 +44,7 @@ L Device:R_Small R_3
 U 1 1 5E79763C
 P 8950 4450
 F 0 "R_3" H 8891 4404 50  0000 R CNN
-F 1 "390R" H 8891 4495 50  0000 R CNN
+F 1 "1K5" H 8891 4495 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8950 4450 50  0001 C CNN
 F 3 "~" H 8950 4450 50  0001 C CNN
 	1    8950 4450
@@ -242,7 +241,7 @@ Connection ~ 8950 4300
 Wire Wire Line
 	8950 4300 8950 4350
 $Comp
-L MukkeBox-rescue:StepUp-MySymbols U202
+L MukkeBox-rescue:StepUp-MySymbols-MukkeBox-rescue U202
 U 1 1 5FE6AEE3
 P 2600 6450
 F 0 "U202" H 3078 6421 50  0000 L CNN
@@ -255,7 +254,7 @@ $EndComp
 Text Notes 2150 5750 0    50   ~ 0
 Möglichkeit fertigen StepUp aufzusetzen
 $Comp
-L MukkeBox-rescue:TPS40210-MySymbols U203
+L MukkeBox-rescue:TPS40210-MySymbols-MukkeBox-rescue U203
 U 1 1 5EDD3766
 P 4300 3800
 AR Path="/5EDD3766" Ref="U203"  Part="1" 
@@ -263,7 +262,7 @@ AR Path="/5E73BAE8/5EDD3766" Ref="U203"  Part="1"
 F 0 "U203" H 4350 4415 50  0000 C CNN
 F 1 "TPS40210" H 4350 4324 50  0000 C CNN
 F 2 "Package_SO:MSOP-10-1EP_3x3mm_P0.5mm_EP1.68x1.88mm" H 4300 3800 50  0001 C CNN
-F 3 "" H 4300 3800 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/tps40210.pdf?ts=1591439964953&ref_url=https://www.ti.com/product/TPS40210?utm_source%3Dgoogle&utm_medium=cpc&utm_campaign=app-null-null-GPN_EN-cpc-pf-google-eu&utm_content=TPS40210&ds_k=TPS40210&DCM=yes&gclid=EAIaIQobChMIqenB5v_s6QIVme3tCh1OGAzwEAAYASAAEgJRsvD_BwE&gclsrc=aw.ds" H 4300 3800 50  0001 C CNN
 	1    4300 3800
 	1    0    0    -1  
 $EndComp
@@ -472,7 +471,7 @@ L Device:C_Small C205
 U 1 1 5EF4B905
 P 3500 3650
 F 0 "C205" V 3300 3600 50  0000 L CNN
-F 1 "100n" V 3400 3600 50  0000 L CNN
+F 1 "1u" V 3400 3600 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3500 3650 50  0001 C CNN
 F 3 "~" H 3500 3650 50  0001 C CNN
 	1    3500 3650
@@ -541,15 +540,12 @@ Wire Wire Line
 Connection ~ 4800 2400
 Wire Wire Line
 	4800 2400 5500 2400
-NoConn ~ 3950 3800
-Text Notes 2050 3850 0    50   ~ 0
+Text Notes 1250 4000 0    50   ~ 0
 DIS/EN internal pulldown 1M enables device
 Text Notes 4750 1900 0    50   ~ 0
 12-20V Input, 32V Output @ 3A
 Text Notes 9250 4050 0    50   ~ 0
 51K7
-Text Notes 2300 3650 0    50   ~ 0
-Softstart 5ms
 Text Notes 3650 4750 0    50   ~ 0
 18k7
 Text Notes 3350 4750 0    50   ~ 0
@@ -629,8 +625,6 @@ F 3 "~" H 6150 3900 50  0001 C CNN
 $EndComp
 Text Notes 5800 4600 0    50   ~ 0
 180p
-Text Notes 7950 5550 0    50   ~ 0
-50A
 Text Notes 7600 3200 0    50   ~ 0
 10A
 Text Notes 3350 4250 0    50   ~ 0
@@ -715,7 +709,7 @@ STPS30M60DJF
 Wire Wire Line
 	8050 3550 8550 3550
 $Comp
-L MukkeBox-rescue:PS1060L-Device D201
+L MukkeBox-rescue:PS1060L-Device-MukkeBox-rescue D201
 U 1 1 5F75672E
 P 7650 3550
 AR Path="/5F75672E" Ref="D201"  Part="1" 
@@ -765,13 +759,13 @@ Connection ~ 6300 3800
 Wire Wire Line
 	6300 3800 6400 3800
 $Comp
-L MukkeBox-rescue:L_Small_3-Device L301
+L MukkeBox-rescue:L_Small_3-Device-MukkeBox-rescue L301
 U 1 1 5EDD1CAF
 P 6700 3300
 AR Path="/5EDD1CAF" Ref="L301"  Part="1" 
 AR Path="/5E73BAE8/5EDD1CAF" Ref="L301"  Part="1" 
-F 0 "L301" H 6747 3346 50  0000 L CNN
-F 1 "22uH PQ2617BHA-220K" H 6747 3255 50  0000 L CNN
+F 0 "L301" V 6900 3200 50  0000 L CNN
+F 1 "22uH PQ2617BHA-220K" V 6800 3200 50  0000 L CNN
 F 2 "Inductor_SMD:PQ2617BHA-330K" H 6700 3300 50  0001 C CNN
 F 3 "https://www.mouser.de/datasheet/2/54/bourns_PQ2617BHA_datasheet-1159314.pdf" H 6700 3300 50  0001 C CNN
 	1    6700 3300
@@ -794,7 +788,7 @@ $Comp
 L Device:L_Small L201
 U 1 1 5EFA9CC8
 P 6050 3300
-F 0 "L201" H 6098 3346 50  0000 L CNN
+F 0 "L201" V 6150 3200 50  0000 L CNN
 F 1 "22uH TAITEC TMPC1265HP-220MG-D " V 5950 2950 50  0000 L CNN
 F 2 "Inductor_SMD:TAITEC TMPC1265HP-220MG-D" H 6050 3300 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/TAITEC-TMPC1265HP-220MG-D_C305224.pdf" H 6050 3300 50  0001 C CNN
@@ -814,4 +808,10 @@ Wire Wire Line
 	6050 3550 6700 3550
 Text Notes 6050 3100 0    50   ~ 0
 alternativ
+Text Notes 4200 4650 0    50   ~ 0
+0,7V FB
+Text GLabel 2750 3800 0    50   Input ~ 0
+STEPUP_DISABLE
+Wire Wire Line
+	3950 3800 2750 3800
 $EndSCHEMATC

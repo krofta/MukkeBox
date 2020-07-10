@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:MukkeBox-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -103,9 +102,9 @@ Wire Wire Line
 	4800 3500 4700 3500
 Wire Wire Line
 	5000 4100 4700 4100
-Text GLabel 9900 3700 2    50   Output ~ 0
+Text GLabel 9900 3400 2    50   Output ~ 0
 TO_SPEAKER_L
-Text GLabel 9900 4100 2    50   Output ~ 0
+Text GLabel 9900 4000 2    50   Output ~ 0
 TO_SPEAKER_R
 Text Notes 5700 4950 0    50   ~ 0
 f_cutoff = 1/(100nF*100R) = 15.9kHz
@@ -243,13 +242,9 @@ $EndComp
 Wire Wire Line
 	3350 3250 3350 3100
 Wire Wire Line
-	8250 4000 8150 4000
+	8250 4000 8200 4000
 Wire Wire Line
 	8150 3700 8250 3700
-Wire Wire Line
-	9900 3700 9400 3700
-Wire Wire Line
-	9900 4100 9400 4100
 $Comp
 L Device:R_Small R615
 U 1 1 5E9A8A58
@@ -277,55 +272,29 @@ Wire Wire Line
 Wire Wire Line
 	8950 3900 8750 3900
 Wire Wire Line
-	9150 3800 9200 3800
-Wire Wire Line
-	9200 3800 9200 3850
-Wire Wire Line
-	9200 3900 9150 3900
-Wire Wire Line
-	9200 3850 9400 3850
-Wire Wire Line
-	9400 3850 9400 3700
-Connection ~ 9200 3850
-Wire Wire Line
-	9200 3850 9200 3900
-Wire Wire Line
-	9400 4000 9400 4100
-Wire Wire Line
-	8250 3900 8150 3900
-Wire Wire Line
-	8150 3900 8150 3950
-Wire Wire Line
-	8250 3800 8150 3800
-Wire Wire Line
-	8150 3800 8150 3750
-Wire Wire Line
 	4950 3000 3650 3000
 Connection ~ 3650 3000
 Connection ~ 3350 3100
 $Comp
 L Device:R_Small R617
 U 1 1 5E9FC4EB
-P 9650 3850
-F 0 "R617" V 9750 3800 50  0000 L CNN
-F 1 "DNP" V 9850 3800 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9650 3850 50  0001 C CNN
-F 3 "~" H 9650 3850 50  0001 C CNN
-	1    9650 3850
+P 10000 3500
+F 0 "R617" V 10050 3250 50  0000 L CNN
+F 1 "DNP" V 10150 3250 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 10000 3500 50  0001 C CNN
+F 3 "~" H 10000 3500 50  0001 C CNN
+	1    10000 3500
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	9550 3850 9400 3850
-Connection ~ 9400 3850
 $Comp
 L power:GNDA #PWR0185
 U 1 1 5E9FF2F0
-P 9750 3850
-F 0 "#PWR0185" H 9750 3600 50  0001 C CNN
-F 1 "GNDA" V 9700 3650 50  0000 C CNN
-F 2 "" H 9750 3850 50  0001 C CNN
-F 3 "" H 9750 3850 50  0001 C CNN
-	1    9750 3850
+P 10100 3500
+F 0 "#PWR0185" H 10100 3250 50  0001 C CNN
+F 1 "GNDA" V 10050 3300 50  0000 C CNN
+F 2 "" H 10100 3500 50  0001 C CNN
+F 3 "" H 10100 3500 50  0001 C CNN
+	1    10100 3500
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -362,19 +331,13 @@ F 3 "~" H 9050 3700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	9150 3700 9400 3700
-Connection ~ 9400 3700
-Wire Wire Line
 	8950 3700 8750 3700
 Wire Wire Line
 	8750 4000 8950 4000
 Wire Wire Line
 	8950 4100 8750 4100
 Wire Wire Line
-	9150 4000 9400 4000
-Wire Wire Line
 	9150 4100 9400 4100
-Connection ~ 9400 4100
 Wire Wire Line
 	7000 3100 7150 3100
 Wire Wire Line
@@ -384,7 +347,7 @@ Wire Wire Line
 Wire Wire Line
 	7550 1100 7700 1100
 $Comp
-L MukkeBox-rescue:TDA7719-MySymbols U503
+L MukkeBox-rescue:TDA7719-MySymbols-MukkeBox-rescue U503
 U 1 1 5EF6B5F5
 P 6350 3700
 F 0 "U503" H 6375 4815 50  0000 C CNN
@@ -408,48 +371,22 @@ NoConn ~ 5750 3500
 NoConn ~ 5750 3600
 NoConn ~ 5750 3700
 $Comp
-L Device:CP1_Small C?
+L Device:C_Small C?
 U 1 1 5F02DF45
 P 6450 1350
 AR Path="/5E73BB4A/5F02DF45" Ref="C?"  Part="1" 
 AR Path="/5EA6895E/5F02DF45" Ref="C508"  Part="1" 
 F 0 "C508" H 6541 1396 50  0000 L CNN
 F 1 "10u" H 6541 1305 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm" H 6450 1350 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6450 1350 50  0001 C CNN
 F 3 "~" H 6450 1350 50  0001 C CNN
 	1    6450 1350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP1_Small C?
-U 1 1 5F03288E
-P 5650 4450
-AR Path="/5E73BB4A/5F03288E" Ref="C?"  Part="1" 
-AR Path="/5EA6895E/5F03288E" Ref="C509"  Part="1" 
-F 0 "C509" H 5741 4496 50  0000 L CNN
-F 1 "10u" H 5741 4405 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm" H 5650 4450 50  0001 C CNN
-F 3 "~" H 5650 4450 50  0001 C CNN
-	1    5650 4450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	5750 4200 5650 4200
 Wire Wire Line
 	5650 4200 5650 4350
-$Comp
-L Device:CP1_Small C?
-U 1 1 5F0361D0
-P 7450 3500
-AR Path="/5E73BB4A/5F0361D0" Ref="C?"  Part="1" 
-AR Path="/5EA6895E/5F0361D0" Ref="C536"  Part="1" 
-F 0 "C536" V 7500 3550 50  0000 L CNN
-F 1 "10u" V 7500 3300 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm" H 7450 3500 50  0001 C CNN
-F 3 "~" H 7450 3500 50  0001 C CNN
-	1    7450 3500
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	7700 3500 7550 3500
 Wire Wire Line
@@ -465,17 +402,6 @@ F 3 "~" H 7400 2700 50  0001 C CNN
 	1    7200 2700
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:TestPoint TP502
-U 1 1 5F04C2E9
-P 7700 2700
-F 0 "TP502" H 7758 2820 50  0000 L CNN
-F 1 "TestPoint" H 7758 2729 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 7900 2700 50  0001 C CNN
-F 3 "~" H 7900 2700 50  0001 C CNN
-	1    7700 2700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7000 3400 8400 3400
 Wire Wire Line
@@ -484,8 +410,6 @@ Wire Wire Line
 	7200 2900 7000 2900
 Wire Wire Line
 	7000 3000 7700 3000
-Wire Wire Line
-	7700 3000 7700 2700
 $Comp
 L Connector:TestPoint TP503
 U 1 1 5F0535DB
@@ -577,7 +501,6 @@ Wire Wire Line
 	7250 3750 7350 3750
 Wire Wire Line
 	7550 3750 8150 3750
-Connection ~ 8150 3750
 Wire Wire Line
 	8150 3750 8150 3700
 Wire Wire Line
@@ -586,15 +509,6 @@ Wire Wire Line
 	7250 3900 7250 4000
 Wire Wire Line
 	7250 4000 7350 4000
-Wire Wire Line
-	8150 3950 7700 3950
-Wire Wire Line
-	7700 3950 7700 4000
-Wire Wire Line
-	7700 4000 7550 4000
-Connection ~ 8150 3950
-Wire Wire Line
-	8150 3950 8150 4000
 Wire Wire Line
 	7700 4100 7700 4250
 Wire Wire Line
@@ -655,7 +569,7 @@ TxR
 Wire Wire Line
 	2700 6050 2950 6050
 $Comp
-L MukkeBox-rescue:BK8000L-RF_Bluetooth U502
+L MukkeBox-rescue:BK8000L-RF_Bluetooth-MukkeBox-rescue U502
 U 1 1 5ECB4DA7
 P 3350 5800
 F 0 "U502" H 3525 7165 50  0000 C CNN
@@ -958,14 +872,14 @@ F 3 "~" H 5100 5500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP1_Small C?
+L Device:C_Small C?
 U 1 1 5FE1C5A0
 P 5300 5500
 AR Path="/5E73BB4A/5FE1C5A0" Ref="C?"  Part="1" 
 AR Path="/5EA6895E/5FE1C5A0" Ref="C542"  Part="1" 
 F 0 "C542" H 5391 5546 50  0000 L CNN
 F 1 "10u" H 5391 5455 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm" H 5300 5500 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5300 5500 50  0001 C CNN
 F 3 "~" H 5300 5500 50  0001 C CNN
 	1    5300 5500
 	1    0    0    -1  
@@ -1087,7 +1001,7 @@ F 3 "" H 1150 6150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MukkeBox-rescue:AP2553-MySymbols U504
+L MukkeBox-rescue:AP2553-MySymbols-MukkeBox-rescue U504
 U 1 1 5ED20D23
 P 1700 3900
 AR Path="/5ED20D23" Ref="U504"  Part="1" 
@@ -1256,7 +1170,7 @@ Text GLabel 5100 5150 2    50   BiDi ~ 0
 Wire Wire Line
 	5100 5150 5100 5350
 $Comp
-L MukkeBox-rescue:TPS560430-Regulator_Switching U?
+L MukkeBox-rescue:TPS560430-Regulator_Switching-MukkeBox-rescue U?
 U 1 1 5EDC547A
 P 4700 1050
 AR Path="/5ED2496F/5EDC547A" Ref="U?"  Part="1" 
@@ -1324,7 +1238,7 @@ Wire Wire Line
 Wire Wire Line
 	6450 1450 6450 1600
 $Comp
-L Device:CP1_Small C?
+L Device:C_Small C?
 U 1 1 5EDC54C5
 P 2650 1150
 AR Path="/5E73BB4A/5EDC54C5" Ref="C?"  Part="1" 
@@ -1332,7 +1246,7 @@ AR Path="/5ED2496F/5EDC54C5" Ref="C?"  Part="1"
 AR Path="/5EA6895E/5EDC54C5" Ref="C503"  Part="1" 
 F 0 "C503" H 2741 1196 50  0000 L CNN
 F 1 "10u" H 2741 1105 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm" H 2650 1150 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2650 1150 50  0001 C CNN
 F 3 "~" H 2650 1150 50  0001 C CNN
 	1    2650 1150
 	1    0    0    -1  
@@ -1515,4 +1429,98 @@ F 3 "" H 4400 6550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4400 6550 4100 6550
+Text GLabel 9900 4200 2    50   Output ~ 0
+TO_SUB
+Wire Wire Line
+	9150 4000 9400 4000
+Wire Wire Line
+	9900 4200 9400 4200
+Wire Wire Line
+	8250 3900 8150 3900
+Wire Wire Line
+	8150 3900 8150 3750
+Connection ~ 8150 3750
+Wire Wire Line
+	8250 3800 8200 3800
+Wire Wire Line
+	8200 3800 8200 4000
+Connection ~ 8200 4000
+Wire Wire Line
+	7550 4000 8200 4000
+Wire Wire Line
+	9150 3700 9400 3700
+Wire Wire Line
+	9150 3900 9400 3900
+Wire Wire Line
+	9400 3900 9400 4000
+Connection ~ 9400 4000
+Wire Wire Line
+	9400 4000 9900 4000
+Wire Wire Line
+	9150 3800 9400 3800
+Wire Wire Line
+	9400 3800 9400 3700
+Connection ~ 9400 3700
+Wire Wire Line
+	9900 3400 9400 3400
+Wire Wire Line
+	9400 3400 9400 3500
+Wire Wire Line
+	9900 3500 9400 3500
+Connection ~ 9400 3500
+Wire Wire Line
+	9400 3500 9400 3700
+$Comp
+L Device:R_Small R20
+U 1 1 60022DD1
+P 10000 3900
+F 0 "R20" V 9850 3650 50  0000 L CNN
+F 1 "DNP" V 9950 3650 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 10000 3900 50  0001 C CNN
+F 3 "~" H 10000 3900 50  0001 C CNN
+	1    10000 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDA #PWR027
+U 1 1 60022DD7
+P 10100 3900
+F 0 "#PWR027" H 10100 3650 50  0001 C CNN
+F 1 "GNDA" V 10150 3700 50  0000 C CNN
+F 2 "" H 10100 3900 50  0001 C CNN
+F 3 "" H 10100 3900 50  0001 C CNN
+	1    10100 3900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9900 3900 9400 3900
+Connection ~ 9400 3900
+Text GLabel 7900 2250 2    50   Output ~ 0
+LEVELMETER
+Wire Wire Line
+	7900 2250 7700 2250
+Wire Wire Line
+	7700 2250 7700 3000
+$Comp
+L Device:C_Small C509
+U 1 1 5F691ED3
+P 5650 4450
+F 0 "C509" H 5450 4400 50  0000 L CNN
+F 1 "10u" H 5450 4500 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5650 4450 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/212/KEM_F3101_R82-1103738.pdf" H 5650 4450 50  0001 C CNN
+	1    5650 4450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C536
+U 1 1 5F694351
+P 7450 3500
+F 0 "C536" V 7500 3250 50  0000 L CNN
+F 1 "10u" V 7500 3600 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 7450 3500 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/212/KEM_F3101_R82-1103738.pdf" H 7450 3500 50  0001 C CNN
+	1    7450 3500
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC

@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:MukkeBox-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -29,12 +28,12 @@ Wire Wire Line
 	8850 2500 8850 2600
 Connection ~ 8850 2500
 $Comp
-L Device:CP1_Small C411
+L Device:C_Small C411
 U 1 1 5E823336
 P 8850 2700
 F 0 "C411" H 8941 2746 50  0000 L CNN
 F 1 "10u" H 8941 2655 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm" H 8850 2700 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 8850 2700 50  0001 C CNN
 F 3 "~" H 8850 2700 50  0001 C CNN
 	1    8850 2700
 	1    0    0    -1  
@@ -618,7 +617,7 @@ $EndComp
 Wire Wire Line
 	1600 4200 1600 4300
 $Comp
-L MukkeBox-rescue:BQ24610-MySymbols U?
+L MukkeBox-rescue:BQ24610-MySymbols-MukkeBox-rescue U?
 U 1 1 5ED991AC
 P 6050 2300
 AR Path="/5ED991AC" Ref="U?"  Part="1" 
@@ -631,7 +630,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/bq24610.pdf?HQS=TI-null-null-mousermode-df
 	1    0    0    -1  
 $EndComp
 $Comp
-L MukkeBox-rescue:HSBB3103-MySymbols Q302
+L MukkeBox-rescue:HSBB3103-MySymbols-MukkeBox-rescue Q302
 U 1 1 5EDC8AA4
 P 3900 1200
 F 0 "Q302" V 4242 1200 50  0000 C CNN
@@ -642,7 +641,7 @@ F 3 "https://datasheet.lcsc.com/szlcsc/2004222133_CJ-CJAB25P03_C504068.pdf" V 39
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MukkeBox-rescue:HSBB3103-MySymbols Q304
+L MukkeBox-rescue:HSBB3103-MySymbols-MukkeBox-rescue Q304
 U 1 1 5EDF60C6
 P 5000 1200
 F 0 "Q304" V 5342 1200 50  0000 C CNN
@@ -854,7 +853,7 @@ $EndComp
 Wire Wire Line
 	7150 1600 7050 1600
 $Comp
-L MukkeBox-rescue:HSBB3103-MySymbols Q311
+L MukkeBox-rescue:HSBB3103-MySymbols-MukkeBox-rescue Q311
 U 1 1 5EDC0C56
 P 10050 1200
 F 0 "Q311" V 10392 1200 50  0000 C CNN
@@ -868,7 +867,7 @@ Connection ~ 10500 1100
 Wire Wire Line
 	10250 1100 10500 1100
 $Comp
-L MukkeBox-rescue:HSBB3103-MySymbols Q310
+L MukkeBox-rescue:HSBB3103-MySymbols-MukkeBox-rescue Q310
 U 1 1 5EDE5A41
 P 8750 1750
 F 0 "Q310" V 9092 1750 50  0000 C CNN
@@ -1328,7 +1327,7 @@ L Device:R_Small R9C301
 U 1 1 5F385775
 P 4550 4300
 F 0 "R9C301" H 4491 4254 50  0000 R CNN
-F 1 "2K2" H 4491 4345 50  0000 R CNN
+F 1 "10K" H 4491 4345 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4550 4300 50  0001 C CNN
 F 3 "~" H 4550 4300 50  0001 C CNN
 	1    4550 4300
@@ -1339,7 +1338,7 @@ L Device:R_Small R9C302
 U 1 1 5F385AA7
 P 4550 4500
 F 0 "R9C302" H 4491 4454 50  0000 R CNN
-F 1 "6K8" H 4491 4545 50  0000 R CNN
+F 1 "470K" H 4491 4545 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4550 4500 50  0001 C CNN
 F 3 "~" H 4550 4500 50  0001 C CNN
 	1    4550 4500
@@ -1565,24 +1564,17 @@ Wire Wire Line
 $Comp
 L Diode:BAT54C D301
 U 1 1 5F7968FE
-P 7000 2650
-F 0 "D301" H 7150 2550 50  0000 L CNN
-F 1 "BAT54C" H 7100 2450 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 7075 2775 50  0001 L CNN
-F 3 "http://www.diodes.com/_files/datasheets/ds11005.pdf" H 6920 2650 50  0001 C CNN
-	1    7000 2650
-	1    0    0    -1  
+P 7100 2950
+F 0 "D301" H 6850 2750 50  0000 L CNN
+F 1 "BAT54C" H 6800 2850 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7175 3075 50  0001 L CNN
+F 3 "http://www.diodes.com/_files/datasheets/ds11005.pdf" H 7020 2950 50  0001 C CNN
+	1    7100 2950
+	-1   0    0    1   
 $EndComp
-Connection ~ 6700 2950
 Wire Wire Line
 	6500 2850 6600 2850
-NoConn ~ 6700 2650
-Wire Wire Line
-	7300 2650 7400 2650
-Wire Wire Line
-	7400 2650 7400 2950
-Wire Wire Line
-	6700 2950 7400 2950
+NoConn ~ 7400 2950
 $Comp
 L power:PWR_FLAG #FLG0106
 U 1 1 5EE0E3DC
@@ -1625,13 +1617,13 @@ F 3 "~" H 6900 2500 50  0001 C CNN
 $EndComp
 Connection ~ 6900 2500
 Wire Wire Line
-	6900 2500 7450 2500
+	6900 2500 7100 2500
 $Comp
 L power:PWR_FLAG #FLG0116
 U 1 1 5EE52FF2
 P 6600 2850
 F 0 "#FLG0116" H 6600 2925 50  0001 C CNN
-F 1 "PWR_FLAG" H 6800 2900 50  0000 C CNN
+F 1 "PWR_FLAG" H 6700 3050 50  0001 C CNN
 F 2 "" H 6600 2850 50  0001 C CNN
 F 3 "~" H 6600 2850 50  0001 C CNN
 	1    6600 2850
@@ -1639,7 +1631,7 @@ F 3 "~" H 6600 2850 50  0001 C CNN
 $EndComp
 Connection ~ 6600 2850
 Wire Wire Line
-	6600 2850 7000 2850
+	6600 2850 6750 2850
 $Comp
 L power:GND #PWR0131
 U 1 1 5EDA6D9E
@@ -1688,7 +1680,7 @@ L Device:R_Small R309
 U 1 1 5EDD4FC6
 P 5100 4400
 F 0 "R309" V 5200 4400 50  0000 C CNN
-F 1 "100K" V 5300 4400 50  0000 C CNN
+F 1 "1K" V 5300 4400 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5100 4400 50  0001 C CNN
 F 3 "~" H 5100 4400 50  0001 C CNN
 	1    5100 4400
@@ -1705,4 +1697,30 @@ Wire Wire Line
 	5000 4400 4550 4400
 Text Notes 1400 6750 0    50   ~ 0
 50ms Charge Time
+Wire Wire Line
+	6800 2950 6700 2950
+Connection ~ 6700 2950
+Wire Wire Line
+	7100 2750 6750 2750
+Wire Wire Line
+	6750 2750 6750 2850
+$Comp
+L Device:C_Small C315
+U 1 1 609476ED
+P 7100 2600
+F 0 "C315" H 7250 2550 50  0000 R CNN
+F 1 "100n" H 7300 2700 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7100 2600 50  0001 C CNN
+F 3 "~" H 7100 2600 50  0001 C CNN
+	1    7100 2600
+	-1   0    0    1   
+$EndComp
+Connection ~ 7100 2500
+Wire Wire Line
+	7100 2500 7450 2500
+Wire Wire Line
+	7100 2700 7100 2750
+Connection ~ 7100 2750
+Text Notes 3350 4700 0    50   ~ 0
+R9C301: 9K3 recommended\nR9C302: 430K recommended\nTemp: 0 - 45 °C
 $EndSCHEMATC

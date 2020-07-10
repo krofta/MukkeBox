@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:MukkeBox-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -89,7 +88,7 @@ Wire Wire Line
 Wire Wire Line
 	9000 3200 8250 3200
 $Comp
-L MukkeBox-rescue:TPS560430-Regulator_Switching U602
+L MukkeBox-rescue:TPS560430-Regulator_Switching-MukkeBox-rescue U602
 U 1 1 5ECDAABE
 P 5950 3150
 F 0 "U602" H 5950 3475 50  0000 C CNN

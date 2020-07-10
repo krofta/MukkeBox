@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name MukkeBox)(type KiCad)(uri ${KIPRJMOD}/MukkeBox.pretty)(options "")(descr ""))
+)

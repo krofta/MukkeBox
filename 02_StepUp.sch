@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:MukkeBox-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -45,7 +44,7 @@ L Device:R_Small R_3
 U 1 1 5E79763C
 P 8950 4450
 F 0 "R_3" H 8891 4404 50  0000 R CNN
-F 1 "1K" H 8891 4495 50  0000 R CNN
+F 1 "1K5" H 8891 4495 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8950 4450 50  0001 C CNN
 F 3 "~" H 8950 4450 50  0001 C CNN
 	1    8950 4450
@@ -242,7 +241,7 @@ Connection ~ 8950 4300
 Wire Wire Line
 	8950 4300 8950 4350
 $Comp
-L MukkeBox-rescue:StepUp-MySymbols U202
+L MukkeBox-rescue:StepUp-MySymbols-MukkeBox-rescue U202
 U 1 1 5FE6AEE3
 P 2600 6450
 F 0 "U202" H 3078 6421 50  0000 L CNN
@@ -255,7 +254,7 @@ $EndComp
 Text Notes 2150 5750 0    50   ~ 0
 Möglichkeit fertigen StepUp aufzusetzen
 $Comp
-L MukkeBox-rescue:TPS40210-MySymbols U203
+L MukkeBox-rescue:TPS40210-MySymbols-MukkeBox-rescue U203
 U 1 1 5EDD3766
 P 4300 3800
 AR Path="/5EDD3766" Ref="U203"  Part="1" 
@@ -472,7 +471,7 @@ L Device:C_Small C205
 U 1 1 5EF4B905
 P 3500 3650
 F 0 "C205" V 3300 3600 50  0000 L CNN
-F 1 "100n" V 3400 3600 50  0000 L CNN
+F 1 "1u" V 3400 3600 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3500 3650 50  0001 C CNN
 F 3 "~" H 3500 3650 50  0001 C CNN
 	1    3500 3650
@@ -541,15 +540,12 @@ Wire Wire Line
 Connection ~ 4800 2400
 Wire Wire Line
 	4800 2400 5500 2400
-NoConn ~ 3950 3800
-Text Notes 2050 3850 0    50   ~ 0
+Text Notes 1250 4000 0    50   ~ 0
 DIS/EN internal pulldown 1M enables device
 Text Notes 4750 1900 0    50   ~ 0
 12-20V Input, 32V Output @ 3A
 Text Notes 9250 4050 0    50   ~ 0
 51K7
-Text Notes 2300 3650 0    50   ~ 0
-Softstart 5ms
 Text Notes 3650 4750 0    50   ~ 0
 18k7
 Text Notes 3350 4750 0    50   ~ 0
@@ -629,8 +625,6 @@ F 3 "~" H 6150 3900 50  0001 C CNN
 $EndComp
 Text Notes 5800 4600 0    50   ~ 0
 180p
-Text Notes 7950 5550 0    50   ~ 0
-50A
 Text Notes 7600 3200 0    50   ~ 0
 10A
 Text Notes 3350 4250 0    50   ~ 0
@@ -715,7 +709,7 @@ STPS30M60DJF
 Wire Wire Line
 	8050 3550 8550 3550
 $Comp
-L MukkeBox-rescue:PS1060L-Device D201
+L MukkeBox-rescue:PS1060L-Device-MukkeBox-rescue D201
 U 1 1 5F75672E
 P 7650 3550
 AR Path="/5F75672E" Ref="D201"  Part="1" 
@@ -765,7 +759,7 @@ Connection ~ 6300 3800
 Wire Wire Line
 	6300 3800 6400 3800
 $Comp
-L MukkeBox-rescue:L_Small_3-Device L301
+L MukkeBox-rescue:L_Small_3-Device-MukkeBox-rescue L301
 U 1 1 5EDD1CAF
 P 6700 3300
 AR Path="/5EDD1CAF" Ref="L301"  Part="1" 
@@ -816,4 +810,8 @@ Text Notes 6050 3100 0    50   ~ 0
 alternativ
 Text Notes 4200 4650 0    50   ~ 0
 0,7V FB
+Text GLabel 2750 3800 0    50   Input ~ 0
+STEPUP_DISABLE
+Wire Wire Line
+	3950 3800 2750 3800
 $EndSCHEMATC
