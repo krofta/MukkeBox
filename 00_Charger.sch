@@ -53,17 +53,6 @@ Wire Wire Line
 	8850 2800 8850 3750
 Text GLabel 1450 3750 0    50   Input ~ 0
 CHARGER_DISABLE
-$Comp
-L Device:CP1_Small C412
-U 1 1 5E75D16E
-P 9250 1500
-F 0 "C412" H 9341 1546 50  0000 L CNN
-F 1 "68u" H 9341 1455 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 9250 1500 50  0001 C CNN
-F 3 "~" H 9250 1500 50  0001 C CNN
-	1    9250 1500
-	1    0    0    -1  
-$EndComp
 Text GLabel 10650 1100 2    50   Input ~ 0
 SYSTEM_LOAD
 Text GLabel 9350 2500 2    50   BiDi ~ 0
@@ -791,19 +780,6 @@ Wire Wire Line
 Wire Wire Line
 	9250 1400 9250 1100
 Connection ~ 9250 1100
-$Comp
-L power:GND #PWR0318
-U 1 1 5EDA31E1
-P 9250 1750
-F 0 "#PWR0318" H 9250 1500 50  0001 C CNN
-F 1 "GND" H 9255 1577 50  0000 C CNN
-F 2 "" H 9250 1750 50  0001 C CNN
-F 3 "" H 9250 1750 50  0001 C CNN
-	1    9250 1750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9250 1750 9250 1600
 $Comp
 L Device:R_Small R308
 U 1 1 5ED8FE46
@@ -1723,4 +1699,32 @@ Wire Wire Line
 Connection ~ 7100 2750
 Text Notes 3350 4700 0    50   ~ 0
 R9C301: 9K3 recommended\nR9C302: 430K recommended\nTemp: 0 - 45 °C
+$Comp
+L Device:CP_Small C?
+U 1 1 5F1B664E
+P 9250 1500
+AR Path="/5E751A81/5F1B664E" Ref="C?"  Part="1" 
+AR Path="/5E73BAE8/5F1B664E" Ref="C?"  Part="1" 
+AR Path="/5E73BB4A/5F1B664E" Ref="C316"  Part="1" 
+F 0 "C316" H 9350 1650 50  0000 L CNN
+F 1 "560u 50V" H 9350 1550 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D12.5mm_P5.00mm" H 9250 1500 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/420/United-Chemi-Con-1109128.pdf" H 9250 1500 50  0001 C CNN
+	1    9250 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F1B6654
+P 9250 1600
+AR Path="/5EA6895E/5F1B6654" Ref="#PWR?"  Part="1" 
+AR Path="/5E73BAE8/5F1B6654" Ref="#PWR?"  Part="1" 
+AR Path="/5E73BB4A/5F1B6654" Ref="#PWR0318"  Part="1" 
+F 0 "#PWR0318" H 9250 1350 50  0001 C CNN
+F 1 "GND" H 9100 1500 50  0000 C CNN
+F 2 "" H 9250 1600 50  0001 C CNN
+F 3 "" H 9250 1600 50  0001 C CNN
+	1    9250 1600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
