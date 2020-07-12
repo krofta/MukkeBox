@@ -1,5 +1,6 @@
 EESchema Schematic File Version 4
-EELAYER 30 0
+LIBS:MukkeBox-cache
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -371,48 +372,22 @@ NoConn ~ 5750 3500
 NoConn ~ 5750 3600
 NoConn ~ 5750 3700
 $Comp
-L Device:CP1_Small C?
+L Device:C_Small C?
 U 1 1 5F02DF45
 P 6450 1350
 AR Path="/5E73BB4A/5F02DF45" Ref="C?"  Part="1" 
 AR Path="/5EA6895E/5F02DF45" Ref="C508"  Part="1" 
 F 0 "C508" H 6541 1396 50  0000 L CNN
 F 1 "10u" H 6541 1305 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm" H 6450 1350 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6450 1350 50  0001 C CNN
 F 3 "~" H 6450 1350 50  0001 C CNN
 	1    6450 1350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP1_Small C?
-U 1 1 5F03288E
-P 5650 4450
-AR Path="/5E73BB4A/5F03288E" Ref="C?"  Part="1" 
-AR Path="/5EA6895E/5F03288E" Ref="C509"  Part="1" 
-F 0 "C509" H 5741 4496 50  0000 L CNN
-F 1 "10u" H 5741 4405 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm" H 5650 4450 50  0001 C CNN
-F 3 "~" H 5650 4450 50  0001 C CNN
-	1    5650 4450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	5750 4200 5650 4200
 Wire Wire Line
 	5650 4200 5650 4350
-$Comp
-L Device:CP1_Small C?
-U 1 1 5F0361D0
-P 7450 3500
-AR Path="/5E73BB4A/5F0361D0" Ref="C?"  Part="1" 
-AR Path="/5EA6895E/5F0361D0" Ref="C536"  Part="1" 
-F 0 "C536" V 7500 3550 50  0000 L CNN
-F 1 "10u" V 7500 3300 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm" H 7450 3500 50  0001 C CNN
-F 3 "~" H 7450 3500 50  0001 C CNN
-	1    7450 3500
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	7700 3500 7550 3500
 Wire Wire Line
@@ -898,14 +873,14 @@ F 3 "~" H 5100 5500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP1_Small C?
+L Device:C_Small C?
 U 1 1 5FE1C5A0
 P 5300 5500
 AR Path="/5E73BB4A/5FE1C5A0" Ref="C?"  Part="1" 
 AR Path="/5EA6895E/5FE1C5A0" Ref="C542"  Part="1" 
 F 0 "C542" H 5391 5546 50  0000 L CNN
 F 1 "10u" H 5391 5455 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm" H 5300 5500 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5300 5500 50  0001 C CNN
 F 3 "~" H 5300 5500 50  0001 C CNN
 	1    5300 5500
 	1    0    0    -1  
@@ -1264,7 +1239,7 @@ Wire Wire Line
 Wire Wire Line
 	6450 1450 6450 1600
 $Comp
-L Device:CP1_Small C?
+L Device:C_Small C?
 U 1 1 5EDC54C5
 P 2650 1150
 AR Path="/5E73BB4A/5EDC54C5" Ref="C?"  Part="1" 
@@ -1272,7 +1247,7 @@ AR Path="/5ED2496F/5EDC54C5" Ref="C?"  Part="1"
 AR Path="/5EA6895E/5EDC54C5" Ref="C503"  Part="1" 
 F 0 "C503" H 2741 1196 50  0000 L CNN
 F 1 "10u" H 2741 1105 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm" H 2650 1150 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2650 1150 50  0001 C CNN
 F 3 "~" H 2650 1150 50  0001 C CNN
 	1    2650 1150
 	1    0    0    -1  
@@ -1527,4 +1502,26 @@ Wire Wire Line
 	7900 2250 7700 2250
 Wire Wire Line
 	7700 2250 7700 3000
+$Comp
+L Device:C_Small C509
+U 1 1 5F691ED3
+P 5650 4450
+F 0 "C509" H 5450 4400 50  0000 L CNN
+F 1 "10u" H 5450 4500 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5650 4450 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/212/KEM_F3101_R82-1103738.pdf" H 5650 4450 50  0001 C CNN
+	1    5650 4450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C536
+U 1 1 5F694351
+P 7450 3500
+F 0 "C536" V 7500 3250 50  0000 L CNN
+F 1 "10u" V 7500 3600 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 7450 3500 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/212/KEM_F3101_R82-1103738.pdf" H 7450 3500 50  0001 C CNN
+	1    7450 3500
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
