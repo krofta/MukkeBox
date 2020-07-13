@@ -1,4 +1,4 @@
-18628443241729167
+18628443232308747
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -58029,6 +58029,13 @@ Mounting 4.5mm 9774100982
 0
 8
 1
+MukkeBox
+HTSSOP-32-TPA3116D2
+HTSSOP32: plastic thin shrink small outline package; 32 leads; body width 6.1 mm; lead pitch 0.65 mm (see NXP SSOP-TSSOP-VSO-REFLOW.pdf and sot487-1_po.pdf)
+SSOP 0.65 PowerPAD
+0
+32
+32
 NetTie
 NetTie-2_SMD_Pad0.5mm
 Net tie, 2 pin, 0.5mm square SMD pads
@@ -81269,13 +81276,6 @@ transformer flyback
 0
 10
 10
-TransientTest
-datakamp_logo
-
-
-0
-0
-0
 Valve
 Valve_ECC-83-1
 Valve ECC-83-1 round pins

@@ -691,92 +691,14 @@ Connection ~ 5400 4600
 Wire Wire Line
 	9000 5350 9300 5350
 $Comp
-L Connector_Generic:Conn_01x04 J?
-U 1 1 5EF1B3FA
-P 9500 1100
-AR Path="/5F5BEFD4/5EF1B3FA" Ref="J?"  Part="1" 
-AR Path="/5EF1B3FA" Ref="J102"  Part="1" 
-F 0 "J102" H 9580 1092 50  0000 L CNN
-F 1 "Conn_01x04" H 9580 1001 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 9500 1100 50  0001 C CNN
-F 3 "~" H 9500 1100 50  0001 C CNN
-	1    9500 1100
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5EF1B401
-P 9200 1550
-AR Path="/5F5BEFD4/5EF1B401" Ref="#PWR?"  Part="1" 
-AR Path="/5EF1B401" Ref="#PWR0105"  Part="1" 
-F 0 "#PWR0105" H 9200 1300 50  0001 C CNN
-F 1 "GND" H 9205 1377 50  0000 C CNN
-F 2 "" H 9200 1550 50  0001 C CNN
-F 3 "" H 9200 1550 50  0001 C CNN
-	1    9200 1550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9300 1300 9200 1300
-Wire Wire Line
-	9200 1300 9200 1500
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5EF1B409
-P 8850 1050
-AR Path="/5F5BEFD4/5EF1B409" Ref="#PWR?"  Part="1" 
-AR Path="/5EF1B409" Ref="#PWR0102"  Part="1" 
-F 0 "#PWR0102" H 8850 900 50  0001 C CNN
-F 1 "+3V3" H 8865 1223 50  0000 C CNN
-F 2 "" H 8850 1050 50  0001 C CNN
-F 3 "" H 8850 1050 50  0001 C CNN
-	1    8850 1050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8850 1050 8850 1200
-Wire Wire Line
-	8850 1200 9300 1200
-$Comp
-L Device:C_Small C?
-U 1 1 5EF1B411
-P 8850 1300
-AR Path="/5F5BEFD4/5EF1B411" Ref="C?"  Part="1" 
-AR Path="/5EF1B411" Ref="C101"  Part="1" 
-F 0 "C101" H 8942 1346 50  0000 L CNN
-F 1 "100n" H 8942 1255 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8850 1300 50  0001 C CNN
-F 3 "~" H 8850 1300 50  0001 C CNN
-	1    8850 1300
-	1    0    0    -1  
-$EndComp
-Connection ~ 8850 1200
-Wire Wire Line
-	8850 1400 8850 1500
-Wire Wire Line
-	8850 1500 9200 1500
-Connection ~ 9200 1500
-Wire Wire Line
-	9200 1500 9200 1550
-Text GLabel 9150 1000 0    50   Input ~ 0
-SDA
-Wire Wire Line
-	9300 1000 9150 1000
-Text GLabel 9150 1100 0    50   Input ~ 0
-SCL
-Wire Wire Line
-	9300 1100 9150 1100
-Text Notes 9150 850  0    50   ~ 0
-I2C-Sensor
-$Comp
-L Connector_Generic:Conn_02x20_Odd_Even J101
+L Connector_Generic:Conn_02x17_Odd_Even J101
 U 1 1 5F093A8D
-P 2100 4900
-F 0 "J101" H 2150 3650 50  0000 R CNN
-F 1 "Conn_02x20_Odd_Even" H 2500 3550 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical" H 2100 4900 50  0001 C CNN
-F 3 "~" H 2100 4900 50  0001 C CNN
-	1    2100 4900
+P 2100 4800
+F 0 "J101" H 2150 3550 50  0000 R CNN
+F 1 "Conn_02x20_Odd_Even" H 2500 3450 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x17_P2.54mm_Vertical" H 2100 4800 50  0001 C CNN
+F 3 "~" H 2100 4800 50  0001 C CNN
+	1    2100 4800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -818,49 +740,27 @@ Wire Wire Line
 	1950 7000 2100 7000
 Wire Wire Line
 	1850 7200 2100 7200
-Text GLabel 3400 5800 2    50   Input ~ 0
+Text GLabel 3400 5300 2    50   Input ~ 0
 SCL
-Text GLabel 1200 5900 0    50   Input ~ 0
+Text GLabel 1200 5300 0    50   Input ~ 0
 SDA
-Text GLabel 3400 5600 2    50   Input ~ 0
+Text GLabel 3400 5100 2    50   Input ~ 0
 RxT
-Text GLabel 1150 5700 0    50   Input ~ 0
+Text GLabel 1150 5100 0    50   Input ~ 0
 TxR
-$Comp
-L power:GND #PWR0117
-U 1 1 5F2ED168
-P 3350 5900
-F 0 "#PWR0117" H 3350 5650 50  0001 C CNN
-F 1 "GND" V 3355 5727 50  0000 C CNN
-F 2 "" H 3350 5900 50  0001 C CNN
-F 3 "" H 3350 5900 50  0001 C CNN
-	1    3350 5900
-	0    -1   -1   0   
-$EndComp
 $Comp
 L power:GND #PWR0115
 U 1 1 5F2F5047
-P 3350 5700
-F 0 "#PWR0115" H 3350 5450 50  0001 C CNN
-F 1 "GND" V 3355 5527 50  0000 C CNN
-F 2 "" H 3350 5700 50  0001 C CNN
-F 3 "" H 3350 5700 50  0001 C CNN
-	1    3350 5700
+P 3350 5200
+F 0 "#PWR0115" H 3350 4950 50  0001 C CNN
+F 1 "GND" V 3355 5027 50  0000 C CNN
+F 2 "" H 3350 5200 50  0001 C CNN
+F 3 "" H 3350 5200 50  0001 C CNN
+	1    3350 5200
 	0    -1   -1   0   
 $EndComp
 Text Label 6850 4350 2    50   ~ 0
 TEMP_SENSOR1
-$Comp
-L power:GND #PWR0114
-U 1 1 5F326AA0
-P 1200 5100
-F 0 "#PWR0114" H 1200 4850 50  0001 C CNN
-F 1 "GND" V 1205 4927 50  0000 C CNN
-F 2 "" H 1200 5100 50  0001 C CNN
-F 3 "" H 1200 5100 50  0001 C CNN
-	1    1200 5100
-	0    1    1    0   
-$EndComp
 $Comp
 L Device:R_Small R103
 U 1 1 5F3E474F
@@ -946,17 +846,15 @@ $EndComp
 NoConn ~ 2600 7300
 NoConn ~ 2100 7300
 NoConn ~ 2100 7100
-Wire Wire Line
-	2400 5900 3350 5900
 $Comp
 L power:+3.3V #PWR0116
 U 1 1 5FAFF780
-P 1200 5800
-F 0 "#PWR0116" H 1200 5650 50  0001 C CNN
-F 1 "+3.3V" V 1200 6050 50  0000 C CNN
-F 2 "" H 1200 5800 50  0001 C CNN
-F 3 "" H 1200 5800 50  0001 C CNN
-	1    1200 5800
+P 1200 5200
+F 0 "#PWR0116" H 1200 5050 50  0001 C CNN
+F 1 "+3.3V" V 1200 5450 50  0000 C CNN
+F 2 "" H 1200 5200 50  0001 C CNN
+F 3 "" H 1200 5200 50  0001 C CNN
+	1    1200 5200
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -1080,7 +978,7 @@ Wire Wire Line
 Text GLabel 6300 3750 0    50   Input ~ 0
 CHARGER_PG
 Wire Wire Line
-	2400 5800 3400 5800
+	2400 5300 3400 5300
 $Comp
 L Sensor_Temperature:LM35-LP U103
 U 1 1 5EFDBF70
@@ -1356,46 +1254,15 @@ $EndComp
 Wire Wire Line
 	3350 5000 2400 5000
 Wire Wire Line
-	1900 5900 1200 5900
+	1900 5300 1200 5300
 Wire Wire Line
-	1900 5800 1200 5800
+	1900 5200 1200 5200
 Wire Wire Line
-	2400 5700 3350 5700
+	2400 5200 3350 5200
 Wire Wire Line
-	2400 5600 3400 5600
+	2400 5100 3400 5100
 Wire Wire Line
-	1900 5700 1150 5700
-Wire Wire Line
-	1900 5600 1900 5500
-Connection ~ 1900 5300
-Wire Wire Line
-	1900 5300 1900 5200
-Connection ~ 1900 5400
-Wire Wire Line
-	1900 5400 1900 5300
-Connection ~ 1900 5500
-Wire Wire Line
-	1900 5500 1900 5400
-$Comp
-L power:+3.3V #PWR0122
-U 1 1 6060B72B
-P 3350 5100
-F 0 "#PWR0122" H 3350 4950 50  0001 C CNN
-F 1 "+3.3V" V 3350 5350 50  0000 C CNN
-F 2 "" H 3350 5100 50  0001 C CNN
-F 3 "" H 3350 5100 50  0001 C CNN
-	1    3350 5100
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2400 5200 2400 5300
-Connection ~ 2400 5300
-Wire Wire Line
-	2400 5300 2400 5400
-Connection ~ 2400 5400
-Wire Wire Line
-	2400 5400 2400 5500
-Connection ~ 2400 5200
+	1900 5100 1150 5100
 $Comp
 L Device:R_Small R109
 U 1 1 606B1139
@@ -1508,17 +1375,6 @@ Wire Wire Line
 Text GLabel 9300 5800 2    50   Output ~ 0
 STEPUP_DISABLE
 Wire Wire Line
-	3350 5100 2400 5100
-Wire Wire Line
-	2400 5100 2400 5200
-Connection ~ 2400 5100
-Wire Wire Line
-	1900 5100 1200 5100
-Wire Wire Line
-	1900 5200 1900 5100
-Connection ~ 1900 5200
-Connection ~ 1900 5100
-Wire Wire Line
 	5400 4900 5400 5100
 Wire Wire Line
 	5700 5000 7000 5000
@@ -1548,4 +1404,10 @@ F 3 "~" H 950 7450 50  0001 C CNN
 	1    950  7450
 	1    0    0    -1  
 $EndComp
+NoConn ~ 2400 5400
+NoConn ~ 2400 5500
+NoConn ~ 2400 5600
+NoConn ~ 1900 5600
+NoConn ~ 1900 5500
+NoConn ~ 1900 5400
 $EndSCHEMATC
