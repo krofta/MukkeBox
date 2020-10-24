@@ -1,5 +1,6 @@
 EESchema Schematic File Version 4
-EELAYER 30 0
+LIBS:MukkeBox-cache
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -138,8 +139,8 @@ L Device:R_Small R?
 U 1 1 5ECED53D
 P 7250 3300
 AR Path="/5ECED53D" Ref="R?"  Part="1" 
-AR Path="/5ED2496F/5ECED53D" Ref="R_FBT601"  Part="1" 
-F 0 "R_FBT601" H 7050 3400 50  0000 C CNN
+AR Path="/5ED2496F/5ECED53D" Ref="R603"  Part="1" 
+F 0 "R603" H 7050 3400 50  0000 C CNN
 F 1 "10K" H 7050 3300 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7250 3300 50  0001 C CNN
 F 3 "~" H 7250 3300 50  0001 C CNN
